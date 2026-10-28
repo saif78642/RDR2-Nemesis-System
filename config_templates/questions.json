@@ -1,0 +1,101 @@
+﻿{
+  "About": "Interrogation questions (Questions.cs). cat: What / When / Where / Why (three each is what the menu is made for). need: fear over his temper's line before he'll answer. odds: + / - on his chance. lies: can he lie (a lie is still shown as ? intel, sometimes a trap). requires: gang named boss officer camps kin (joined by &). answer: orders wants bossnature catch news holedup stores people past worstgrudge bargain (and the older single ones: ride alone habit funeral shakeup camp hideout treasury supplies). requires 'news': his outfit has a burying or a shake-up heir to tell of; 'funeral': a burying. Built-in rows missing from this file are added by Id unless listed in Removed.",
+  "Version": 4,
+  "Rows": [
+    {
+      "Id": "what-orders",
+      "Cat": "What",
+      "Text": "\"What are your orders? What's the outfit planning?\"",
+      "Need": 5,
+      "Lies": true,
+      "Requires": "gang",
+      "Answer": "orders"
+    },
+    {
+      "Id": "what-wants",
+      "Cat": "What",
+      "Text": "\"What are you after, really?\"",
+      "Odds": 10,
+      "Requires": "named",
+      "Answer": "wants"
+    },
+    {
+      "Id": "what-boss",
+      "Cat": "What",
+      "Text": "\"What kind of man is your boss?\"",
+      "Need": 5,
+      "Requires": "boss",
+      "Answer": "bossnature"
+    },
+    {
+      "Id": "when-boss",
+      "Cat": "When",
+      "Text": "\"When can I catch your boss? Where?\"",
+      "Need": 10,
+      "Lies": true,
+      "Requires": "gang&boss",
+      "Answer": "catch"
+    },
+    {
+      "Id": "when-news",
+      "Cat": "When",
+      "Text": "\"What's going on in the outfit? Anything coming?\"",
+      "Odds": 10,
+      "Requires": "gang&news",
+      "Answer": "news"
+    },
+    {
+      "Id": "where-camp",
+      "Cat": "Where",
+      "Text": "\"Where's your boss holed up? Talk.\"",
+      "Lies": true,
+      "Requires": "gang",
+      "Answer": "holedup"
+    },
+    {
+      "Id": "where-stores",
+      "Cat": "Where",
+      "Text": "\"Where do they keep the money? The guns and feed?\"",
+      "Need": 15,
+      "Odds": -5,
+      "Requires": "gang&named",
+      "Answer": "stores"
+    },
+    {
+      "Id": "where-people",
+      "Cat": "Where",
+      "Text": "\"Your family. Your friends. Where are they?\"",
+      "Need": 15,
+      "Requires": "named",
+      "Answer": "people"
+    },
+    {
+      "Id": "why-past",
+      "Cat": "Why",
+      "Text": "\"Why do you ride with these men?\"",
+      "Need": -10,
+      "Odds": 15,
+      "Requires": "named",
+      "Answer": "past"
+    },
+    {
+      "Id": "why-grudge",
+      "Cat": "Why",
+      "Text": "\"Who wants me dead the most? Why?\"",
+      "Need": 5,
+      "Requires": "gang",
+      "Answer": "worstgrudge"
+    },
+    {
+      "Id": "why-live",
+      "Cat": "Why",
+      "Text": "\"Give me one reason to let you live.\"",
+      "Need": 10,
+      "Odds": 5,
+      "Requires": "",
+      "Answer": "bargain",
+      "Once": false
+    }
+  ],
+  "Removed": []
+}

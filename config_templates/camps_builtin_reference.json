@@ -1,0 +1,796 @@
+﻿{
+  "About": "Camp sites for factions other than the O'Driscolls (theirs are the game's own camps). Learned in game where 3+ of a faction's men gather (seen twice), or added with H on a faction's hierarchy page (debug on). Delete a row to remove a site. hideout = officers rank 4+ prefer it.",
+  "Sites": [
+    {
+      "Id": "six_point_cabin",
+      "Gang": "odriscoll",
+      "Name": "Six Point Cabin",
+      "Region": "Cumberland Forest",
+      "X": -43.4,
+      "Y": 1230.9,
+      "Z": 172.7,
+      "Hideout": true
+    },
+    {
+      "Id": "hanging_dog_ranch",
+      "Gang": "odriscoll",
+      "Name": "Hanging Dog Ranch",
+      "Region": "Big Valley",
+      "X": -2197.1,
+      "Y": 700.3,
+      "Z": 121.5,
+      "Hideout": true
+    },
+    {
+      "Id": "gang_odriscollboys_bgv001",
+      "Gang": "odriscoll",
+      "Region": "Big Valley",
+      "X": -1118.4,
+      "Y": -220.2,
+      "Z": 91.2
+    },
+    {
+      "Id": "gang_odriscollboys_bgv002",
+      "Gang": "odriscoll",
+      "Region": "Big Valley",
+      "X": -980.4,
+      "Y": -212.6,
+      "Z": 90.2
+    },
+    {
+      "Id": "gang_odriscollboys_bgv003",
+      "Gang": "odriscoll",
+      "Region": "Big Valley",
+      "X": -2601.2,
+      "Y": -24.6,
+      "Z": 161.5
+    },
+    {
+      "Id": "gang_odriscollboys_bgv004",
+      "Gang": "odriscoll",
+      "Region": "Big Valley",
+      "X": -1602.5,
+      "Y": -893.0,
+      "Z": 86.5
+    },
+    {
+      "Id": "gang_odriscollboys_bgv005",
+      "Gang": "odriscoll",
+      "Region": "Big Valley",
+      "X": -2763.2,
+      "Y": 113.3,
+      "Z": 165.2
+    },
+    {
+      "Id": "gang_odriscollboys_bgv006",
+      "Gang": "odriscoll",
+      "Region": "Big Valley",
+      "X": -1448.7,
+      "Y": 101.4,
+      "Z": 91.6
+    },
+    {
+      "Id": "gang_odriscollboys_bgv007",
+      "Gang": "odriscoll",
+      "Region": "Big Valley",
+      "X": -1580.8,
+      "Y": 496.3,
+      "Z": 115.5
+    },
+    {
+      "Id": "gang_odriscollboys_bgv008",
+      "Gang": "odriscoll",
+      "Region": "Big Valley",
+      "X": -1345.1,
+      "Y": 492.8,
+      "Z": 97.3
+    },
+    {
+      "Id": "gang_odriscollboys_bgv009",
+      "Gang": "odriscoll",
+      "Region": "Big Valley",
+      "X": -1711.5,
+      "Y": 605.2,
+      "Z": 119.3
+    },
+    {
+      "Id": "gang_odriscollboys_bgv010",
+      "Gang": "odriscoll",
+      "Region": "Big Valley",
+      "X": -1622.6,
+      "Y": 822.5,
+      "Z": 153.1
+    },
+    {
+      "Id": "gang_odriscollboys_cml001",
+      "Gang": "odriscoll",
+      "Region": "Cumberland Forest",
+      "X": -2.8,
+      "Y": 949.6,
+      "Z": 211.4
+    },
+    {
+      "Id": "gang_odriscollboys_cml002",
+      "Gang": "odriscoll",
+      "Region": "Cumberland Forest",
+      "X": 645.5,
+      "Y": 1298.7,
+      "Z": 197.1
+    },
+    {
+      "Id": "gang_odriscollboys_cml003",
+      "Gang": "odriscoll",
+      "Region": "Cumberland Forest",
+      "X": 102.4,
+      "Y": 1406.9,
+      "Z": 168.4
+    },
+    {
+      "Id": "gang_odriscollboys_cml004",
+      "Gang": "odriscoll",
+      "Region": "Cumberland Forest",
+      "X": 586.5,
+      "Y": 1431.2,
+      "Z": 185.7
+    },
+    {
+      "Id": "gang_odriscollboys_cml005",
+      "Gang": "odriscoll",
+      "Region": "Cumberland Forest",
+      "X": 497.3,
+      "Y": 1498.1,
+      "Z": 173.9
+    },
+    {
+      "Id": "gang_odriscollboys_hrt001",
+      "Gang": "odriscoll",
+      "Region": "the Heartlands",
+      "X": -647.6,
+      "Y": -391.5,
+      "Z": 80.3
+    },
+    {
+      "Id": "gang_odoriscollboys_hrt002",
+      "Gang": "odriscoll",
+      "Region": "the Heartlands",
+      "X": 499.1,
+      "Y": -259.1,
+      "Z": 144.8
+    },
+    {
+      "Id": "gang_odriscollboys_hrt003",
+      "Gang": "odriscoll",
+      "Region": "the Heartlands",
+      "X": 649.7,
+      "Y": -111.8,
+      "Z": 150.6
+    },
+    {
+      "Id": "gang_odriscollboys_hrt004",
+      "Gang": "odriscoll",
+      "Region": "the Heartlands",
+      "X": 1059.1,
+      "Y": 34.3,
+      "Z": 87.3
+    },
+    {
+      "Id": "gang_odoriscollboys_hrt005",
+      "Gang": "odriscoll",
+      "Region": "the Heartlands",
+      "X": -1172.4,
+      "Y": 94.5,
+      "Z": 45.1
+    },
+    {
+      "Id": "gang_odriscollboys_hrt006",
+      "Gang": "odriscoll",
+      "Region": "the Heartlands",
+      "X": -961.0,
+      "Y": 296.2,
+      "Z": 96.1
+    },
+    {
+      "Id": "gang_odriscollboys_hrt007",
+      "Gang": "odriscoll",
+      "Region": "the Heartlands",
+      "X": -645.9,
+      "Y": 277.5,
+      "Z": 91.5
+    },
+    {
+      "Id": "gang_odriscollboys_hrt008",
+      "Gang": "odriscoll",
+      "Region": "the Heartlands",
+      "X": -191.8,
+      "Y": 294.7,
+      "Z": 97.5
+    },
+    {
+      "Id": "gang_odriscollboys_hrt009",
+      "Gang": "odriscoll",
+      "Region": "the Heartlands",
+      "X": 182.8,
+      "Y": 344.3,
+      "Z": 121.4
+    },
+    {
+      "Id": "gang_odriscollboys_hrt010",
+      "Gang": "odriscoll",
+      "Region": "the Heartlands",
+      "X": -849.9,
+      "Y": 465.8,
+      "Z": 91.0
+    },
+    {
+      "Id": "gang_odriscollboys_hrt011",
+      "Gang": "odriscoll",
+      "Region": "the Heartlands",
+      "X": 439.7,
+      "Y": 830.0,
+      "Z": 147.1
+    },
+    {
+      "Id": "gang_odriscollboys_hrt012",
+      "Gang": "odriscoll",
+      "Region": "the Heartlands",
+      "X": 275.6,
+      "Y": 835.1,
+      "Z": 191.2
+    },
+    {
+      "Id": "gang_odriscollboys_hrt013",
+      "Gang": "odriscoll",
+      "Region": "the Heartlands",
+      "X": 1000.1,
+      "Y": 991.4,
+      "Z": 152.3
+    },
+    {
+      "Id": "gang_lemoyne_scm001",
+      "Gang": "lemoyneraiders",
+      "Region": "Scarlett Meadows",
+      "X": 1173.2,
+      "Y": -2180.8,
+      "Z": 55.8
+    },
+    {
+      "Id": "gang_lemoyne_scm002",
+      "Gang": "lemoyneraiders",
+      "Region": "Scarlett Meadows",
+      "X": 1426.4,
+      "Y": -2185.0,
+      "Z": 50.0
+    },
+    {
+      "Id": "gang_lemoyne_scm003",
+      "Gang": "lemoyneraiders",
+      "Region": "Scarlett Meadows",
+      "X": 1562.1,
+      "Y": -2048.9,
+      "Z": 49.0
+    },
+    {
+      "Id": "gang_lemoyne_scm004",
+      "Gang": "lemoyneraiders",
+      "Region": "Scarlett Meadows",
+      "X": 1705.0,
+      "Y": -2008.8,
+      "Z": 45.4
+    },
+    {
+      "Id": "gang_lemoyne_scm005",
+      "Gang": "lemoyneraiders",
+      "Region": "Scarlett Meadows",
+      "X": 1380.3,
+      "Y": -1696.1,
+      "Z": 68.3
+    },
+    {
+      "Id": "gang_lemoyne_scm006",
+      "Gang": "lemoyneraiders",
+      "Region": "Scarlett Meadows",
+      "X": 1622.1,
+      "Y": -1649.4,
+      "Z": 57.7
+    },
+    {
+      "Id": "gang_lemoyne_scm007",
+      "Gang": "lemoyneraiders",
+      "Region": "Scarlett Meadows",
+      "X": 1503.0,
+      "Y": -1470.5,
+      "Z": 73.0
+    },
+    {
+      "Id": "gang_lemoyne_scm008",
+      "Gang": "lemoyneraiders",
+      "Region": "Scarlett Meadows",
+      "X": 868.5,
+      "Y": -1330.5,
+      "Z": 56.3
+    },
+    {
+      "Id": "gang_lemoyne_scm009",
+      "Gang": "lemoyneraiders",
+      "Region": "Scarlett Meadows",
+      "X": 948.0,
+      "Y": -1318.5,
+      "Z": 59.8
+    },
+    {
+      "Id": "gang_lemoyne_scm010",
+      "Gang": "lemoyneraiders",
+      "Region": "Scarlett Meadows",
+      "X": 1083.4,
+      "Y": -1268.5,
+      "Z": 69.2
+    },
+    {
+      "Id": "gang_lemoyne_scm011",
+      "Gang": "lemoyneraiders",
+      "Region": "Scarlett Meadows",
+      "X": 701.8,
+      "Y": -1173.6,
+      "Z": 48.6
+    },
+    {
+      "Id": "gang_lemoyne_scm012",
+      "Gang": "lemoyneraiders",
+      "Region": "Scarlett Meadows",
+      "X": 856.7,
+      "Y": -1134.3,
+      "Z": 59.0
+    },
+    {
+      "Id": "gang_lemoyne_scm013",
+      "Gang": "lemoyneraiders",
+      "Region": "Scarlett Meadows",
+      "X": 683.4,
+      "Y": -992.4,
+      "Z": 54.1
+    },
+    {
+      "Id": "gang_lemoyne_scm014",
+      "Gang": "lemoyneraiders",
+      "Region": "Scarlett Meadows",
+      "X": 911.2,
+      "Y": -986.3,
+      "Z": 58.6
+    },
+    {
+      "Id": "gang_lemoyne_scm015",
+      "Gang": "lemoyneraiders",
+      "Region": "Scarlett Meadows",
+      "X": 708.5,
+      "Y": -885.4,
+      "Z": 49.9
+    },
+    {
+      "Id": "gang_lemoyne_scm016",
+      "Gang": "lemoyneraiders",
+      "Region": "Scarlett Meadows",
+      "X": 1334.9,
+      "Y": -594.7,
+      "Z": 76.2
+    },
+    {
+      "Id": "gang_lemoyne_scm017",
+      "Gang": "lemoyneraiders",
+      "Region": "Scarlett Meadows",
+      "X": 879.3,
+      "Y": -538.3,
+      "Z": 89.7
+    },
+    {
+      "Id": "gang_lemoyne_scm018",
+      "Gang": "lemoyneraiders",
+      "Region": "Scarlett Meadows",
+      "X": 961.2,
+      "Y": -572.9,
+      "Z": 90.9
+    },
+    {
+      "Id": "gang_lemoyne_scm019",
+      "Gang": "lemoyneraiders",
+      "Region": "Scarlett Meadows",
+      "X": 1012.5,
+      "Y": -392.5,
+      "Z": 92.1
+    },
+    {
+      "Id": "gang_skinner_tal001",
+      "Gang": "skinners",
+      "Region": "Tall Trees",
+      "X": -2014.5,
+      "Y": -1828.5,
+      "Z": 114.0
+    },
+    {
+      "Id": "gang_skinner_tal002",
+      "Gang": "skinners",
+      "Region": "Tall Trees",
+      "X": -2136.9,
+      "Y": -1783.6,
+      "Z": 139.3
+    },
+    {
+      "Id": "gang_skinner_tal003",
+      "Gang": "skinners",
+      "Region": "Tall Trees",
+      "X": -2667.6,
+      "Y": -1462.4,
+      "Z": 146.2
+    },
+    {
+      "Id": "gang_skinner_tal004",
+      "Gang": "skinners",
+      "Region": "Tall Trees",
+      "X": -2429.4,
+      "Y": -1329.6,
+      "Z": 151.9
+    },
+    {
+      "Id": "gang_skinner_tal005",
+      "Gang": "skinners",
+      "Region": "Tall Trees",
+      "X": -2109.8,
+      "Y": -1275.0,
+      "Z": 123.7
+    },
+    {
+      "Id": "gang_skinner_tal006",
+      "Gang": "skinners",
+      "Region": "Tall Trees",
+      "X": -2033.1,
+      "Y": -1278.6,
+      "Z": 115.2
+    },
+    {
+      "Id": "murfree_beaver_hollow",
+      "Gang": "murfree",
+      "Name": "Beaver Hollow",
+      "Region": "Roanoke Ridge",
+      "X": 2351.4,
+      "Y": 1358.2,
+      "Z": 106.9,
+      "Hideout": true
+    },
+    {
+      "Id": "murfree_ransack07",
+      "Gang": "murfree",
+      "Region": "Roanoke Ridge",
+      "X": 2357.8,
+      "Y": 836.1,
+      "Z": 79.6
+    },
+    {
+      "Id": "murfree_ransack11",
+      "Gang": "murfree",
+      "Region": "Roanoke Ridge",
+      "X": 2299.3,
+      "Y": 1050.8,
+      "Z": 116.6
+    },
+    {
+      "Id": "murfree_ransack12",
+      "Gang": "murfree",
+      "Region": "Roanoke Ridge",
+      "X": 2517.6,
+      "Y": 1746.4,
+      "Z": 88.3
+    },
+    {
+      "Id": "murfree_ransack13",
+      "Gang": "murfree",
+      "Region": "Roanoke Ridge",
+      "X": 2792.8,
+      "Y": 2008.3,
+      "Z": 165.3
+    },
+    {
+      "Id": "murfree_ransack01",
+      "Gang": "murfree",
+      "Region": "Bluewater Marsh",
+      "X": 2119.9,
+      "Y": -139.3,
+      "Z": 50.3
+    },
+    {
+      "Id": "murfree_mossy_flats",
+      "Gang": "murfree",
+      "Region": "Roanoke Ridge",
+      "X": 2453.5,
+      "Y": 290.5,
+      "Z": 70.4
+    },
+    {
+      "Id": "murfree_rocky_seven",
+      "Gang": "murfree",
+      "Region": "Roanoke Ridge",
+      "X": 2996.8,
+      "Y": 2197.3,
+      "Z": 166.1
+    },
+    {
+      "Id": "bronte_mansion",
+      "Gang": "bronte",
+      "Name": "the Bronte Mansion",
+      "Region": "Bayou Nwa",
+      "X": 2338.6,
+      "Y": -1204.4,
+      "Z": 44.0,
+      "Hideout": true
+    },
+    {
+      "Id": "bronte_docks",
+      "Gang": "bronte",
+      "Region": "Saint Denis",
+      "X": 2806.9,
+      "Y": -1417.9,
+      "Z": 43.0
+    },
+    {
+      "Id": "bronte_warehouses",
+      "Gang": "bronte",
+      "Region": "Saint Denis",
+      "X": 2574.1,
+      "Y": -1405.9,
+      "Z": 45.0
+    },
+    {
+      "Id": "placed_bronte_c43b22",
+      "Gang": "bronte",
+      "Region": "Saint Denis",
+      "X": 2367.1,
+      "Y": -1435.6,
+      "Z": 45.5
+    },
+    {
+      "Id": "bronte_slums",
+      "Gang": "bronte",
+      "Region": "Saint Denis",
+      "X": 2840.0,
+      "Y": -1229.3,
+      "Z": 47.6
+    },
+    {
+      "Id": "bronte_lakay",
+      "Gang": "bronte",
+      "Name": "Lakay",
+      "Region": "Bayou Nwa",
+      "X": 2264.4,
+      "Y": -764.2,
+      "Z": 43.1,
+      "Hideout": true
+    },
+    {
+      "Id": "bronte_boathouse",
+      "Gang": "bronte",
+      "Region": "Bayou Nwa",
+      "X": 2020.9,
+      "Y": -775.8,
+      "Z": 42.7
+    },
+    {
+      "Id": "bronte_copperhead",
+      "Gang": "bronte",
+      "Region": "Bayou Nwa",
+      "X": 2040.7,
+      "Y": -1639.4,
+      "Z": 41.3
+    },
+    {
+      "Id": "laramie_manteca",
+      "Gang": "laramie",
+      "Name": "Manteca Falls",
+      "Region": "Hennigan's Stead",
+      "X": -1657.0,
+      "Y": -2760.0,
+      "Z": 71.0,
+      "Hideout": true
+    },
+    {
+      "Id": "laramie_hen_shack",
+      "Gang": "laramie",
+      "Region": "Hennigan's Stead",
+      "X": -1810.8,
+      "Y": -2393.1,
+      "Z": 41.5
+    },
+    {
+      "Id": "laramie_hen_cabin",
+      "Gang": "laramie",
+      "Region": "Hennigan's Stead",
+      "X": -1412.4,
+      "Y": -2671.5,
+      "Z": 43.4
+    },
+    {
+      "Id": "laramie_quakers",
+      "Gang": "laramie",
+      "Region": "the Great Plains",
+      "X": -1199.9,
+      "Y": -1938.9,
+      "Z": 42.6
+    },
+    {
+      "Id": "delobo_gaptooth",
+      "Gang": "delobo",
+      "Name": "Gaptooth Breach",
+      "Region": "Gaptooth Ridge",
+      "X": -5990.0,
+      "Y": -3261.0,
+      "Z": -21.0,
+      "Hideout": true
+    },
+    {
+      "Id": "delobo_gap_shack",
+      "Gang": "delobo",
+      "Region": "Gaptooth Ridge",
+      "X": -5850.3,
+      "Y": -3743.9,
+      "Z": -25.9
+    },
+    {
+      "Id": "delobo_ben_shack",
+      "Gang": "delobo",
+      "Region": "Gaptooth Ridge",
+      "X": -5204.8,
+      "Y": -3490.9,
+      "Z": -23.4
+    },
+    {
+      "Id": "delobo_rio_camp",
+      "Gang": "delobo",
+      "Region": "Rio Bravo",
+      "X": -5248.1,
+      "Y": -3851.5,
+      "Z": -2.1
+    },
+    {
+      "Id": "delobo_cho_shack",
+      "Gang": "delobo",
+      "Region": "Cholla Springs",
+      "X": -3400.6,
+      "Y": -3305.4,
+      "Z": -6.2
+    },
+    {
+      "Id": "delobo_cho_shack2",
+      "Gang": "delobo",
+      "Region": "Cholla Springs",
+      "X": -3552.2,
+      "Y": -3009.9,
+      "Z": 10.1
+    },
+    {
+      "Id": "delobo_cho_rocks",
+      "Gang": "delobo",
+      "Region": "Cholla Springs",
+      "X": -3956.8,
+      "Y": -2124.6,
+      "Z": -5.8
+    },
+    {
+      "Id": "nightfolk_shack",
+      "Gang": "nightfolk",
+      "Region": "Bayou Nwa",
+      "X": 1707.4,
+      "Y": -1005.4,
+      "Z": 40.2
+    },
+    {
+      "Id": "nightfolk_shady",
+      "Gang": "nightfolk",
+      "Region": "Bayou Nwa",
+      "X": 1870.0,
+      "Y": -1853.0,
+      "Z": 43.0
+    },
+    {
+      "Id": "placed_delobo_1d0d56",
+      "Gang": "delobo",
+      "Region": "Cholla Springs",
+      "X": -4350.9,
+      "Y": -2950.6,
+      "Z": -14.5
+    },
+    {
+      "Id": "placed_delobo_03907f",
+      "Gang": "delobo",
+      "Region": "Cholla Springs",
+      "X": -3835.7,
+      "Y": -3150.5,
+      "Z": -12.4
+    },
+    {
+      "Id": "placed_delobo_80f73c",
+      "Gang": "delobo",
+      "Region": "Gaptooth Ridge",
+      "X": -5600.3,
+      "Y": -3306.9,
+      "Z": -21.5
+    },
+    {
+      "Id": "placed_laramie_a7c059",
+      "Gang": "laramie",
+      "Region": "Hennigan's Stead",
+      "X": -1949.7,
+      "Y": -2993.8,
+      "Z": -4.4
+    },
+    {
+      "Id": "placed_skinners_4fa891",
+      "Gang": "skinners",
+      "Region": "Tall Trees",
+      "X": -1545.0,
+      "Y": -1958.1,
+      "Z": 47.7
+    },
+    {
+      "Id": "placed_skinners_7ac923",
+      "Gang": "skinners",
+      "Region": "Tall Trees",
+      "X": -2236.0,
+      "Y": -1291.2,
+      "Z": 134.9
+    },
+    {
+      "Id": "placed_murfree_db3b49",
+      "Gang": "murfree",
+      "Region": "Roanoke Ridge",
+      "X": 2476.3,
+      "Y": 1756.8,
+      "Z": 87.5
+    },
+    {
+      "Id": "placed_murfree_70f4d7",
+      "Gang": "murfree",
+      "Region": "Roanoke Ridge",
+      "X": 3244.3,
+      "Y": 1488.8,
+      "Z": 51.7
+    },
+    {
+      "Id": "placed_lemoyneraiders_c2958d",
+      "Gang": "lemoyneraiders",
+      "Region": "Bluewater Marsh",
+      "X": 2172.3,
+      "Y": -399.5,
+      "Z": 42.4
+    },
+    {
+      "Id": "placed_lemoyneraiders_701490",
+      "Gang": "lemoyneraiders",
+      "Region": "the Grizzlies",
+      "X": 1053.3,
+      "Y": 1248.7,
+      "Z": 201.2
+    },
+    {
+      "Id": "wapiti_hunting_camp",
+      "Gang": "wapiti",
+      "Region": "Grizzlies East",
+      "X": 712.7,
+      "Y": 1882.3,
+      "Z": 239.1
+    },
+    {
+      "Id": "wapiti_lowland_camp",
+      "Gang": "wapiti",
+      "Region": "Grizzlies East",
+      "X": 794.0,
+      "Y": 1511.0,
+      "Z": 204.0
+    },
+    {
+      "Id": "wapiti_ridge",
+      "Gang": "wapiti",
+      "Region": "Grizzlies East",
+      "X": 992.4,
+      "Y": 1452.6,
+      "Z": 276.0
+    }
+  ],
+  "Candidates": []
+}

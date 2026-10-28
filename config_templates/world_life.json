@@ -1,0 +1,3145 @@
+﻿{
+  "About": "Everyday events of the men on your roster (WorldSim LIFE, WorldLife.cs). who: any / gang / loner / army / a faction id. Tokens {n} him, {t} a town, {g} his gang, {f} a mate, {b} his boss, {l} his leader. weight: + good / - bad mood strength. hours on his mind. when: conditions joined by & (and) and | (or): married single children notarmy knows poor rich dim sharp pet nopet loyal coward hothead proud cold greedy drifter friendly surly devout godless notgodless catholic a quirk (drunk gambler braggart traitor honest superstitious sadist) rank>=N rank<=N hate>=N hate<N (N or vengeful / murderous) fear>=N fear<N aggr<N aggr>=N. odds: how often (10 = usual). effects: rest:H fear:N hate:N child marry single widow scar:beat|blade|claw friend sour pet nopet. Ids keep built-in rows from being added twice; list an Id in Removed to drop a built-in row for good.",
+  "Version": 2,
+  "Rows": [
+    {
+      "Id": "any-n-came-down-with-a-fever",
+      "Who": "any",
+      "Title": "{n} came down with a fever",
+      "Thought": "laid up with a fever",
+      "Mood": "Sick",
+      "Weight": -3,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": [
+        "rest:36"
+      ]
+    },
+    {
+      "Id": "any-n-caught-a-cough-in-the-rain-he-can-t-shake",
+      "Who": "any",
+      "Title": "{n} caught a cough in the rain he can't shake",
+      "Thought": "a cough that won't quit",
+      "Mood": "Sick",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": [
+        "rest:12"
+      ]
+    },
+    {
+      "Id": "any-n-broke-two-fingers-falling-off-a-fence",
+      "Who": "any",
+      "Title": "{n} broke two fingers falling off a fence",
+      "Thought": "two splinted fingers",
+      "Mood": "Hurting",
+      "Weight": -2,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-was-thrown-from-his-horse",
+      "Who": "any",
+      "Title": "{n} was thrown from his horse",
+      "Thought": "a back that aches from the fall",
+      "Mood": "Hurting",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": [
+        "rest:12"
+      ]
+    },
+    {
+      "Id": "any-n-was-bitten-by-a-rattlesnake",
+      "Who": "any",
+      "Title": "{n} was bitten by a rattlesnake",
+      "Thought": "a swollen leg from a snakebite",
+      "Mood": "Hurting",
+      "Weight": -3,
+      "Hours": 48,
+      "Odds": 8,
+      "Effects": [
+        "rest:24"
+      ]
+    },
+    {
+      "Id": "any-n-nearly-drowned-crossing-a-river",
+      "Who": "any",
+      "Title": "{n} nearly drowned crossing a river",
+      "Thought": "nearly drowned crossing a river",
+      "Mood": "Shaken",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-tangled-with-a-cougar-and-lived",
+      "Who": "any",
+      "Title": "{n} tangled with a cougar and lived",
+      "Thought": "the cougar's claws",
+      "Mood": "Shaken",
+      "Weight": -3,
+      "Hours": 96,
+      "Odds": 6,
+      "Effects": [
+        "scar:claw",
+        "rest:24"
+      ]
+    },
+    {
+      "Id": "any-n-got-lost-in-a-blizzard-up-in-the-mountains",
+      "Who": "any",
+      "Title": "{n} got lost in a blizzard up in the mountains",
+      "Thought": "the cold of the mountains",
+      "Mood": "Shaken",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 8,
+      "Effects": [
+        "rest:12"
+      ]
+    },
+    {
+      "Id": "any-n-got-sunstroke-on-the-trail",
+      "Who": "any",
+      "Title": "{n} got sunstroke on the trail",
+      "Thought": "a sunstroke headache",
+      "Mood": "Sick",
+      "Weight": -2,
+      "Hours": 24,
+      "Odds": 8,
+      "Effects": [
+        "rest:12"
+      ]
+    },
+    {
+      "Id": "any-n-had-a-rotten-tooth-pulled-in-t",
+      "Who": "any",
+      "Title": "{n} had a rotten tooth pulled in {t}",
+      "Thought": "a sore jaw",
+      "Mood": "Hurting",
+      "Weight": -1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-ate-bad-meat-and-spent-two-days-sick",
+      "Who": "any",
+      "Title": "{n} ate bad meat and spent two days sick",
+      "Thought": "a gut that's still not right",
+      "Mood": "Sick",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": [
+        "rest:24"
+      ]
+    },
+    {
+      "Id": "any-n-lost-a-tooth-in-a-tavern-scrap-in-t",
+      "Who": "any",
+      "Title": "{n} lost a tooth in a tavern scrap in {t}",
+      "Thought": "a gap in his teeth",
+      "Mood": "Humiliated",
+      "Weight": -1,
+      "Hours": 48,
+      "Odds": 8,
+      "Effects": [
+        "scar:beat"
+      ]
+    },
+    {
+      "Id": "any-n-took-a-beating-from-three-drunks-in-t",
+      "Who": "any",
+      "Title": "{n} took a beating from three drunks in {t}",
+      "Thought": "the beating in {t}",
+      "Mood": "Humiliated",
+      "Weight": -3,
+      "Hours": 72,
+      "Odds": 6,
+      "Effects": [
+        "scar:beat"
+      ]
+    },
+    {
+      "Id": "any-n-cut-his-hand-open-skinning-a-deer",
+      "Who": "any",
+      "Title": "{n} cut his hand open skinning a deer",
+      "Thought": "a bandaged hand",
+      "Mood": "Hurting",
+      "Weight": -1,
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-had-nightmares-about-the-men-he-s-killed",
+      "Who": "any",
+      "Title": "{n} had nightmares about the men he's killed",
+      "Thought": "bad dreams",
+      "Mood": "Shaken",
+      "Weight": -2,
+      "Hours": 48,
+      "When": "aggr<60",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-brought-down-a-big-buck",
+      "Who": "any",
+      "Title": "{n} brought down a big buck",
+      "Thought": "the biggest buck he's ever shot",
+      "Mood": "Proud",
+      "Weight": 2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-drove-off-a-wolf-pack-alone",
+      "Who": "any",
+      "Title": "{n} drove off a wolf pack alone",
+      "Thought": "the wolves he drove off",
+      "Mood": "Proud",
+      "Weight": 2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-spent-a-night-lost-in-the-woods",
+      "Who": "any",
+      "Title": "{n} spent a night lost in the woods",
+      "Thought": "a night lost in the woods",
+      "Mood": "Shaken",
+      "Weight": -1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-saw-a-ghost-on-the-road-at-night-or-says-he-did",
+      "Who": "any",
+      "Title": "{n} saw a ghost on the road at night - or says he did",
+      "Thought": "something he saw on the road at night",
+      "Mood": "Shaken",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-found-a-gold-nugget-in-a-creek",
+      "Who": "any",
+      "Title": "{n} found a gold nugget in a creek",
+      "Thought": "a gold nugget in his pocket",
+      "Mood": "Flush",
+      "Weight": 3,
+      "Hours": 72,
+      "Odds": 5,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-was-robbed-on-the-road",
+      "Who": "any",
+      "Title": "{n} was robbed on the road",
+      "Thought": "being robbed on the road",
+      "Mood": "Bitter",
+      "Weight": -3,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-watched-a-man-die-of-fever",
+      "Who": "any",
+      "Title": "{n} watched a man die of fever",
+      "Thought": "a dying man's face",
+      "Mood": "Shaken",
+      "Weight": -1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-buried-a-stranger-by-the-road",
+      "Who": "any",
+      "Title": "{n} buried a stranger by the road",
+      "Thought": "a grave by the road",
+      "Mood": "Steady",
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-helped-a-family-whose-wagon-broke-down",
+      "Who": "any",
+      "Title": "{n} helped a family whose wagon broke down",
+      "Thought": "helping a stranded family",
+      "Mood": "Proud",
+      "Weight": 1,
+      "Hours": 48,
+      "When": "friendly",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-found-a-stray-dog-that-follows-him-now",
+      "Who": "any",
+      "Title": "{n} found a stray dog that follows him now",
+      "Thought": "the stray dog that follows him",
+      "Mood": "Joyful",
+      "Weight": 2,
+      "Hours": 96,
+      "When": "nopet",
+      "Odds": 6,
+      "Effects": [
+        "pet"
+      ]
+    },
+    {
+      "Id": "any-n-s-dog-was-killed-by-a-wolf",
+      "Who": "any",
+      "Title": "{n}'s dog was killed by a wolf",
+      "Thought": "his dog, dead",
+      "Mood": "Grieving",
+      "Weight": -3,
+      "Hours": 96,
+      "When": "pet",
+      "Odds": 10,
+      "Effects": [
+        "nopet"
+      ]
+    },
+    {
+      "Id": "any-n-slept-rough-under-the-stars",
+      "Who": "any",
+      "Title": "{n} slept rough under the stars",
+      "Thought": "a cold night outdoors",
+      "Mood": "Steady",
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-saw-a-hanging-in-t",
+      "Who": "any",
+      "Title": "{n} saw a hanging in {t}",
+      "Thought": "the hanging in {t}",
+      "Mood": "Shaken",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": [
+        "fear:2"
+      ]
+    },
+    {
+      "Id": "any-n-won-a-horse-race-outside-t",
+      "Who": "any",
+      "Title": "{n} won a horse race outside {t}",
+      "Thought": "winning the horse race",
+      "Mood": "Proud",
+      "Weight": 3,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-bought-a-new-horse",
+      "Who": "any",
+      "Title": "{n} bought a new horse",
+      "Thought": "his new horse",
+      "Mood": "Proud",
+      "Weight": 2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-s-horse-went-lame-and-had-to-be-shot",
+      "Who": "any",
+      "Title": "{n}'s horse went lame and had to be shot",
+      "Thought": "having to shoot his horse",
+      "Mood": "Bitter",
+      "Weight": -2,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-bought-a-new-hat-in-t",
+      "Who": "any",
+      "Title": "{n} bought a new hat in {t}",
+      "Thought": "a fine new hat",
+      "Mood": "Proud",
+      "Weight": 1,
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-got-a-shave-and-a-hot-bath-in-t",
+      "Who": "any",
+      "Title": "{n} got a shave and a hot bath in {t}",
+      "Thought": "a hot bath",
+      "Mood": "Joyful",
+      "Weight": 1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-had-his-photograph-taken-in-t",
+      "Who": "any",
+      "Title": "{n} had his photograph taken in {t}",
+      "Thought": "his photograph",
+      "Mood": "Proud",
+      "Weight": 1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-drank-t-dry",
+      "Who": "any",
+      "Title": "{n} drank {t} dry",
+      "Thought": "a long night in {t}",
+      "Mood": "Drunk",
+      "Weight": 1,
+      "Hours": 18,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-drank-alone-in-t-for-three-days",
+      "Who": "any",
+      "Title": "{n} drank alone in {t} for three days",
+      "Thought": "the bottle",
+      "Mood": "Drunk",
+      "Weight": -1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-swore-off-drink",
+      "Who": "any",
+      "Title": "{n} swore off drink",
+      "Thought": "staying sober",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-fell-off-the-wagon-drinking-again",
+      "Who": "any",
+      "Title": "{n} fell off the wagon - drinking again",
+      "Thought": "the bottle again",
+      "Mood": "Drunk",
+      "Weight": -1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-won-big-at-poker-in-t",
+      "Who": "any",
+      "Title": "{n} won big at poker in {t}",
+      "Thought": "a fat poker pot",
+      "Mood": "Flush",
+      "Weight": 2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-lost-his-money-at-cards-in-t",
+      "Who": "any",
+      "Title": "{n} lost his money at cards in {t}",
+      "Thought": "losing at cards",
+      "Mood": "Bitter",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-lost-his-horse-in-a-card-game-in-t",
+      "Who": "any",
+      "Title": "{n} lost his horse in a card game in {t}",
+      "Thought": "losing his horse at cards",
+      "Mood": "Bitter",
+      "Weight": -3,
+      "Hours": 72,
+      "When": "notarmy",
+      "Odds": 6,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-won-an-arm-wrestling-match-in-t",
+      "Who": "any",
+      "Title": "{n} won an arm-wrestling match in {t}",
+      "Thought": "beating the big man at arm-wrestling",
+      "Mood": "Proud",
+      "Weight": 2,
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-won-a-shooting-contest-in-t",
+      "Who": "any",
+      "Title": "{n} won a shooting contest in {t}",
+      "Thought": "the shooting contest he won",
+      "Mood": "Proud",
+      "Weight": 3,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-lost-a-shooting-contest-in-t",
+      "Who": "any",
+      "Title": "{n} lost a shooting contest in {t}",
+      "Thought": "losing the shooting contest",
+      "Mood": "Humiliated",
+      "Weight": -2,
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-got-into-a-shouting-match-in-t",
+      "Who": "any",
+      "Title": "{n} got into a shouting match in {t}",
+      "Thought": "the shouting match in {t}",
+      "Mood": "Bitter",
+      "Weight": -1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-was-run-out-of-the-t-saloon",
+      "Who": "any",
+      "Title": "{n} was run out of the {t} saloon",
+      "Thought": "being run out of the saloon",
+      "Mood": "Humiliated",
+      "Weight": -2,
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-spent-a-night-in-the-t-jail",
+      "Who": "any",
+      "Title": "{n} spent a night in the {t} jail",
+      "Thought": "a night in the cells",
+      "Mood": "Jailed",
+      "Weight": -2,
+      "Hours": 24,
+      "When": "notarmy",
+      "Odds": 10,
+      "Effects": [
+        "rest:24"
+      ]
+    },
+    {
+      "Id": "any-n-was-fined-by-the-t-sheriff",
+      "Who": "any",
+      "Title": "{n} was fined by the {t} sheriff",
+      "Thought": "the sheriff's fine",
+      "Mood": "Bitter",
+      "Weight": -1,
+      "Hours": 24,
+      "When": "notarmy",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-talked-his-way-out-of-an-arrest-in-t",
+      "Who": "any",
+      "Title": "{n} talked his way out of an arrest in {t}",
+      "Thought": "fooling the sheriff",
+      "Mood": "Proud",
+      "Weight": 2,
+      "Hours": 36,
+      "When": "notarmy",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-was-cheated-by-a-merchant-in-t",
+      "Who": "any",
+      "Title": "{n} was cheated by a merchant in {t}",
+      "Thought": "the crooked merchant",
+      "Mood": "Bitter",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-had-his-gun-stolen-in-t",
+      "Who": "any",
+      "Title": "{n} had his gun stolen in {t}",
+      "Thought": "his stolen gun",
+      "Mood": "Bitter",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-bought-a-fine-new-revolver-in-t",
+      "Who": "any",
+      "Title": "{n} bought a fine new revolver in {t}",
+      "Thought": "his new revolver",
+      "Mood": "Proud",
+      "Weight": 2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-paid-off-his-debts",
+      "Who": "any",
+      "Title": "{n} paid off his debts",
+      "Thought": "being square with everyone",
+      "Mood": "Joyful",
+      "Weight": 2,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-owes-money-to-the-wrong-people",
+      "Who": "any",
+      "Title": "{n} owes money to the wrong people",
+      "Thought": "the men he owes",
+      "Mood": "Shaken",
+      "Weight": -3,
+      "Hours": 96,
+      "When": "notarmy",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-lent-money-to-a-man-who-skipped-town",
+      "Who": "any",
+      "Title": "{n} lent money to a man who skipped town",
+      "Thought": "the money he'll never see again",
+      "Mood": "Bitter",
+      "Weight": -2,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-had-his-fortune-read-in-t-it-went-badly",
+      "Who": "any",
+      "Title": "{n} had his fortune read in {t} - it went badly",
+      "Thought": "what the fortune teller said",
+      "Mood": "Shaken",
+      "Weight": -1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-saw-a-travelling-show-in-t",
+      "Who": "any",
+      "Title": "{n} saw a travelling show in {t}",
+      "Thought": "the travelling show",
+      "Mood": "Joyful",
+      "Weight": 1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-celebrated-his-birthday-in-t",
+      "Who": "any",
+      "Title": "{n} celebrated his birthday in {t}",
+      "Thought": "his birthday",
+      "Mood": "Joyful",
+      "Weight": 2,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-took-up-the-harmonica",
+      "Who": "any",
+      "Title": "{n} took up the harmonica",
+      "Thought": "learning the harmonica",
+      "Mood": "Joyful",
+      "Weight": 1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-read-a-dime-novel-about-outlaws",
+      "Who": "any",
+      "Title": "{n} read a dime novel about outlaws",
+      "Thought": "a dime novel",
+      "Mood": "Joyful",
+      "Weight": 1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-learned-to-write-his-name",
+      "Who": "any",
+      "Title": "{n} learned to write his name",
+      "Thought": "writing his name",
+      "Mood": "Proud",
+      "Weight": 1,
+      "Hours": 72,
+      "When": "dim",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-went-to-church-in-t",
+      "Who": "any",
+      "Title": "{n} went to church in {t}",
+      "Thought": "the sermon in {t}",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 48,
+      "When": "notgodless",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-prayed-all-night",
+      "Who": "any",
+      "Title": "{n} prayed all night",
+      "Thought": "praying for his soul",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 24,
+      "When": "devout",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-cursed-god-after-a-bad-week",
+      "Who": "any",
+      "Title": "{n} cursed God after a bad week",
+      "Thought": "a God who doesn't listen",
+      "Mood": "Bitter",
+      "Weight": -1,
+      "Hours": 48,
+      "When": "godless",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-confessed-his-sins-to-a-priest-in-t",
+      "Who": "any",
+      "Title": "{n} confessed his sins to a priest in {t}",
+      "Thought": "the confession",
+      "Mood": "Steady",
+      "Weight": 2,
+      "Hours": 48,
+      "When": "catholic&notgodless",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-got-married-in-t",
+      "Who": "any",
+      "Title": "{n} got married in {t}",
+      "Thought": "his new wife",
+      "Mood": "Joyful",
+      "Weight": 4,
+      "Hours": 120,
+      "When": "single",
+      "Odds": 6,
+      "Effects": [
+        "marry"
+      ]
+    },
+    {
+      "Id": "any-n-fell-for-a-saloon-girl-in-t",
+      "Who": "any",
+      "Title": "{n} fell for a saloon girl in {t}",
+      "Thought": "a girl in {t}",
+      "Mood": "Joyful",
+      "Weight": 2,
+      "Hours": 72,
+      "When": "single",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-was-jilted-by-a-woman-in-t",
+      "Who": "any",
+      "Title": "{n} was jilted by a woman in {t}",
+      "Thought": "the woman who left him",
+      "Mood": "Bitter",
+      "Weight": -3,
+      "Hours": 96,
+      "When": "single",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-became-a-father-again",
+      "Who": "any",
+      "Title": "{n} became a father again",
+      "Thought": "a new baby at home",
+      "Mood": "Joyful",
+      "Weight": 4,
+      "Hours": 96,
+      "When": "married",
+      "Odds": 8,
+      "Effects": [
+        "child"
+      ]
+    },
+    {
+      "Id": "any-n-s-child-fell-sick",
+      "Who": "any",
+      "Title": "{n}'s child fell sick",
+      "Thought": "his sick child",
+      "Mood": "Homesick",
+      "Weight": -3,
+      "Hours": 96,
+      "When": "married&children",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-s-wife-left-him",
+      "Who": "any",
+      "Title": "{n}'s wife left him",
+      "Thought": "his wife walking out",
+      "Mood": "Bitter",
+      "Weight": -4,
+      "Hours": 120,
+      "When": "married",
+      "Odds": 4,
+      "Effects": [
+        "single"
+      ]
+    },
+    {
+      "Id": "any-n-s-wife-died-of-consumption",
+      "Who": "any",
+      "Title": "{n}'s wife died of consumption",
+      "Thought": "his dead wife",
+      "Mood": "Grieving",
+      "Weight": -5,
+      "Hours": 168,
+      "When": "married",
+      "Odds": 3,
+      "Effects": [
+        "widow"
+      ]
+    },
+    {
+      "Id": "any-n-went-home-to-see-his-family",
+      "Who": "any",
+      "Title": "{n} went home to see his family",
+      "Thought": "seeing his family",
+      "Mood": "Joyful",
+      "Weight": 3,
+      "Hours": 72,
+      "When": "married",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-sent-money-home-to-his-family",
+      "Who": "any",
+      "Title": "{n} sent money home to his family",
+      "Thought": "the money he sent home",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 48,
+      "When": "married",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-s-wife-fell-ill",
+      "Who": "any",
+      "Title": "{n}'s wife fell ill",
+      "Thought": "his sick wife, far away",
+      "Mood": "Homesick",
+      "Weight": -3,
+      "Hours": 96,
+      "When": "married",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-got-a-letter-from-home-good-news",
+      "Who": "any",
+      "Title": "{n} got a letter from home - good news",
+      "Thought": "good news from home",
+      "Mood": "Joyful",
+      "Weight": 2,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-got-a-letter-from-home-bad-news",
+      "Who": "any",
+      "Title": "{n} got a letter from home - bad news",
+      "Thought": "bad news from home",
+      "Mood": "Homesick",
+      "Weight": -2,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-learned-his-brother-back-east-had-died",
+      "Who": "any",
+      "Title": "{n} learned his brother back east had died",
+      "Thought": "his dead brother",
+      "Mood": "Grieving",
+      "Weight": -3,
+      "Hours": 120,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-got-word-his-father-had-died",
+      "Who": "any",
+      "Title": "{n} got word his father had died",
+      "Thought": "his father's death",
+      "Mood": "Grieving",
+      "Weight": -3,
+      "Hours": 120,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-visited-his-mother-s-grave",
+      "Who": "any",
+      "Title": "{n} visited his mother's grave",
+      "Thought": "his mother's grave",
+      "Mood": "Grieving",
+      "Weight": -1,
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-talked-about-leaving-the-territory-for-good",
+      "Who": "any",
+      "Title": "{n} talked about leaving the territory for good",
+      "Thought": "leaving all this behind",
+      "Mood": "Homesick",
+      "Weight": -1,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-heard-tales-of-what-you-ve-done",
+      "Who": "any",
+      "Title": "{n} heard tales of what you've done",
+      "Thought": "the stories about you",
+      "Mood": "Shaken",
+      "Weight": -2,
+      "Hours": 72,
+      "When": "knows",
+      "Odds": 10,
+      "Effects": [
+        "fear:5"
+      ]
+    },
+    {
+      "Id": "any-n-swore-in-front-of-witnesses-he-d-kill-you",
+      "Who": "any",
+      "Title": "{n} swore in front of witnesses he'd kill you",
+      "Thought": "killing you",
+      "Mood": "Bitter",
+      "Weight": -1,
+      "Hours": 72,
+      "When": "hate>=40",
+      "Odds": 10,
+      "Effects": [
+        "hate:4"
+      ]
+    },
+    {
+      "Id": "any-n-told-everyone-in-t-how-he-d-beat-you",
+      "Who": "any",
+      "Title": "{n} told everyone in {t} how he'd beat you",
+      "Thought": "his boasts about you",
+      "Mood": "Proud",
+      "Weight": 1,
+      "Hours": 48,
+      "When": "proud|hothead",
+      "Odds": 10,
+      "Effects": [
+        "hate:2"
+      ]
+    },
+    {
+      "Id": "any-n-had-nightmares-about-you",
+      "Who": "any",
+      "Title": "{n} had nightmares about you",
+      "Thought": "your face",
+      "Mood": "Shaken",
+      "Weight": -2,
+      "Hours": 48,
+      "When": "fear>=30",
+      "Odds": 10,
+      "Effects": [
+        "fear:4"
+      ]
+    },
+    {
+      "Id": "any-n-cleaned-and-oiled-his-guns-all-evening",
+      "Who": "any",
+      "Title": "{n} cleaned and oiled his guns all evening",
+      "Thought": "the day he finds you",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 24,
+      "When": "hate>=murderous",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-sharpened-his-knife-thinking-of-you",
+      "Who": "any",
+      "Title": "{n} sharpened his knife thinking of you",
+      "Thought": "your throat",
+      "Mood": "Bitter",
+      "Hours": 48,
+      "When": "hate>=vengeful&hate<murderous",
+      "Odds": 10,
+      "Effects": [
+        "hate:2"
+      ]
+    },
+    {
+      "Id": "any-n-asked-around-t-about-you",
+      "Who": "any",
+      "Title": "{n} asked around {t} about you",
+      "Thought": "where you ride",
+      "Mood": "Steady",
+      "Hours": 48,
+      "When": "hate>=vengeful&knows",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-decided-you-weren-t-worth-dying-for",
+      "Who": "any",
+      "Title": "{n} decided you weren't worth dying for",
+      "Thought": "letting it go",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 72,
+      "When": "coward|drifter",
+      "Odds": 6,
+      "Effects": [
+        "hate:-6"
+      ]
+    },
+    {
+      "Id": "any-n-saw-your-wanted-poster-in-t",
+      "Who": "any",
+      "Title": "{n} saw your wanted poster in {t}",
+      "Thought": "your face on the poster",
+      "Mood": "Steady",
+      "Hours": 48,
+      "When": "knows",
+      "Odds": 8,
+      "Effects": [
+        "fear:2"
+      ]
+    },
+    {
+      "Id": "gang-n-rode-on-a-stagecoach-job-that-paid-well",
+      "Who": "gang",
+      "Title": "{n} rode on a stagecoach job that paid well",
+      "Thought": "his cut from the stagecoach",
+      "Mood": "Flush",
+      "Weight": 2,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-rode-on-a-job-that-went-bad",
+      "Who": "gang",
+      "Title": "{n} rode on a job that went bad",
+      "Thought": "the job that went bad",
+      "Mood": "Shaken",
+      "Weight": -2,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-robbed-a-homestead-with-the-boys",
+      "Who": "gang",
+      "Title": "{n} robbed a homestead with the boys",
+      "Thought": "the homestead job",
+      "Mood": "Flush",
+      "Weight": 2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-helped-hold-up-a-train",
+      "Who": "gang",
+      "Title": "{n} helped hold up a train",
+      "Thought": "the train job",
+      "Mood": "Flush",
+      "Weight": 3,
+      "Hours": 72,
+      "When": "rank>=2",
+      "Odds": 6,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-was-nearly-caught-by-lawmen",
+      "Who": "gang",
+      "Title": "{n} was nearly caught by lawmen",
+      "Thought": "the law on his heels",
+      "Mood": "Shaken",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-was-passed-over",
+      "Who": "gang",
+      "Title": "{n} was passed over",
+      "Thought": "the seat he thinks he's owed",
+      "Mood": "Bitter",
+      "Weight": -3,
+      "Hours": 120,
+      "When": "rank<=3",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-was-praised-by-b",
+      "Who": "gang",
+      "Title": "{n} was praised by {b}",
+      "Thought": "{b}'s praise",
+      "Mood": "Proud",
+      "Weight": 2,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-was-dressed-down-by-b-in-front-of-the-others",
+      "Who": "gang",
+      "Title": "{n} was dressed down by {b} in front of the others",
+      "Thought": "{b}'s tongue-lashing",
+      "Mood": "Humiliated",
+      "Weight": -2,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-stood-watch-three-nights-running",
+      "Who": "gang",
+      "Title": "{n} stood watch three nights running",
+      "Thought": "too many nights on watch",
+      "Mood": "Bitter",
+      "Weight": -1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-and-f-became-friends",
+      "Who": "gang",
+      "Title": "{n} and {f} became friends",
+      "Thought": "his new friend {f}",
+      "Mood": "Joyful",
+      "Weight": 1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": [
+        "friend"
+      ]
+    },
+    {
+      "Id": "gang-n-accused-f-of-skimming-from-the-take",
+      "Who": "gang",
+      "Title": "{n} accused {f} of skimming from the take",
+      "Thought": "{f} and the missing money",
+      "Mood": "Bitter",
+      "Weight": -2,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": [
+        "sour"
+      ]
+    },
+    {
+      "Id": "gang-n-taught-a-new-man-how-to-shoot",
+      "Who": "gang",
+      "Title": "{n} taught a new man how to shoot",
+      "Thought": "the new man he's teaching",
+      "Mood": "Proud",
+      "Weight": 1,
+      "Hours": 48,
+      "When": "rank>=2",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-won-the-camp-card-game",
+      "Who": "gang",
+      "Title": "{n} won the camp card game",
+      "Thought": "the pot he took off the boys",
+      "Mood": "Flush",
+      "Weight": 1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-lost-his-share-at-cards-to-f",
+      "Who": "gang",
+      "Title": "{n} lost his share at cards to {f}",
+      "Thought": "{f} and his luck",
+      "Mood": "Bitter",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-swore-loyalty-to-l-again",
+      "Who": "gang",
+      "Title": "{n} swore loyalty to {l} again",
+      "Thought": "loyalty to {l}",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 72,
+      "When": "loyal",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-thought-about-leaving-the-g",
+      "Who": "gang",
+      "Title": "{n} thought about leaving the {g}",
+      "Thought": "getting out",
+      "Mood": "Bitter",
+      "Weight": -2,
+      "Hours": 96,
+      "When": "fear>=40|coward",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-drank-to-the-gang-s-dead",
+      "Who": "gang",
+      "Title": "{n} drank to the gang's dead",
+      "Thought": "the boys who didn't make it",
+      "Mood": "Grieving",
+      "Weight": -1,
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-got-the-camp-s-best-bedroll",
+      "Who": "gang",
+      "Title": "{n} got the camp's best bedroll",
+      "Thought": "a good bedroll",
+      "Mood": "Joyful",
+      "Weight": 1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "odriscoll-n-sang-irish-songs-by-the-fire-all-night",
+      "Who": "odriscoll",
+      "Title": "{n} sang Irish songs by the fire all night",
+      "Thought": "the old songs",
+      "Mood": "Joyful",
+      "Weight": 1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "odriscoll-n-heard-l-wants-results",
+      "Who": "odriscoll",
+      "Title": "{n} heard {l} wants results",
+      "Thought": "what {l} expects",
+      "Mood": "Shaken",
+      "Weight": -1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "odriscoll-n-stole-a-wagon-of-whiskey",
+      "Who": "odriscoll",
+      "Title": "{n} stole a wagon of whiskey",
+      "Thought": "the stolen whiskey",
+      "Mood": "Flush",
+      "Weight": 2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "raider-n-raised-a-toast-to-the-old-cause",
+      "Who": "raider",
+      "Title": "{n} raised a toast to the old cause",
+      "Thought": "the war that never ended",
+      "Mood": "Proud",
+      "Weight": 1,
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "raider-n-drilled-with-the-boys-like-it-was-63",
+      "Who": "raider",
+      "Title": "{n} drilled with the boys like it was '63",
+      "Thought": "the old drill",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "raider-n-cursed-the-army-over-a-bottle",
+      "Who": "raider",
+      "Title": "{n} cursed the Army over a bottle",
+      "Thought": "the bluecoats",
+      "Mood": "Bitter",
+      "Weight": -1,
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "klan-n-hid-his-robe-from-his-wife",
+      "Who": "klan",
+      "Title": "{n} hid his robe from his wife",
+      "Thought": "keeping his secret",
+      "Mood": "Shaken",
+      "Weight": -1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "klan-n-was-shunned-in-t",
+      "Who": "klan",
+      "Title": "{n} was shunned in {t}",
+      "Thought": "the looks he gets in {t}",
+      "Mood": "Humiliated",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "wapiti-n-brought-an-elk-back-for-the-families",
+      "Who": "wapiti",
+      "Title": "{n} brought an elk back for the families",
+      "Thought": "the elk hunt",
+      "Mood": "Proud",
+      "Weight": 2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "wapiti-n-went-without-when-the-rations-came-short-again",
+      "Who": "wapiti",
+      "Title": "{n} went without when the rations came short again",
+      "Thought": "the short rations",
+      "Mood": "Bitter",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "wapiti-n-broke-a-wild-horse",
+      "Who": "wapiti",
+      "Title": "{n} broke a wild horse",
+      "Thought": "the new horse",
+      "Mood": "Joyful",
+      "Weight": 1,
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "wapiti-n-was-turned-away-at-the-trading-post-in-valentine",
+      "Who": "wapiti",
+      "Title": "{n} was turned away at the trading post in Valentine",
+      "Thought": "the trading post",
+      "Mood": "Humiliated",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "wapiti-n-watched-soldiers-ride-past-the-reservation",
+      "Who": "wapiti",
+      "Title": "{n} watched soldiers ride past the reservation",
+      "Thought": "the soldiers",
+      "Mood": "Shaken",
+      "Weight": -1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "wapiti-n-sat-with-the-elders-through-the-night",
+      "Who": "wapiti",
+      "Title": "{n} sat with the elders through the night",
+      "Thought": "the elders' words",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "wapiti-n-argued-with-f-about-fighting-the-army",
+      "Who": "wapiti",
+      "Title": "{n} argued with {f} about fighting the Army",
+      "Thought": "the argument with {f}",
+      "Mood": "Bitter",
+      "Weight": -1,
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "wapiti-n-lost-a-horse-in-the-river-crossing",
+      "Who": "wapiti",
+      "Title": "{n} lost a horse in the river crossing",
+      "Thought": "the lost horse",
+      "Mood": "Grieving",
+      "Weight": -1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "wapiti-n-spent-the-night-alone-in-the-mountains",
+      "Who": "wapiti",
+      "Title": "{n} spent the night alone in the mountains",
+      "Thought": "the night in the mountains",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "wapiti-n-fell-sick-with-the-fever-going-round-the-camp",
+      "Who": "wapiti",
+      "Title": "{n} fell sick with the fever going round the camp",
+      "Thought": "the fever",
+      "Mood": "Sick",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": [
+        "rest:36"
+      ]
+    },
+    {
+      "Id": "wapiti-n-won-a-horse-race-against-f",
+      "Who": "wapiti",
+      "Title": "{n} won a horse race against {f}",
+      "Thought": "the race",
+      "Mood": "Proud",
+      "Weight": 2,
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "wapiti-n-made-new-arrows-through-the-evening",
+      "Who": "wapiti",
+      "Title": "{n} made new arrows through the evening",
+      "Thought": "the new arrows",
+      "Mood": "Steady",
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "nightfolk-n-hung-a-lantern-in-the-cypress-and-waited-for-something-to-come-to-it",
+      "Who": "nightfolk",
+      "Title": "{n} hung a lantern in the cypress and waited for something to come to it",
+      "Thought": "the lantern in the cypress",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "nightfolk-n-heard-his-name-called-from-the-water-three-nights-running",
+      "Who": "nightfolk",
+      "Title": "{n} heard his name called from the water three nights running",
+      "Thought": "the voice in the water",
+      "Mood": "Shaken",
+      "Weight": -2,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "nightfolk-n-came-back-from-the-swamp-mud-to-the-chest-and-won-t-say-where-he-d-been",
+      "Who": "nightfolk",
+      "Title": "{n} came back from the swamp mud to the chest and won't say where he'd been",
+      "Thought": "where he was",
+      "Mood": "Steady",
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "nightfolk-n-buried-something-under-the-floor-of-his-shack",
+      "Who": "nightfolk",
+      "Title": "{n} buried something under the floor of his shack",
+      "Thought": "what's under the floor",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "nightfolk-n-lost-two-toes-to-a-gator-in-the-shallows",
+      "Who": "nightfolk",
+      "Title": "{n} lost two toes to a gator in the shallows",
+      "Thought": "the gator",
+      "Mood": "Hurting",
+      "Weight": -3,
+      "Hours": 72,
+      "Odds": 6,
+      "Effects": [
+        "rest:24",
+        "scar:claw"
+      ]
+    },
+    {
+      "Id": "nightfolk-n-sat-up-all-night-with-l-and-neither-said-a-word",
+      "Who": "nightfolk",
+      "Title": "{n} sat up all night with {l}, and neither said a word",
+      "Thought": "the night with {l}",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 48,
+      "When": "rank>=2",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "nightfolk-n-found-a-saint-denis-man-s-pocket-watch-in-a-heron-s-nest",
+      "Who": "nightfolk",
+      "Title": "{n} found a Saint Denis man's pocket watch in a heron's nest",
+      "Thought": "the pocket watch",
+      "Mood": "Flush",
+      "Weight": 1,
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "nightfolk-n-carved-a-face-into-a-cypress-stump-and-talks-to-it",
+      "Who": "nightfolk",
+      "Title": "{n} carved a face into a cypress stump and talks to it",
+      "Thought": "the face in the stump",
+      "Mood": "Joyful",
+      "Weight": 1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "nightfolk-n-followed-a-light-out-past-lagras-until-dawn",
+      "Who": "nightfolk",
+      "Title": "{n} followed a light out past Lagras until dawn",
+      "Thought": "the light past Lagras",
+      "Mood": "Shaken",
+      "Weight": -1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "nightfolk-n-hasn-t-spoken-in-nine-days",
+      "Who": "nightfolk",
+      "Title": "{n} hasn't spoken in nine days",
+      "Thought": "the silence",
+      "Mood": "Steady",
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "nightfolk-n-traded-a-jar-of-teeth-for-a-shotgun",
+      "Who": "nightfolk",
+      "Title": "{n} traded a jar of teeth for a shotgun",
+      "Thought": "the trade",
+      "Mood": "Proud",
+      "Weight": 1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "nightfolk-n-was-seen-in-daylight-and-the-others-won-t-look-at-him",
+      "Who": "nightfolk",
+      "Title": "{n} was seen in daylight, and the others won't look at him",
+      "Thought": "being seen in daylight",
+      "Mood": "Humiliated",
+      "Weight": -2,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "nightfolk-n-came-down-with-the-swamp-fever",
+      "Who": "nightfolk",
+      "Title": "{n} came down with the swamp fever",
+      "Thought": "the swamp fever",
+      "Mood": "Sick",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": [
+        "rest:36"
+      ]
+    },
+    {
+      "Id": "nightfolk-n-sang-to-the-dead-in-the-reeds-until-the-frogs-went-quiet",
+      "Who": "nightfolk",
+      "Title": "{n} sang to the dead in the reeds until the frogs went quiet",
+      "Thought": "the singing",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "nightfolk-n-and-f-rowed-out-to-the-old-plantation-and-came-back-one-oar-short",
+      "Who": "nightfolk",
+      "Title": "{n} and {f} rowed out to the old plantation and came back one oar short",
+      "Thought": "the night at the plantation",
+      "Mood": "Shaken",
+      "Weight": -1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "nightfolk-n-hung-a-raider-s-hat-in-the-trees-by-the-road",
+      "Who": "nightfolk",
+      "Title": "{n} hung a Raider's hat in the trees by the road",
+      "Thought": "the hat in the trees",
+      "Mood": "Proud",
+      "Weight": 2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "nightfolk-n-fell-out-with-f-over-which-of-them-the-bayou-favours",
+      "Who": "nightfolk",
+      "Title": "{n} fell out with {f} over which of them the bayou favours",
+      "Thought": "{f}",
+      "Mood": "Bitter",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 8,
+      "Effects": [
+        "sour"
+      ]
+    },
+    {
+      "Id": "nightfolk-n-pulled-a-drowned-man-out-of-the-water-and-went-through-his-pockets",
+      "Who": "nightfolk",
+      "Title": "{n} pulled a drowned man out of the water and went through his pockets",
+      "Thought": "the drowned man's pockets",
+      "Mood": "Flush",
+      "Weight": 1,
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "nightfolk-n-won-t-go-past-the-old-church-at-shady-belle-any-more",
+      "Who": "nightfolk",
+      "Title": "{n} won't go past the old church at Shady Belle any more",
+      "Thought": "the old church",
+      "Mood": "Shaken",
+      "Weight": -1,
+      "Hours": 48,
+      "When": "superstitious|coward",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "nightfolk-n-whistled-in-the-dark-until-something-whistled-back",
+      "Who": "nightfolk",
+      "Title": "{n} whistled in the dark until something whistled back",
+      "Thought": "what whistled back",
+      "Mood": "Shaken",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "nightfolk-n-took-in-a-stray-dog-and-named-it-after-a-dead-man",
+      "Who": "nightfolk",
+      "Title": "{n} took in a stray dog and named it after a dead man",
+      "Thought": "the dog",
+      "Mood": "Joyful",
+      "Weight": 2,
+      "Hours": 48,
+      "When": "nopet",
+      "Odds": 6,
+      "Effects": [
+        "pet"
+      ]
+    },
+    {
+      "Id": "nightfolk-n-stood-outside-a-house-in-saint-denis-all-night-until-the-lamps-went-out",
+      "Who": "nightfolk",
+      "Title": "{n} stood outside a house in Saint Denis all night, until the lamps went out",
+      "Thought": "the house in Saint Denis",
+      "Mood": "Steady",
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "nightfolk-n-keeps-a-heron-s-skull-by-his-bed-now-for-luck",
+      "Who": "nightfolk",
+      "Title": "{n} keeps a heron's skull by his bed now, for luck",
+      "Thought": "the heron's skull",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "nightfolk-n-was-marked-by-l-for-something-he-swears-he-didn-t-do",
+      "Who": "nightfolk",
+      "Title": "{n} was marked by {l} for something he swears he didn't do",
+      "Thought": "{l}'s mark",
+      "Mood": "Bitter",
+      "Weight": -3,
+      "Hours": 72,
+      "When": "rank<=2",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "nightfolk-n-and-f-watched-a-riverboat-go-by-and-counted-the-lights",
+      "Who": "nightfolk",
+      "Title": "{n} and {f} watched a riverboat go by and counted the lights",
+      "Thought": "the riverboat with {f}",
+      "Mood": "Joyful",
+      "Weight": 1,
+      "Hours": 36,
+      "Odds": 8,
+      "Effects": [
+        "friend"
+      ]
+    },
+    {
+      "Id": "laramie-n-changed-the-brand-on-a-stolen-steer-so-well-the-owner-bought-it-back",
+      "Who": "laramie",
+      "Title": "{n} changed the brand on a stolen steer so well the owner bought it back",
+      "Thought": "the steer",
+      "Mood": "Proud",
+      "Weight": 2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "laramie-n-got-kicked-by-a-horse-in-the-corral",
+      "Who": "laramie",
+      "Title": "{n} got kicked by a horse in the corral",
+      "Thought": "the kick",
+      "Mood": "Hurting",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 8,
+      "Effects": [
+        "rest:24"
+      ]
+    },
+    {
+      "Id": "laramie-n-rode-night-herd-alone-in-a-storm",
+      "Who": "laramie",
+      "Title": "{n} rode night herd alone in a storm",
+      "Thought": "the storm",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "laramie-n-lost-his-share-at-cards-in-blackwater",
+      "Who": "laramie",
+      "Title": "{n} lost his share at cards in Blackwater",
+      "Thought": "the lost share",
+      "Mood": "Bitter",
+      "Weight": -2,
+      "Hours": 48,
+      "When": "gambler|greedy",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "laramie-n-sold-a-stolen-horse-in-armadillo-for-twice-what-it-was-worth",
+      "Who": "laramie",
+      "Title": "{n} sold a stolen horse in Armadillo for twice what it was worth",
+      "Thought": "the sale",
+      "Mood": "Flush",
+      "Weight": 2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "laramie-n-roped-a-wild-mustang-on-the-great-plains",
+      "Who": "laramie",
+      "Title": "{n} roped a wild mustang on the Great Plains",
+      "Thought": "the mustang",
+      "Mood": "Joyful",
+      "Weight": 2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "laramie-n-found-his-own-face-on-a-cattlemen-s-association-poster",
+      "Who": "laramie",
+      "Title": "{n} found his own face on a cattlemen's association poster",
+      "Thought": "the poster",
+      "Mood": "Shaken",
+      "Weight": -1,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "laramie-n-and-f-drove-a-stolen-herd-through-the-night-to-hennigan-s-stead",
+      "Who": "laramie",
+      "Title": "{n} and {f} drove a stolen herd through the night to Hennigan's Stead",
+      "Thought": "the drive with {f}",
+      "Mood": "Proud",
+      "Weight": 1,
+      "Hours": 48,
+      "Odds": 8,
+      "Effects": [
+        "friend"
+      ]
+    },
+    {
+      "Id": "laramie-n-was-shot-at-by-a-rancher-who-caught-him-at-the-fence-line",
+      "Who": "laramie",
+      "Title": "{n} was shot at by a rancher who caught him at the fence line",
+      "Thought": "the rancher's shotgun",
+      "Mood": "Shaken",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "laramie-n-branded-his-hand-by-mistake",
+      "Who": "laramie",
+      "Title": "{n} branded his hand by mistake",
+      "Thought": "the burn",
+      "Mood": "Hurting",
+      "Weight": -1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "laramie-n-heard-l-wants-him-to-lead-his-own-crew",
+      "Who": "laramie",
+      "Title": "{n} heard {l} wants him to lead his own crew",
+      "Thought": "{l}'s word",
+      "Mood": "Proud",
+      "Weight": 2,
+      "Hours": 72,
+      "When": "rank<=2",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "laramie-n-argued-with-f-about-who-lost-the-last-herd",
+      "Who": "laramie",
+      "Title": "{n} argued with {f} about who lost the last herd",
+      "Thought": "{f}",
+      "Mood": "Bitter",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 8,
+      "Effects": [
+        "sour"
+      ]
+    },
+    {
+      "Id": "delobo-n-crossed-the-river-to-see-his-mother",
+      "Who": "delobo",
+      "Title": "{n} crossed the river to see his mother",
+      "Thought": "his mother across the river",
+      "Mood": "Homesick",
+      "Weight": -1,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "delobo-n-lit-a-candle-at-the-mission-for-the-men-they-lost",
+      "Who": "delobo",
+      "Title": "{n} lit a candle at the mission for the men they lost",
+      "Thought": "the candle for the dead",
+      "Mood": "Grieving",
+      "Weight": -1,
+      "Hours": 48,
+      "When": "notgodless",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "delobo-n-won-a-horse-race-in-tumbleweed-against-an-american",
+      "Who": "delobo",
+      "Title": "{n} won a horse race in Tumbleweed against an American",
+      "Thought": "the race",
+      "Mood": "Proud",
+      "Weight": 2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "delobo-n-spent-his-share-of-the-train-money-in-one-night-in-armadillo",
+      "Who": "delobo",
+      "Title": "{n} spent his share of the train money in one night in Armadillo",
+      "Thought": "the night in Armadillo",
+      "Mood": "Joyful",
+      "Weight": 1,
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "delobo-n-was-nearly-bitten-by-a-rattlesnake-under-his-bedroll",
+      "Who": "delobo",
+      "Title": "{n} was nearly bitten by a rattlesnake under his bedroll",
+      "Thought": "the rattlesnake",
+      "Mood": "Shaken",
+      "Weight": -1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "delobo-n-went-three-days-without-water-in-gaptooth-ridge",
+      "Who": "delobo",
+      "Title": "{n} went three days without water in Gaptooth Ridge",
+      "Thought": "the dry days",
+      "Mood": "Sick",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 6,
+      "Effects": [
+        "rest:24"
+      ]
+    },
+    {
+      "Id": "delobo-n-ran-guns-across-the-river-by-moonlight",
+      "Who": "delobo",
+      "Title": "{n} ran guns across the river by moonlight",
+      "Thought": "the guns",
+      "Mood": "Flush",
+      "Weight": 2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "delobo-n-played-the-guitar-by-the-fire-until-the-jefe-told-him-to-stop",
+      "Who": "delobo",
+      "Title": "{n} played the guitar by the fire until the jefe told him to stop",
+      "Thought": "the guitar",
+      "Mood": "Joyful",
+      "Weight": 1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "delobo-n-heard-the-rurales-are-asking-about-him-in-nuevo-paraiso",
+      "Who": "delobo",
+      "Title": "{n} heard the rurales are asking about him in Nuevo Paraiso",
+      "Thought": "the rurales",
+      "Mood": "Shaken",
+      "Weight": -2,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "delobo-n-and-f-hid-from-an-army-patrol-in-a-dry-wash-all-day",
+      "Who": "delobo",
+      "Title": "{n} and {f} hid from an Army patrol in a dry wash all day",
+      "Thought": "the day in the wash with {f}",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 48,
+      "Odds": 8,
+      "Effects": [
+        "friend"
+      ]
+    },
+    {
+      "Id": "delobo-n-was-cheated-by-a-horse-trader-in-armadillo",
+      "Who": "delobo",
+      "Title": "{n} was cheated by a horse trader in Armadillo",
+      "Thought": "the horse trader",
+      "Mood": "Bitter",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "delobo-n-wrote-a-letter-home-he-never-sent",
+      "Who": "delobo",
+      "Title": "{n} wrote a letter home he never sent",
+      "Thought": "the letter",
+      "Mood": "Homesick",
+      "Weight": -1,
+      "Hours": 48,
+      "When": "married|children",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "army-n-drew-extra-duty-at-fort-wallace",
+      "Who": "army",
+      "Title": "{n} drew extra duty at Fort Wallace",
+      "Thought": "extra duty",
+      "Mood": "Bitter",
+      "Weight": -1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "army-n-got-his-pay",
+      "Who": "army",
+      "Title": "{n} got his pay",
+      "Thought": "payday",
+      "Mood": "Flush",
+      "Weight": 1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "army-n-was-drilled-hard-by-his-sergeant",
+      "Who": "army",
+      "Title": "{n} was drilled hard by his sergeant",
+      "Thought": "the sergeant's drill",
+      "Mood": "Bitter",
+      "Weight": -1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "army-n-was-commended-by-his-officer",
+      "Who": "army",
+      "Title": "{n} was commended by his officer",
+      "Thought": "the commendation",
+      "Mood": "Proud",
+      "Weight": 2,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "army-n-was-put-on-report-for-drinking",
+      "Who": "army",
+      "Title": "{n} was put on report for drinking",
+      "Thought": "being put on report",
+      "Mood": "Humiliated",
+      "Weight": -2,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "army-n-stood-guard-all-night-in-the-cold",
+      "Who": "army",
+      "Title": "{n} stood guard all night in the cold",
+      "Thought": "the cold night on guard",
+      "Mood": "Sick",
+      "Weight": -1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "army-n-wrote-a-letter-to-his-mother",
+      "Who": "army",
+      "Title": "{n} wrote a letter to his mother",
+      "Thought": "home",
+      "Mood": "Homesick",
+      "Weight": -1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "army-n-lost-money-betting-on-a-boxing-match-at-the-fort",
+      "Who": "army",
+      "Title": "{n} lost money betting on a boxing match at the fort",
+      "Thought": "the boxing bet",
+      "Mood": "Bitter",
+      "Weight": -1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "army-n-rode-dispatch-to-valentine-and-back",
+      "Who": "army",
+      "Title": "{n} rode dispatch to Valentine and back",
+      "Thought": "the dispatch ride",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "army-n-got-new-boots-from-the-quartermaster",
+      "Who": "army",
+      "Title": "{n} got new boots from the quartermaster",
+      "Thought": "new boots",
+      "Mood": "Joyful",
+      "Weight": 1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "army-n-was-disciplined-for-losing-his-rifle",
+      "Who": "army",
+      "Title": "{n} was disciplined for losing his rifle",
+      "Thought": "the lost rifle",
+      "Mood": "Humiliated",
+      "Weight": -2,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "army-n-chased-deserters-through-the-hills",
+      "Who": "army",
+      "Title": "{n} chased deserters through the hills",
+      "Thought": "the deserters",
+      "Mood": "Steady",
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "loner-n-drifted-to-t-looking-for-work",
+      "Who": "loner",
+      "Title": "{n} drifted to {t} looking for work",
+      "Thought": "finding work",
+      "Mood": "Steady",
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "loner-n-took-a-job-breaking-horses-near-t",
+      "Who": "loner",
+      "Title": "{n} took a job breaking horses near {t}",
+      "Thought": "breaking horses",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "loner-n-worked-a-week-on-a-ranch-near-t",
+      "Who": "loner",
+      "Title": "{n} worked a week on a ranch near {t}",
+      "Thought": "ranch work",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "loner-n-quit-his-job-in-t",
+      "Who": "loner",
+      "Title": "{n} quit his job in {t}",
+      "Thought": "the job he quit",
+      "Mood": "Bitter",
+      "Weight": -1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "loner-n-sold-furs-in-t",
+      "Who": "loner",
+      "Title": "{n} sold furs in {t}",
+      "Thought": "a good price for furs",
+      "Mood": "Flush",
+      "Weight": 1,
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "loner-n-played-cards-with-strangers-in-t-and-won",
+      "Who": "loner",
+      "Title": "{n} played cards with strangers in {t} and won",
+      "Thought": "the strangers' money",
+      "Mood": "Flush",
+      "Weight": 2,
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "loner-n-robbed-a-traveller-on-the-road",
+      "Who": "loner",
+      "Title": "{n} robbed a traveller on the road",
+      "Thought": "the traveller he robbed",
+      "Mood": "Flush",
+      "Weight": 2,
+      "Hours": 48,
+      "When": "poor",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "loner-n-was-hired-as-a-guard-for-a-wagon-train",
+      "Who": "loner",
+      "Title": "{n} was hired as a guard for a wagon train",
+      "Thought": "the wagon train",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "loner-n-made-a-friend-in-t",
+      "Who": "loner",
+      "Title": "{n} made a friend in {t}",
+      "Thought": "a friend in {t}",
+      "Mood": "Joyful",
+      "Weight": 2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-lost-his-hat-in-the-wind-on-the-trail",
+      "Who": "any",
+      "Title": "{n} lost his hat in the wind on the trail",
+      "Thought": "his good hat, gone",
+      "Mood": "Bitter",
+      "Weight": -1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-found-a-pocket-watch-in-the-mud-outside-t",
+      "Who": "any",
+      "Title": "{n} found a pocket watch in the mud outside {t}",
+      "Thought": "the found watch",
+      "Mood": "Joyful",
+      "Weight": 1,
+      "Hours": 36,
+      "Odds": 8,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-got-into-a-shoving-match-over-a-woman-in-t",
+      "Who": "any",
+      "Title": "{n} got into a shoving match over a woman in {t}",
+      "Thought": "the woman in {t}",
+      "Mood": "Bitter",
+      "Weight": -1,
+      "Hours": 48,
+      "When": "single",
+      "Odds": 8,
+      "Effects": [
+        "scar:beat"
+      ]
+    },
+    {
+      "Id": "any-n-paid-a-dentist-in-t-to-pull-a-rotten-tooth",
+      "Who": "any",
+      "Title": "{n} paid a dentist in {t} to pull a rotten tooth",
+      "Thought": "the pulled tooth",
+      "Mood": "Hurting",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-had-his-boots-stolen-while-he-slept",
+      "Who": "any",
+      "Title": "{n} had his boots stolen while he slept",
+      "Thought": "his stolen boots",
+      "Mood": "Bitter",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-won-a-shooting-contest-outside-t",
+      "Who": "any",
+      "Title": "{n} won a shooting contest outside {t}",
+      "Thought": "winning the shooting contest",
+      "Mood": "Proud",
+      "Weight": 2,
+      "Hours": 72,
+      "When": "aggr>=50",
+      "Odds": 6,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-lost-a-shooting-contest-outside-t",
+      "Who": "any",
+      "Title": "{n} lost a shooting contest outside {t}",
+      "Thought": "losing the shooting contest",
+      "Mood": "Humiliated",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 6,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-drank-too-much-and-slept-in-a-ditch",
+      "Who": "any",
+      "Title": "{n} drank too much and slept in a ditch",
+      "Thought": "the ditch he woke in",
+      "Mood": "Humiliated",
+      "Weight": -1,
+      "Hours": 24,
+      "When": "drunk",
+      "Odds": 14,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-got-thrown-out-of-a-saloon-in-t",
+      "Who": "any",
+      "Title": "{n} got thrown out of a saloon in {t}",
+      "Thought": "the saloon in {t}",
+      "Mood": "Humiliated",
+      "Weight": -2,
+      "Hours": 48,
+      "When": "drunk|hothead",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-lost-a-week-s-money-at-faro-in-t",
+      "Who": "any",
+      "Title": "{n} lost a week's money at faro in {t}",
+      "Thought": "the faro table",
+      "Mood": "Bitter",
+      "Weight": -2,
+      "Hours": 72,
+      "When": "gambler",
+      "Odds": 16,
+      "Effects": [
+        "hate:1"
+      ]
+    },
+    {
+      "Id": "any-n-cleaned-out-a-card-table-in-t",
+      "Who": "any",
+      "Title": "{n} cleaned out a card table in {t}",
+      "Thought": "the poker pot",
+      "Mood": "Flush",
+      "Weight": 3,
+      "Hours": 48,
+      "When": "gambler",
+      "Odds": 14,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-bought-a-new-rifle-from-the-gunsmith-in-t",
+      "Who": "any",
+      "Title": "{n} bought a new rifle from the gunsmith in {t}",
+      "Thought": "the new rifle",
+      "Mood": "Proud",
+      "Weight": 1,
+      "Hours": 48,
+      "When": "notarmy",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-had-his-horse-throw-a-shoe-miles-from-anywhere",
+      "Who": "any",
+      "Title": "{n} had his horse throw a shoe miles from anywhere",
+      "Thought": "the long walk",
+      "Mood": "Bitter",
+      "Weight": -1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-watched-a-hanging-in-t",
+      "Who": "any",
+      "Title": "{n} watched a hanging in {t}",
+      "Thought": "the hanging",
+      "Mood": "Shaken",
+      "Weight": -2,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-helped-pull-a-wagon-out-of-the-mud",
+      "Who": "any",
+      "Title": "{n} helped pull a wagon out of the mud",
+      "Thought": "a good turn",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 24,
+      "When": "friendly",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-was-kicked-by-a-mule",
+      "Who": "any",
+      "Title": "{n} was kicked by a mule",
+      "Thought": "the mule's kick",
+      "Mood": "Hurting",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 6,
+      "Effects": [
+        "rest:12"
+      ]
+    },
+    {
+      "Id": "any-n-ate-bad-meat-and-was-sick-for-two-days",
+      "Who": "any",
+      "Title": "{n} ate bad meat and was sick for two days",
+      "Thought": "the bad meat",
+      "Mood": "Sick",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 8,
+      "Effects": [
+        "rest:24"
+      ]
+    },
+    {
+      "Id": "any-n-saw-a-ghost-by-the-old-church-he-swears-it",
+      "Who": "any",
+      "Title": "{n} saw a ghost by the old church, he swears it",
+      "Thought": "what he saw by the church",
+      "Mood": "Shaken",
+      "Weight": -2,
+      "Hours": 96,
+      "When": "superstitious",
+      "Odds": 18,
+      "Effects": [
+        "fear:3"
+      ]
+    },
+    {
+      "Id": "any-n-lit-a-candle-for-his-mother-in-t",
+      "Who": "any",
+      "Title": "{n} lit a candle for his mother in {t}",
+      "Thought": "his mother",
+      "Mood": "Homesick",
+      "Weight": -1,
+      "Hours": 48,
+      "When": "devout|catholic",
+      "Odds": 8,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-got-a-letter-saying-his-father-died",
+      "Who": "any",
+      "Title": "{n} got a letter saying his father died",
+      "Thought": "his father, gone",
+      "Mood": "Grieving",
+      "Weight": -4,
+      "Hours": 120,
+      "Odds": 4,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-read-about-you-in-the-newspaper",
+      "Who": "any",
+      "Title": "{n} read about you in the newspaper",
+      "Thought": "what the paper said about you",
+      "Mood": "Shaken",
+      "Weight": -1,
+      "Hours": 48,
+      "When": "knows",
+      "Odds": 8,
+      "Effects": [
+        "fear:2"
+      ]
+    },
+    {
+      "Id": "any-n-bragged-about-you-in-a-saloon-and-got-laughed-at",
+      "Who": "any",
+      "Title": "{n} bragged about you in a saloon and got laughed at",
+      "Thought": "the laughing",
+      "Mood": "Humiliated",
+      "Weight": -2,
+      "Hours": 48,
+      "When": "braggart&knows",
+      "Odds": 14,
+      "Effects": [
+        "hate:3"
+      ]
+    },
+    {
+      "Id": "any-n-sat-up-all-night-with-a-bottle-thinking-about-you",
+      "Who": "any",
+      "Title": "{n} sat up all night with a bottle, thinking about you",
+      "Thought": "you",
+      "Mood": "Bitter",
+      "Weight": -1,
+      "Hours": 48,
+      "When": "hate>=vengeful&drunk",
+      "Odds": 14,
+      "Effects": [
+        "hate:2"
+      ]
+    },
+    {
+      "Id": "any-n-told-a-stranger-he-d-seen-you-for-a-dollar",
+      "Who": "any",
+      "Title": "{n} told a stranger he'd seen you, for a dollar",
+      "Thought": "the dollar",
+      "Mood": "Flush",
+      "Weight": 1,
+      "Hours": 24,
+      "When": "traitor|greedy",
+      "Odds": 8,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-took-a-bath-and-a-shave-in-t",
+      "Who": "any",
+      "Title": "{n} took a bath and a shave in {t}",
+      "Thought": "a clean shave",
+      "Mood": "Joyful",
+      "Weight": 1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-got-his-fortune-told-in-t",
+      "Who": "any",
+      "Title": "{n} got his fortune told in {t}",
+      "Thought": "what the fortune teller said",
+      "Mood": "Shaken",
+      "Weight": -1,
+      "Hours": 72,
+      "When": "superstitious",
+      "Odds": 14,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-hurt-a-man-badly-in-a-fight-over-nothing",
+      "Who": "any",
+      "Title": "{n} hurt a man badly in a fight over nothing",
+      "Thought": "the man he hurt",
+      "Mood": "Steady",
+      "Hours": 48,
+      "When": "sadist",
+      "Odds": 16,
+      "Effects": [
+        "scar:beat"
+      ]
+    },
+    {
+      "Id": "any-n-carved-his-initials-into-a-tree-on-the-trail",
+      "Who": "any",
+      "Title": "{n} carved his initials into a tree on the trail",
+      "Thought": "home",
+      "Mood": "Steady",
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-sold-his-old-horse-and-bought-a-better-one",
+      "Who": "any",
+      "Title": "{n} sold his old horse and bought a better one",
+      "Thought": "the new horse",
+      "Mood": "Joyful",
+      "Weight": 2,
+      "Hours": 48,
+      "When": "rich|greedy",
+      "Odds": 8,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-lost-his-rifle-crossing-a-river",
+      "Who": "any",
+      "Title": "{n} lost his rifle crossing a river",
+      "Thought": "the lost rifle",
+      "Mood": "Bitter",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 6,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-caught-a-thief-in-his-camp-and-let-him-go",
+      "Who": "any",
+      "Title": "{n} caught a thief in his camp and let him go",
+      "Thought": "the thief he let go",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 24,
+      "When": "friendly",
+      "Odds": 8,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-caught-a-thief-in-his-camp-and-beat-him-bloody",
+      "Who": "any",
+      "Title": "{n} caught a thief in his camp and beat him bloody",
+      "Thought": "the thief he beat",
+      "Mood": "Proud",
+      "Weight": 1,
+      "Hours": 24,
+      "When": "aggr>=60",
+      "Odds": 8,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-spent-a-night-in-a-cave-waiting-out-a-storm",
+      "Who": "any",
+      "Title": "{n} spent a night in a cave waiting out a storm",
+      "Thought": "the storm",
+      "Mood": "Shaken",
+      "Weight": -1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-stayed-awake-after-a-bad-dream-about-the-war",
+      "Who": "any",
+      "Title": "{n} stayed awake after a bad dream about the war",
+      "Thought": "the war",
+      "Mood": "Shaken",
+      "Weight": -2,
+      "Hours": 72,
+      "When": "rank>=1",
+      "Odds": 4,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-wrote-a-will-just-in-case",
+      "Who": "any",
+      "Title": "{n} wrote a will, just in case",
+      "Thought": "dying",
+      "Mood": "Shaken",
+      "Weight": -1,
+      "Hours": 72,
+      "When": "fear>=40",
+      "Odds": 8,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-s-youngest-got-sick-back-home",
+      "Who": "any",
+      "Title": "{n}'s youngest got sick back home",
+      "Thought": "his sick child",
+      "Mood": "Grieving",
+      "Weight": -3,
+      "Hours": 96,
+      "When": "married&children",
+      "Odds": 10,
+      "Effects": [
+        "fear:2"
+      ]
+    },
+    {
+      "Id": "any-n-sent-his-wages-home-to-his-wife",
+      "Who": "any",
+      "Title": "{n} sent his wages home to his wife",
+      "Thought": "his family",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 48,
+      "When": "married",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-s-wife-wrote-asking-him-to-come-home",
+      "Who": "any",
+      "Title": "{n}'s wife wrote, asking him to come home",
+      "Thought": "his wife's letter",
+      "Mood": "Homesick",
+      "Weight": -2,
+      "Hours": 96,
+      "When": "married",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "any-n-got-a-dog-from-a-farmer-near-t",
+      "Who": "any",
+      "Title": "{n} got a dog from a farmer near {t}",
+      "Thought": "the new dog",
+      "Mood": "Joyful",
+      "Weight": 2,
+      "Hours": 72,
+      "When": "nopet",
+      "Odds": 4,
+      "Effects": [
+        "pet"
+      ]
+    },
+    {
+      "Id": "any-n-fell-asleep-on-watch-and-was-caught",
+      "Who": "any",
+      "Title": "{n} fell asleep on watch and was caught",
+      "Thought": "falling asleep on watch",
+      "Mood": "Humiliated",
+      "Weight": -2,
+      "Hours": 48,
+      "When": "notarmy",
+      "Odds": 6,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-and-f-rode-out-to-rob-a-lone-rider",
+      "Who": "gang",
+      "Title": "{n} and {f} rode out to rob a lone rider",
+      "Thought": "the lone rider",
+      "Mood": "Flush",
+      "Weight": 1,
+      "Hours": 36,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-was-sent-to-scout-the-roads-near-t",
+      "Who": "gang",
+      "Title": "{n} was sent to scout the roads near {t}",
+      "Thought": "scouting",
+      "Mood": "Steady",
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-argued-with-b-about-the-split-from-a-job",
+      "Who": "gang",
+      "Title": "{n} argued with {b} about the split from a job",
+      "Thought": "the split",
+      "Mood": "Bitter",
+      "Weight": -2,
+      "Hours": 72,
+      "Odds": 8,
+      "Effects": [
+        "hate:1"
+      ]
+    },
+    {
+      "Id": "gang-n-won-b-s-favour-on-a-job",
+      "Who": "gang",
+      "Title": "{n} won {b}'s favour on a job",
+      "Thought": "{b}'s favour",
+      "Mood": "Proud",
+      "Weight": 2,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-buried-a-man-of-the-g-in-the-hills",
+      "Who": "gang",
+      "Title": "{n} buried a man of the {g} in the hills",
+      "Thought": "the man he buried",
+      "Mood": "Grieving",
+      "Weight": -2,
+      "Hours": 96,
+      "Odds": 6,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-stood-guard-all-night-while-the-g-slept",
+      "Who": "gang",
+      "Title": "{n} stood guard all night while the {g} slept",
+      "Thought": "the long watch",
+      "Mood": "Steady",
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-stole-a-crate-of-whiskey-off-a-wagon",
+      "Who": "gang",
+      "Title": "{n} stole a crate of whiskey off a wagon",
+      "Thought": "the whiskey",
+      "Mood": "Joyful",
+      "Weight": 2,
+      "Hours": 48,
+      "When": "drunk",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-got-a-new-tattoo-in-t",
+      "Who": "gang",
+      "Title": "{n} got a new tattoo in {t}",
+      "Thought": "the new tattoo",
+      "Mood": "Proud",
+      "Weight": 1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-taught-a-younger-man-of-the-g-to-shoot",
+      "Who": "gang",
+      "Title": "{n} taught a younger man of the {g} to shoot",
+      "Thought": "the young one",
+      "Mood": "Proud",
+      "Weight": 1,
+      "Hours": 48,
+      "When": "rank>=2",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "gang-n-was-caught-skimming-from-the-g-s-take",
+      "Who": "gang",
+      "Title": "{n} was caught skimming from the {g}'s take",
+      "Thought": "being caught skimming",
+      "Mood": "Humiliated",
+      "Weight": -3,
+      "Hours": 96,
+      "When": "greedy|traitor",
+      "Odds": 8,
+      "Effects": [
+        "scar:beat"
+      ]
+    },
+    {
+      "Id": "odriscoll-n-drank-to-colm-s-health-in-t",
+      "Who": "odriscoll",
+      "Title": "{n} drank to Colm's health in {t}",
+      "Thought": "Colm O'Driscoll",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "odriscoll-n-heard-colm-was-looking-to-settle-with-dutch",
+      "Who": "odriscoll",
+      "Title": "{n} heard Colm was looking to settle with Dutch",
+      "Thought": "the old feud",
+      "Mood": "Bitter",
+      "Weight": -1,
+      "Hours": 48,
+      "Odds": 8,
+      "Effects": [
+        "hate:1"
+      ]
+    },
+    {
+      "Id": "odriscoll-n-sang-irish-songs-in-camp-till-dawn",
+      "Who": "odriscoll",
+      "Title": "{n} sang Irish songs in camp till dawn",
+      "Thought": "the old songs",
+      "Mood": "Homesick",
+      "Weight": 1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "raider-n-rode-in-a-parade-of-old-veterans-outside-t",
+      "Who": "raider",
+      "Title": "{n} rode in a parade of old veterans outside {t}",
+      "Thought": "the old cause",
+      "Mood": "Proud",
+      "Weight": 2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "raider-n-burned-a-union-flag-in-camp",
+      "Who": "raider",
+      "Title": "{n} burned a Union flag in camp",
+      "Thought": "the old war",
+      "Mood": "Bitter",
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "raider-n-argued-with-a-braithwaite-man-over-money",
+      "Who": "raider",
+      "Title": "{n} argued with a Braithwaite man over money",
+      "Thought": "the Braithwaites",
+      "Mood": "Bitter",
+      "Weight": -1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "klan-n-hid-his-robes-from-his-wife",
+      "Who": "klan",
+      "Title": "{n} hid his robes from his wife",
+      "Thought": "his wife finding out",
+      "Mood": "Shaken",
+      "Weight": -1,
+      "Hours": 48,
+      "When": "married",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "klan-n-was-laughed-at-in-t-folks-know-what-he-is",
+      "Who": "klan",
+      "Title": "{n} was laughed at in {t} - folks know what he is",
+      "Thought": "being known",
+      "Mood": "Humiliated",
+      "Weight": -2,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "army-n-stood-drill-in-the-rain-all-morning",
+      "Who": "army",
+      "Title": "{n} stood drill in the rain all morning",
+      "Thought": "the drill",
+      "Mood": "Bitter",
+      "Weight": -1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "army-n-was-promised-leave-and-then-refused-it",
+      "Who": "army",
+      "Title": "{n} was promised leave and then refused it",
+      "Thought": "the leave he lost",
+      "Mood": "Bitter",
+      "Weight": -2,
+      "Hours": 72,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "army-n-shot-a-rattlesnake-on-patrol",
+      "Who": "army",
+      "Title": "{n} shot a rattlesnake on patrol",
+      "Thought": "the snake",
+      "Mood": "Steady",
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "army-n-lost-a-bet-on-the-regiment-s-horse-race",
+      "Who": "army",
+      "Title": "{n} lost a bet on the regiment's horse race",
+      "Thought": "the horse race",
+      "Mood": "Bitter",
+      "Weight": -1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "army-n-was-praised-by-colonel-favours",
+      "Who": "army",
+      "Title": "{n} was praised by Colonel Favours",
+      "Thought": "the colonel's praise",
+      "Mood": "Proud",
+      "Weight": 2,
+      "Hours": 72,
+      "Odds": 6,
+      "Effects": []
+    },
+    {
+      "Id": "army-n-guarded-prisoners-at-the-fort-all-night",
+      "Who": "army",
+      "Title": "{n} guarded prisoners at the fort all night",
+      "Thought": "the prisoners",
+      "Mood": "Steady",
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "loner-n-did-a-day-s-work-at-the-stables-in-t",
+      "Who": "loner",
+      "Title": "{n} did a day's work at the stables in {t}",
+      "Thought": "the stables",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "loner-n-slept-rough-outside-t",
+      "Who": "loner",
+      "Title": "{n} slept rough outside {t}",
+      "Thought": "the cold ground",
+      "Mood": "Bitter",
+      "Weight": -1,
+      "Hours": 24,
+      "When": "poor",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "loner-n-bought-a-round-for-strangers-in-t",
+      "Who": "loner",
+      "Title": "{n} bought a round for strangers in {t}",
+      "Thought": "the strangers",
+      "Mood": "Joyful",
+      "Weight": 1,
+      "Hours": 24,
+      "When": "rich|friendly",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "loner-n-was-cheated-at-cards-in-t",
+      "Who": "loner",
+      "Title": "{n} was cheated at cards in {t}",
+      "Thought": "the cheat",
+      "Mood": "Bitter",
+      "Weight": -2,
+      "Hours": 48,
+      "When": "gambler|dim",
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "loner-n-hunted-a-deer-and-sold-the-hide-in-t",
+      "Who": "loner",
+      "Title": "{n} hunted a deer and sold the hide in {t}",
+      "Thought": "the hide",
+      "Mood": "Flush",
+      "Weight": 1,
+      "Hours": 24,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "wapiti-n-saw-soldiers-cross-the-river-near-the-reservation",
+      "Who": "wapiti",
+      "Title": "{n} saw soldiers cross the river near the reservation",
+      "Thought": "the soldiers",
+      "Mood": "Bitter",
+      "Weight": -2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "wapiti-n-told-the-old-stories-to-the-children",
+      "Who": "wapiti",
+      "Title": "{n} told the old stories to the children",
+      "Thought": "the old stories",
+      "Mood": "Steady",
+      "Weight": 1,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    },
+    {
+      "Id": "wapiti-n-brought-back-a-good-elk",
+      "Who": "wapiti",
+      "Title": "{n} brought back a good elk",
+      "Thought": "the elk",
+      "Mood": "Proud",
+      "Weight": 2,
+      "Hours": 48,
+      "Odds": 10,
+      "Effects": []
+    }
+  ],
+  "Removed": []
+}

@@ -1,0 +1,31 @@
+﻿{
+  "About": "TURMOIL world events (Sandbox.cs): Weight = how often turmoil comes up next to the [World] weights (clash 20, life 60...), Kinds = each wildcard's weight (0 = never). Incident lines: {a} {b} = the two factions, {p} / {d} = the district.",
+  "Weight": 10,
+  "Kinds": {
+    "INCIDENT": 30,
+    "DEFECTION": 25,
+    "ASSASSINATION": 15,
+    "TRUCE": 7,
+    "ALLIANCE": 8,
+    "CRACKDOWN": 7,
+    "FEVER": 10,
+    "WINDFALL": 15
+  },
+  "BadBlood": [
+    "{aw} men ran off a {bw} horse string near {p}",
+    "a {bw} man was found hanged outside {p} - the {a} are blamed",
+    "{aw} and {bw} men shot it out over a card game in {p}",
+    "the {a} took a {bw} supply wagon on the road by {p}",
+    "a {aw} rider insulted a {bw} officer in front of his men near {p}",
+    "the {a} burned a {bw} lean-to by {p}",
+    "a {bw} man killed a {aw} boy in a drunken fight in {p}",
+    "the {a} moved in on ground the {b} call theirs near {p}"
+  ],
+  "Deals": [
+    "{aw} and {bw} bosses met in {p} and split the roads between them",
+    "the {a} paid the {b} for passage through {d}",
+    "a {aw} man married into a {bw} family near {p}",
+    "the {a} sent back a {bw} prisoner unharmed",
+    "{aw} and {bw} men drank together after a hunt near {p}"
+  ]
+}

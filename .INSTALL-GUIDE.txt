@@ -1,0 +1,137 @@
+﻿=====================================================================
+  enRAGE v0.9.5.3 - INSTALL GUIDE
+  A nemesis system for Red Dead Redemption 2 - Story Mode only
+=====================================================================
+
+TL;DR - a standard script mod install, about five minutes:
+
+  1. Install ScriptHookRDR2 (Alexander Blade):
+       http://www.dev-c.com/rdr2/scripthookrdr2/
+  2. Install ScriptHookRDR2DotNet V2 (2.2.0 or newer):
+       https://github.com/Halen84/ScriptHookRDR2DotNet-V2/releases
+  3. Copy this download's "scripts" folder into the ROOT of your
+     Red Dead Redemption 2 folder (the one with RDR2.exe in it).
+  4. Start the game, load a Story Mode save, press F11.
+
+What they are: ScriptHookRDR2 lets the game load script mods, and
+ScriptHookRDR2DotNet lets it run mods written in .NET, like this one.
+Both are free and not included here. Get them from their authors.
+Close the game before installing.
+
+
+---------------------------------------------------------------------
+ 1. FIND YOUR GAME FOLDER
+---------------------------------------------------------------------
+It's the folder with RDR2.exe in it. The usual places:
+
+  Steam     C:\Program Files (x86)\Steam\steamapps\common\Red Dead Redemption 2
+            (or Steam -> right-click the game -> Manage -> Browse local files)
+  Rockstar  C:\Program Files\Rockstar Games\Red Dead Redemption 2
+  Epic      C:\Program Files\Epic Games\RedDeadRedemption2
+
+Below, <GAME> means that folder.
+
+
+---------------------------------------------------------------------
+ 2. INSTALL THE SCRIPT HOOKS (skip any you already have)
+---------------------------------------------------------------------
+  a) ScriptHookRDR2 by Alexander Blade
+     http://www.dev-c.com/rdr2/scripthookrdr2/
+     From the "bin" folder of the download, copy into <GAME>:
+         ScriptHookRDR2.dll
+         dinput8.dll
+
+  b) ScriptHookRDR2DotNet V2 (version 2.2.0 or newer)
+     https://github.com/Halen84/ScriptHookRDR2DotNet-V2/releases
+     Copy into <GAME>:
+         ScriptHookRDRDotNet.asi
+         ScriptHookRDRDotNet.ini
+         ScriptHookRDRNetAPI.dll
+     (some releases put ScriptHookRDRNetAPI.dll in a "scripts" folder;
+     <GAME>\scripts\ works too)
+
+  You also need the Microsoft .NET Framework 4.8 (already on Windows 10
+  and 11) and the Visual C++ 2015-2022 x64 redistributable.
+
+  An "Unsupported game version" message on launch means ScriptHookRDR2
+  is older than your game. Download its newest version.
+
+
+---------------------------------------------------------------------
+ 3. INSTALL enRAGE
+---------------------------------------------------------------------
+Copy the whole "scripts" folder from this download into the root of
+<GAME>, next to RDR2.exe. Merge it if Windows asks. You should end up
+with:
+
+  <GAME>\RDR2.exe
+  <GAME>\scripts\NemesisMod.dll
+  <GAME>\scripts\Newtonsoft.Json.dll
+
+Not <GAME>\scripts\scripts\... and not inside another mod's folder.
+
+That's all. The first time the game loads enRAGE it writes its settings
+file (<GAME>\scripts\NemesisMod.ini) and makes its data folder.
+
+
+---------------------------------------------------------------------
+ 4. PLAY
+---------------------------------------------------------------------
+Start Red Dead Redemption 2 and load a STORY MODE save. A welcome guide
+opens the first time.
+
+  F11  (pad: double-tap D-pad Right)   the enRAGE menu
+  Tab  (pad: View)                     switch between Hierarchy, World, X-ray log
+  Alt+F11                              every setting, changed live
+  Insert                               reload scripts
+  F11 then G  (pad: Y)                 the welcome guide again
+
+Never use Script Hook in Red Dead Online. It closes the game there.
+
+
+---------------------------------------------------------------------
+ WHERE YOUR WORLD IS SAVED
+---------------------------------------------------------------------
+Your nemeses, the world, people, save points and logs live in:
+
+  Documents\Rockstar Games\Red Dead Redemption 2\enRAGE
+
+next to the game's own saves. Reinstalling or "verifying" the game
+does not touch it. Each game save file gets its own enRAGE world.
+To back it up, copy that folder somewhere safe.
+
+
+---------------------------------------------------------------------
+ UPDATING
+---------------------------------------------------------------------
+Close the game and copy the new "scripts" folder over the old one
+(replace the two DLLs). Your world and settings are kept, and the mod
+moves an old world to Documents itself the first time it loads.
+
+
+---------------------------------------------------------------------
+ UNINSTALLING
+---------------------------------------------------------------------
+Delete <GAME>\scripts\NemesisMod.dll, NemesisMod.ini and BulletImpact.ini
+(and Newtonsoft.Json.dll if no other mod needs it). To remove your world
+too, delete Documents\Rockstar Games\Red Dead Redemption 2\enRAGE.
+Leave the Script Hook files if other mods use them.
+
+
+---------------------------------------------------------------------
+ TROUBLE?
+---------------------------------------------------------------------
+  Nothing happens in game / F11 does nothing
+     - Check that both script hooks are in <GAME> (step 2) and the DLLs
+       are in <GAME>\scripts (step 3).
+     - F8 opens the Script Hook .NET console. Errors show there.
+     - Right-click each downloaded .zip -> Properties -> "Unblock" before
+       unzipping, or Windows may block the DLLs.
+
+  Sending a bug report - include these from the enRAGE data folder:
+     grudges.log, startup.log, lastframe.txt, and lastcrash.txt
+     if it's there (enRAGE keeps it after a crash)
+  and <GAME>\ScriptHookRDR2.log and <GAME>\ScriptHookRDRDotNet.log.
+
+Licence: you're free to translate and modify enRAGE and to share translations and patches (with a link to the Nexus Mods page) - see LICENSE.txt for what is and isn't allowed. Third-party credits: THIRD-PARTY.txt.
+

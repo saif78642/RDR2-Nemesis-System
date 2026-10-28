@@ -1,0 +1,458 @@
+﻿{
+  "About": "Districts: Key, Name, X / Y (its middle), Hashes (the zone hashes the game gives for it, hex), Lore (faction id -> starting hold 0-100; a faction's encounter weight there = hold / 18). Towns: Name (the game's zone name), Doctor / Saloon [x, y, z] (either may be missing), DoctorOpen (true: the doctor's office is open in the game, so a laid-up man can be found there), CoreRadius (the busy part, m).",
+  "Districts": [
+    {
+      "Key": "heartlands",
+      "Name": "the Heartlands",
+      "X": 364.0,
+      "Y": 396.0,
+      "Hashes": [
+        "0x07D4FF5F",
+        "0xD88E8E24"
+      ],
+      "Lore": {
+        "odriscoll": 29,
+        "army": 27
+      },
+      "Lore1907": {
+        "army": 30,
+        "laramie": 8
+      },
+      "Region": "DISTRICT_HEARTLAND"
+    },
+    {
+      "Key": "cumberland",
+      "Name": "Cumberland Forest",
+      "X": 316.0,
+      "Y": 1264.0,
+      "Hashes": [
+        "0x6D67801E",
+        "0xF21D7665",
+        "0xA72388D5"
+      ],
+      "Lore": {
+        "army": 27,
+        "odriscoll": 29,
+        "wapiti": 9
+      },
+      "Lore1907": {
+        "army": 30
+      },
+      "Region": "DISTRICT_CUMBERLAND_FOREST"
+    },
+    {
+      "Key": "grizzlies_east",
+      "Name": "the Grizzlies East",
+      "X": 1168.0,
+      "Y": 1452.0,
+      "Hashes": [
+        "0x89CBB335",
+        "0xF8D68DC1"
+      ],
+      "Lore": {
+        "odriscoll": 29,
+        "army": 27,
+        "wapiti": 27
+      },
+      "Lore1907": {
+        "army": 30
+      },
+      "Region": "DISTRICT_GRIZZLIES_EAST"
+    },
+    {
+      "Key": "grizzlies_west",
+      "Name": "the Grizzlies West",
+      "X": -1212.0,
+      "Y": 1720.0,
+      "Hashes": [
+        "0xA2398567",
+        "0x62162401"
+      ],
+      "Lore": {
+        "odriscoll": 29,
+        "army": 27
+      },
+      "Lore1907": {
+        "army": 22
+      },
+      "Region": "DISTRICT_GRIZZLIES_WEST"
+    },
+    {
+      "Key": "grizzlies",
+      "Name": "the Grizzlies",
+      "X": -1218.0,
+      "Y": 1923.0,
+      "Hashes": [
+        "0x13710BB4"
+      ],
+      "Lore": {
+        "odriscoll": 29,
+        "army": 27
+      },
+      "Lore1907": {
+        "army": 22
+      },
+      "Region": "DISTRICT_GRIZZLIES_WEST"
+    },
+    {
+      "Key": "roanoke",
+      "Name": "Roanoke Ridge",
+      "X": 2464.0,
+      "Y": 1072.0,
+      "Hashes": [
+        "0x0AA5F25D",
+        "0x7285FF5F",
+        "0x7D3D174C"
+      ],
+      "Lore": {
+        "murfree": 36,
+        "odriscoll": 15,
+        "army": 27
+      },
+      "Lore1907": {
+        "murfree": 40,
+        "army": 25
+      },
+      "Region": "DISTRICT_ROANOKE_RIDGE"
+    },
+    {
+      "Key": "big_valley",
+      "Name": "Big Valley",
+      "X": -1784.0,
+      "Y": -128.0,
+      "Hashes": [
+        "0x3108C492",
+        "0xCFC5B2D1"
+      ],
+      "Lore": {
+        "odriscoll": 18,
+        "army": 7
+      },
+      "Lore1907": {
+        "laramie": 22,
+        "army": 8
+      },
+      "Region": "DISTRICT_BIG_VALLEY"
+    },
+    {
+      "Key": "tall_trees",
+      "Name": "Tall Trees",
+      "X": -2024.0,
+      "Y": -1656.0,
+      "Hashes": [
+        "0x6467EF09",
+        "0x65BC9DB1"
+      ],
+      "Lore": {
+        "skinners": 36,
+        "odriscoll": 7,
+        "army": 7
+      },
+      "Lore1907": {
+        "skinners": 40,
+        "army": 7
+      },
+      "Region": "DISTRICT_TALL_TREES"
+    },
+    {
+      "Key": "great_plains",
+      "Name": "the Great Plains",
+      "X": -1232.0,
+      "Y": -1476.0,
+      "Hashes": [
+        "0x0C925868",
+        "0x1C68EA97"
+      ],
+      "Lore": {
+        "odriscoll": 18,
+        "skinners": 11,
+        "army": 7
+      },
+      "Lore1907": {
+        "laramie": 36,
+        "skinners": 12,
+        "army": 7
+      },
+      "Region": "DISTRICT_GREAT_PLAINS"
+    },
+    {
+      "Key": "scarlett_meadows",
+      "Name": "Scarlett Meadows",
+      "X": 1416.0,
+      "Y": -1160.0,
+      "Hashes": [
+        "0x28FD8B3D",
+        "0xCC7C3314"
+      ],
+      "Lore": {
+        "lemoyneraiders": 45,
+        "klan": 27,
+        "army": 5,
+        "odriscoll": 3
+      },
+      "Lore1907": {
+        "lemoyneraiders": 40,
+        "klan": 25,
+        "army": 6
+      },
+      "Region": "DISTRICT_SCARLETT_MEADOWS"
+    },
+    {
+      "Key": "bluewater_marsh",
+      "Name": "Bluewater Marsh",
+      "X": 2082.0,
+      "Y": -604.0,
+      "Hashes": [
+        "0xE3F913AC",
+        "0x4DFA0B50"
+      ],
+      "Lore": {
+        "lemoyneraiders": 45,
+        "klan": 27,
+        "army": 5,
+        "odriscoll": 3
+      },
+      "Lore1907": {
+        "lemoyneraiders": 40,
+        "klan": 25,
+        "army": 6
+      },
+      "Region": "DISTRICT_BLUEWATER_MARSH"
+    },
+    {
+      "Key": "bayou_nwa",
+      "Name": "Bayou Nwa",
+      "X": 2232.0,
+      "Y": -1064.0,
+      "Hashes": [
+        "0x78BFE1AC",
+        "0xC920C87B"
+      ],
+      "Lore": {
+        "lemoyneraiders": 45,
+        "bronte": 36,
+        "army": 5,
+        "odriscoll": 3
+      },
+      "Lore1907": {
+        "bronte": 36,
+        "lemoyneraiders": 30,
+        "nightfolk": 20,
+        "army": 6
+      },
+      "Region": "DISTRICT_BAYOU_NWA"
+    },
+    {
+      "Key": "bluegill_marsh",
+      "Name": "Bluegill Marsh",
+      "X": 3120.0,
+      "Y": -84.0,
+      "Hashes": [
+        "0xCCD3275B",
+        "0x0E38ECAC"
+      ],
+      "Lore": {
+        "lemoyneraiders": 20,
+        "army": 5,
+        "odriscoll": 3
+      },
+      "Lore1907": {
+        "lemoyneraiders": 20,
+        "nightfolk": 6,
+        "army": 6
+      },
+      "Region": "DISTRICT_BLUEGILL_MARSH"
+    },
+    {
+      "Key": "hennigans_stead",
+      "Name": "Hennigan's Stead",
+      "X": -2208.0,
+      "Y": -2644.0,
+      "Hashes": [
+        "0x35390B10",
+        "0xFCCF2B76"
+      ],
+      "Lore": {},
+      "Lore1907": {
+        "laramie": 40,
+        "delobo": 8,
+        "army": 5
+      },
+      "Region": "DISTRICT_HENNIGANS_STEAD"
+    },
+    {
+      "Key": "cholla_springs",
+      "Name": "Cholla Springs",
+      "X": -4128.0,
+      "Y": -2654.0,
+      "Hashes": [
+        "0xF9831C72",
+        "0x2BE0ECA6"
+      ],
+      "Lore": {},
+      "Lore1907": {
+        "delobo": 40,
+        "laramie": 8,
+        "army": 7
+      },
+      "Region": "DISTRICT_CHOLLA_SPRINGS"
+    },
+    {
+      "Key": "gaptooth_ridge",
+      "Name": "Gaptooth Ridge",
+      "X": -5568.0,
+      "Y": -3044.0,
+      "Hashes": [
+        "0x84D7AD0E",
+        "0xEB388009"
+      ],
+      "Lore": {},
+      "Lore1907": {
+        "delobo": 45,
+        "army": 5
+      },
+      "Region": "DISTRICT_GAPTOOTH_RIDGE"
+    },
+    {
+      "Key": "rio_bravo",
+      "Name": "Rio Bravo",
+      "X": -4528.0,
+      "Y": -3604.0,
+      "Hashes": [
+        "0x8016C23F",
+        "0x2E79F240"
+      ],
+      "Lore": {},
+      "Lore1907": {
+        "delobo": 45
+      },
+      "Region": "DISTRICT_RIO_BRAVO"
+    }
+  ],
+  "Towns": [
+    {
+      "Name": "Valentine",
+      "Doctor": [
+        -287.55,
+        812.09,
+        119.25
+      ],
+      "Saloon": [
+        -313.51,
+        805.81,
+        118.98
+      ],
+      "DoctorOpen": true,
+      "CoreRadius": 130.0
+    },
+    {
+      "Name": "Saint Denis",
+      "Doctor": [
+        2732.4,
+        -1233.83,
+        50.7
+      ],
+      "Saloon": [
+        2792.37,
+        -1168.41,
+        47.93
+      ],
+      "DoctorOpen": true,
+      "CoreRadius": 290.0,
+      "Centre": [
+        2660.0,
+        -1240.0,
+        47.0
+      ]
+    },
+    {
+      "Name": "Rhodes",
+      "Doctor": [
+        1372.46,
+        -1305.12,
+        77.75
+      ],
+      "Saloon": [
+        1340.17,
+        -1374.82,
+        80.48
+      ],
+      "DoctorOpen": false,
+      "CoreRadius": 120.0
+    },
+    {
+      "Name": "Blackwater",
+      "Doctor": [
+        -785.69,
+        -1306.2,
+        43.81
+      ],
+      "Saloon": [
+        -817.59,
+        -1319.09,
+        43.68
+      ],
+      "DoctorOpen": false,
+      "CoreRadius": 150.0
+    },
+    {
+      "Name": "Armadillo",
+      "Doctor": [
+        -3738.99,
+        -2636.93,
+        -12.4
+      ],
+      "Saloon": [
+        -3699.81,
+        -2594.41,
+        -13.32
+      ],
+      "DoctorOpen": false,
+      "CoreRadius": 110.0
+    },
+    {
+      "Name": "Tumbleweed",
+      "Doctor": [
+        -5528.01,
+        -2952.85,
+        -0.5
+      ],
+      "Saloon": [
+        -5518.48,
+        -2906.51,
+        -1.75
+      ],
+      "DoctorOpen": false,
+      "CoreRadius": 90.0
+    },
+    {
+      "Name": "Strawberry",
+      "Doctor": [
+        -1808.89,
+        -434.0,
+        158.72
+      ],
+      "DoctorOpen": false,
+      "CoreRadius": 100.0
+    },
+    {
+      "Name": "Annesburg",
+      "Doctor": [
+        2922.97,
+        1356.31,
+        44.71
+      ],
+      "DoctorOpen": false,
+      "CoreRadius": 120.0
+    },
+    {
+      "Name": "Van Horn",
+      "Saloon": [
+        2947.84,
+        528.06,
+        45.34
+      ],
+      "CoreRadius": 100.0
+    }
+  ]
+}

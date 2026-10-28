@@ -1,0 +1,1809 @@
+﻿{
+  "About": "Every faction (Gangs.cs fields by name). Leave a field out to keep the built-in value; a new Id = a new faction. Name lists: a NameBank name (\"IrishFirst\") or a list. Districts: zone hashes as hex. Tiers: Label / MinRank / Seats, top first. Seed: Rank / Count / Models. Relations: other faction id -> -100..100 (either side may say it). Jobs: Title / Place with {t} = the town, Crew; JobTowns: where they happen.",
+  "Factions": [
+    {
+      "Id": "odriscoll",
+      "Name": "O'Driscoll Boys",
+      "ModelTokens": [
+        "duster",
+        "odriscoll"
+      ],
+      "LeaderModel": "cs_colmodriscoll",
+      "MixedFootSoldiers": true,
+      "WeightNorth": 1.6,
+      "WeightSouth": 0.2,
+      "Faiths": [
+        "Catholic"
+      ],
+      "TroopModels": [
+        347599949,
+        50483426,
+        3021353735,
+        3531894755
+      ],
+      "HasCamps": true,
+      "CrewExtra": 1,
+      "JobTowns": [
+        "Valentine",
+        "Strawberry",
+        "Annesburg",
+        "Van Horn"
+      ],
+      "Relations": {
+        "lemoyneraiders": -60,
+        "murfree": -45,
+        "skinners": -40,
+        "bronte": -40,
+        "army": -70,
+        "klan": -10,
+        "wapiti": -20
+      },
+      "LoreLeaderProtected": true,
+      "Era": 1899,
+      "LeaderName": "Colm O'Driscoll",
+      "LeaderBlurb": "Leader of the O'Driscoll Boys. Dutch's oldest enemy.",
+      "FirstNames": "IrishFirst",
+      "LastNames": "IrishLast",
+      "Titles": "ODriscollTitles",
+      "Accent": [
+        92,
+        150,
+        98
+      ],
+      "Tiers": [
+        {
+          "Label": "CAPTAINS",
+          "MinRank": 4,
+          "Seats": 3
+        },
+        {
+          "Label": "LIEUTENANTS",
+          "MinRank": 2,
+          "Seats": 5
+        },
+        {
+          "Label": "BOYS",
+          "MinRank": 1,
+          "Seats": 10
+        }
+      ],
+      "Seed": [
+        {
+          "Rank": 4,
+          "Count": 3,
+          "Models": [
+            "247176142",
+            "3808576604",
+            "3518177726"
+          ]
+        },
+        {
+          "Rank": 3,
+          "Count": 3,
+          "Models": [
+            "347599949",
+            "50483426",
+            "3021353735"
+          ]
+        },
+        {
+          "Rank": 2,
+          "Count": 2,
+          "Models": [
+            "3531894755",
+            "1336863290"
+          ]
+        },
+        {
+          "Rank": 1,
+          "Count": 10,
+          "Models": [
+            "347599949",
+            "50483426",
+            "3021353735",
+            "3531894755",
+            "1336863290"
+          ]
+        }
+      ],
+      "ExtraSidearms": [
+        {
+          "Weapon": "379542007",
+          "Name": "a Cattleman",
+          "Weight": 3,
+          "MinRank": 1
+        }
+      ],
+      "Jobs": [
+        {
+          "Title": "rob the stagecoach on the road out of {t}",
+          "Place": "the road out of {t}",
+          "Crew": 4
+        },
+        {
+          "Title": "hit a homestead outside {t}",
+          "Place": "a homestead outside {t}",
+          "Crew": 3
+        },
+        {
+          "Title": "run off horses from a ranch near {t}",
+          "Place": "a ranch near {t}",
+          "Crew": 3
+        },
+        {
+          "Title": "rob travellers on the road by {t}",
+          "Place": "the road by {t}",
+          "Crew": 3
+        },
+        {
+          "Title": "settle a score with a man in {t}",
+          "Place": "the edge of {t}",
+          "Crew": 2
+        }
+      ]
+    },
+    {
+      "Id": "lemoyneraiders",
+      "Name": "Lemoyne Raiders",
+      "ModelTokens": [
+        "uniexconfeds",
+        "exconfed"
+      ],
+      "LeaderModel": "u_m_m_uniexconfedsbounty_01|cs_exconfedsleader_01",
+      "LeaderSpot": [
+        2440.0,
+        285.0,
+        500.0
+      ],
+      "AmbushBase": 0.15,
+      "EncounterRate": 0.3,
+      "OldArmyKnifeWeight": 5,
+      "MixedFootSoldiers": true,
+      "WeightNorth": 0.03,
+      "WeightSouth": 2.5,
+      "WeightElsewhere": 0.03,
+      "CombatMovement": 2,
+      "CombatAbility": 1,
+      "CombatRange": 1,
+      "Faiths": [
+        "Baptist",
+        "Methodist"
+      ],
+      "MemberWealth": "Poor",
+      "MemberTrades": [
+        "Ex-soldier"
+      ],
+      "TroopModels": [
+        3666010779,
+        3325147641,
+        3939581308
+      ],
+      "PatrolsIn": "south",
+      "HasCamps": true,
+      "CrewExtra": 2,
+      "JobTowns": [
+        "Rhodes",
+        "Saint Denis"
+      ],
+      "Relations": {
+        "army": -70,
+        "bronte": -55,
+        "klan": -40,
+        "murfree": -30,
+        "skinners": -25,
+        "wapiti": -15
+      },
+      "LoreLeaderProtected": true,
+      "LeaderName": "Lindsey Wofford",
+      "LeaderBlurb": "Runs the Raiders out of Fort Brennand like the war never ended.",
+      "FirstNames": "SouthernFirst",
+      "LastNames": "SouthernLast",
+      "Titles": "RaiderTitles",
+      "Accent": [
+        126,
+        142,
+        168
+      ],
+      "Tiers": [
+        {
+          "Label": "CAPTAINS",
+          "MinRank": 4,
+          "Seats": 3
+        },
+        {
+          "Label": "SERGEANTS",
+          "MinRank": 2,
+          "Seats": 4
+        },
+        {
+          "Label": "RAIDERS",
+          "MinRank": 1,
+          "Seats": 7
+        }
+      ],
+      "Seed": [
+        {
+          "Rank": 4,
+          "Count": 2,
+          "Models": [
+            "3939581308"
+          ]
+        },
+        {
+          "Rank": 3,
+          "Count": 2,
+          "Models": [
+            "3666010779",
+            "3939581308"
+          ]
+        },
+        {
+          "Rank": 2,
+          "Count": 2,
+          "Models": [
+            "3325147641"
+          ]
+        },
+        {
+          "Rank": 1,
+          "Count": 7,
+          "Models": [
+            "3666010779",
+            "3325147641"
+          ]
+        }
+      ],
+      "ExtraSidearms": [
+        {
+          "Weapon": "132728264",
+          "Name": "an old Navy revolver",
+          "Weight": 4,
+          "MinRank": 1
+        },
+        {
+          "Weapon": "1529685685",
+          "Name": "a LeMat",
+          "Weight": 3,
+          "MinRank": 3
+        }
+      ],
+      "ExtraLongGuns": [
+        {
+          "Weapon": "1676963302",
+          "Name": "a Springfield",
+          "Weight": 4
+        }
+      ],
+      "Jobs": [
+        {
+          "Title": "burn out a farm outside {t}",
+          "Place": "a farm outside {t}",
+          "Crew": 4
+        },
+        {
+          "Title": "ambush lawmen on the road to {t}",
+          "Place": "the road to {t}",
+          "Crew": 4
+        },
+        {
+          "Title": "run guns through the woods by {t}",
+          "Place": "the woods by {t}",
+          "Crew": 3
+        },
+        {
+          "Title": "rough up a carpetbagger near {t}",
+          "Place": "the road near {t}",
+          "Crew": 3
+        }
+      ]
+    },
+    {
+      "Id": "army",
+      "Name": "U.S. Army",
+      "ModelTokens": [
+        "army"
+      ],
+      "LeaderModel": "cs_colfavours",
+      "AmbushBase": 0.12,
+      "EncounterRate": 0.4,
+      "OrdersNotFeelings": true,
+      "UniformKit": true,
+      "NeedsReason": true,
+      "SquadsOnly": true,
+      "RankInName": true,
+      "KeepsToItsOwn": true,
+      "Feuds": false,
+      "GangLifeEvents": false,
+      "WeightNorth": 1.5,
+      "WeightSouth": 0.3,
+      "WeightElsewhere": 0.4,
+      "WeightNearFort": 3.0,
+      "CombatMovement": 1,
+      "CombatAbility": 2,
+      "CombatRange": 2,
+      "AccuracyMin": 40,
+      "MemberWealth": "Working",
+      "MemberTrades": [
+        "Soldier"
+      ],
+      "TroopModels": [
+        2150064377,
+        722236839
+      ],
+      "TroopLongGuns": true,
+      "TroopAccuracy": 30,
+      "PatrolsIn": "north",
+      "FamilyNames": false,
+      "UnnamedKillsPerPoint": 1,
+      "JobTowns": [
+        "Valentine",
+        "Strawberry",
+        "Annesburg",
+        "Rhodes",
+        "Van Horn"
+      ],
+      "Relations": {
+        "klan": -35,
+        "wapiti": -45,
+        "bronte": -25,
+        "murfree": -50,
+        "skinners": -50
+      },
+      "TurfWars": false,
+      "LoreLeaderProtected": true,
+      "LeaderName": "Col. Henry Favours",
+      "LeaderBlurb": "Commands Fort Wallace and keeps the Wapiti on their reservation. Wants the outlaw problem buried.",
+      "FirstNames": "AmericanFirst",
+      "LastNames": "ArmyLast",
+      "Titles": "ArmyTitles",
+      "Accent": [
+        112,
+        124,
+        68
+      ],
+      "Tiers": [
+        {
+          "Label": "OFFICERS",
+          "MinRank": 4,
+          "Seats": 3
+        },
+        {
+          "Label": "SERGEANTS",
+          "MinRank": 2,
+          "Seats": 5
+        },
+        {
+          "Label": "PRIVATES",
+          "MinRank": 1,
+          "Seats": 14
+        }
+      ],
+      "Seed": [
+        {
+          "Rank": 4,
+          "Count": 3,
+          "Models": [
+            "722236839"
+          ]
+        },
+        {
+          "Rank": 3,
+          "Count": 2,
+          "Models": [
+            "722236839"
+          ]
+        },
+        {
+          "Rank": 2,
+          "Count": 3,
+          "Models": [
+            "722236839",
+            "2150064377"
+          ]
+        },
+        {
+          "Rank": 1,
+          "Count": 14,
+          "Models": [
+            "2150064377",
+            "722236839"
+          ]
+        }
+      ],
+      "Jobs": [
+        {
+          "Title": "sweep the road outside {t} for O'Driscolls",
+          "Place": "the road outside {t}",
+          "Crew": 4
+        },
+        {
+          "Title": "escort a supply wagon to {t}",
+          "Place": "the road to {t}",
+          "Crew": 4
+        },
+        {
+          "Title": "hunt deserters in the hills by {t}",
+          "Place": "the hills by {t}",
+          "Crew": 3
+        }
+      ]
+    },
+    {
+      "Id": "klan",
+      "Name": "The Klan",
+      "ModelTokens": [],
+      "AmbushBase": 0.08,
+      "EncounterRate": 0.3,
+      "NoTowns": true,
+      "DayWeight": 0.2,
+      "NightWeight": 1.5,
+      "TownModels": [
+        "a_m_m_rhdtownfolk_01",
+        "a_m_m_rhdtownfolk_02",
+        "a_m_m_rhdtownfolk_01_laborer",
+        "a_m_m_rhdforeman_01",
+        "a_m_m_rhdupperclass_01",
+        "a_m_m_rhdobesemen_01",
+        "a_m_m_valfarmer_01",
+        "a_m_m_vhttownfolk_01"
+      ],
+      "CombatMovement": 3,
+      "CombatAbility": 0,
+      "AccuracyMax": 18,
+      "MayFlee": true,
+      "Faiths": [
+        "Baptist",
+        "Methodist"
+      ],
+      "MemberTrades": [
+        "Farmer",
+        "Store clerk"
+      ],
+      "TroopModels": [
+        138961043,
+        969427509
+      ],
+      "JobTowns": [
+        "Rhodes"
+      ],
+      "Relations": {
+        "bronte": -30,
+        "murfree": -20,
+        "skinners": -10,
+        "wapiti": -40
+      },
+      "LeaderName": "High Warden Jebediah Pruitt",
+      "LeaderBlurb": "Hides his face, lights the fires, sends others to do the dying.",
+      "FirstNames": "SouthernFirst",
+      "LastNames": "SouthernLast",
+      "Titles": "KlanTitles",
+      "Accent": [
+        226,
+        222,
+        210
+      ],
+      "Tiers": [
+        {
+          "Label": "WARDENS",
+          "MinRank": 4,
+          "Seats": 1
+        },
+        {
+          "Label": "TORCHBEARERS",
+          "MinRank": 2,
+          "Seats": 2
+        },
+        {
+          "Label": "HOODS",
+          "MinRank": 1,
+          "Seats": 5
+        }
+      ],
+      "Seed": [
+        {
+          "Rank": 4,
+          "Count": 1,
+          "Models": [
+            "969427509"
+          ]
+        },
+        {
+          "Rank": 2,
+          "Count": 2,
+          "Models": [
+            "969427509",
+            "138961043"
+          ]
+        },
+        {
+          "Rank": 1,
+          "Count": 5,
+          "Models": [
+            "138961043",
+            "969427509"
+          ]
+        }
+      ],
+      "ExtraLongGuns": [
+        {
+          "Weapon": "1845102363",
+          "Name": "a double-barrel shotgun",
+          "Weight": 5
+        }
+      ],
+      "OnlyDistricts": [
+        "0xCC7C3314",
+        "0x28FD8B3D",
+        "0x4DFA0B50",
+        "0xE3F913AC"
+      ],
+      "Jobs": [
+        {
+          "Title": "ride by night outside {t}",
+          "Place": "the fields outside {t}",
+          "Crew": 4
+        },
+        {
+          "Title": "burn a cross outside {t}",
+          "Place": "a field outside {t}",
+          "Crew": 3
+        }
+      ]
+    },
+    {
+      "Id": "wapiti",
+      "Name": "Wapiti",
+      "ModelTokens": [
+        "wapwarriors"
+      ],
+      "LeaderModel": "cs_rainsfall",
+      "AmbushBase": 0.08,
+      "EncounterRate": 0.4,
+      "NeedsReason": true,
+      "SquadsOnly": true,
+      "KeepsToItsOwn": true,
+      "Feuds": false,
+      "GangLifeEvents": false,
+      "CombatMovement": 2,
+      "CombatAbility": 1,
+      "CombatRange": 1,
+      "AccuracyMin": 25,
+      "Faiths": [
+        "the old ways"
+      ],
+      "MemberWealth": "Poor",
+      "MemberTrades": [
+        "Hunter",
+        "Horse breaker"
+      ],
+      "TroopModels": [
+        830712509
+      ],
+      "TroopAccuracy": 20,
+      "PatrolsIn": "districts",
+      "HasCamps": true,
+      "TribalKit": true,
+      "ReasonFromBounty": false,
+      "FamilyNames": false,
+      "OwnLives": true,
+      "AnswersGunfire": false,
+      "JobTowns": [
+        "Strawberry",
+        "Valentine"
+      ],
+      "Relations": {
+        "murfree": -20,
+        "skinners": -45
+      },
+      "TurfWars": false,
+      "LoreLeaderProtected": true,
+      "Era": 1899,
+      "LeaderName": "Rains Fall",
+      "LeaderBlurb": "Chief of the Wapiti. Wants his people to live through the reservation, not die fighting the Army.",
+      "FirstNames": "WapitiFirst",
+      "LastNames": "WapitiLast",
+      "Titles": "WapitiTitles",
+      "ExcludedNames": "WapitiExcluded",
+      "Accent": [
+        178,
+        112,
+        74
+      ],
+      "Tiers": [
+        {
+          "Label": "WAR LEADERS",
+          "MinRank": 4,
+          "Seats": 2
+        },
+        {
+          "Label": "SCOUTS",
+          "MinRank": 2,
+          "Seats": 4
+        },
+        {
+          "Label": "WARRIORS",
+          "MinRank": 1,
+          "Seats": 8
+        }
+      ],
+      "Seed": [
+        {
+          "Rank": 4,
+          "Count": 2,
+          "Models": [
+            "830712509"
+          ]
+        },
+        {
+          "Rank": 3,
+          "Count": 2,
+          "Models": [
+            "830712509"
+          ]
+        },
+        {
+          "Rank": 2,
+          "Count": 2,
+          "Models": [
+            "830712509"
+          ]
+        },
+        {
+          "Rank": 1,
+          "Count": 8,
+          "Models": [
+            "830712509"
+          ]
+        }
+      ],
+      "SeedHate": [
+        25,
+        50
+      ],
+      "OnlyDistricts": [
+        "0x89CBB335",
+        "0xF8D68DC1",
+        "0x6D67801E"
+      ],
+      "DistrictWeights": {
+        "0x89CBB335": 1.5,
+        "0xF8D68DC1": 1.5,
+        "0x6D67801E": 0.5
+      },
+      "Jobs": [
+        {
+          "Title": "hunt in the hills above {t}",
+          "Place": "the hills above {t}",
+          "Crew": 3
+        },
+        {
+          "Title": "watch the soldiers' road by {t}",
+          "Place": "the road by {t}",
+          "Crew": 3
+        }
+      ]
+    },
+    {
+      "Id": "bronte",
+      "Name": "Bronte Family",
+      "ModelTokens": [
+        "brontegoon",
+        "nbxbronte"
+      ],
+      "LeaderModel": "cs_bronte",
+      "AmbushBase": 0.12,
+      "EncounterRate": 0.5,
+      "NeedsReason": true,
+      "DayWeight": 0.8,
+      "NightWeight": 1.4,
+      "DistrictWeight": 2.0,
+      "CombatMovement": 1,
+      "CombatAbility": 1,
+      "CombatRange": 1,
+      "AccuracyMin": 25,
+      "Faiths": [
+        "Catholic"
+      ],
+      "MemberWealth": "Working",
+      "TroopModels": [
+        1478983280,
+        3086153095
+      ],
+      "TroopAccuracy": 26,
+      "HasCamps": true,
+      "ReasonFromBounty": false,
+      "HomeTown": "Saint Denis",
+      "JobTowns": [
+        "Saint Denis"
+      ],
+      "Relations": {
+        "murfree": -20,
+        "skinners": -10
+      },
+      "LoreLeaderProtected": true,
+      "LeaderName": "Angelo Bronte",
+      "LeaderBlurb": "Owns Saint Denis - the police, the docks, the mayor's ear. Smiles while he does it.",
+      "FirstNames": "ItalianFirst",
+      "LastNames": "ItalianLast",
+      "Titles": "MobTitles",
+      "Accent": [
+        150,
+        72,
+        84
+      ],
+      "Tiers": [
+        {
+          "Label": "CAPOS",
+          "MinRank": 4,
+          "Seats": 2
+        },
+        {
+          "Label": "ENFORCERS",
+          "MinRank": 2,
+          "Seats": 4
+        },
+        {
+          "Label": "SOLDIERS",
+          "MinRank": 1,
+          "Seats": 8
+        }
+      ],
+      "Seed": [
+        {
+          "Rank": 4,
+          "Count": 2,
+          "Models": [
+            "1112571710",
+            "3904678012"
+          ]
+        },
+        {
+          "Rank": 3,
+          "Count": 2,
+          "Models": [
+            "1478983280",
+            "3086153095"
+          ]
+        },
+        {
+          "Rank": 2,
+          "Count": 2,
+          "Models": [
+            "1478983280"
+          ]
+        },
+        {
+          "Rank": 1,
+          "Count": 8,
+          "Models": [
+            "1478983280",
+            "3086153095"
+          ]
+        }
+      ],
+      "ExtraSidearms": [
+        {
+          "Weapon": "127400949",
+          "Name": "a Double-Action",
+          "Weight": 4,
+          "MinRank": 1
+        },
+        {
+          "Weapon": "34411519",
+          "Name": "a Volcanic pistol",
+          "Weight": 2,
+          "MinRank": 2
+        },
+        {
+          "Weapon": "2239809086",
+          "Name": "a Mauser",
+          "Weight": 2,
+          "MinRank": 4
+        }
+      ],
+      "ExtraLongGuns": [
+        {
+          "Weapon": "392538360",
+          "Name": "a sawed-off",
+          "Weight": 5
+        },
+        {
+          "Weapon": "834124286",
+          "Name": "a pump shotgun",
+          "Weight": 2
+        }
+      ],
+      "OnlyDistricts": [
+        "0x78BFE1AC",
+        "0xC920C87B"
+      ],
+      "Jobs": [
+        {
+          "Title": "collect from a shopkeeper who's behind in {t}",
+          "Place": "a back street of {t}",
+          "Crew": 3
+        },
+        {
+          "Title": "move crates off a riverboat near {t}",
+          "Place": "the docks road by {t}",
+          "Crew": 4
+        },
+        {
+          "Title": "teach a rival bootlegger a lesson outside {t}",
+          "Place": "the bayou road outside {t}",
+          "Crew": 3
+        }
+      ]
+    },
+    {
+      "Id": "murfree",
+      "Name": "Murfree Brood",
+      "ModelTokens": [
+        "uniinbred"
+      ],
+      "AmbushBase": 0.1,
+      "EncounterRate": 0.6,
+      "KeepsToItsOwn": true,
+      "MixedFootSoldiers": true,
+      "NoTowns": true,
+      "DayWeight": 0.5,
+      "NightWeight": 1.8,
+      "DistrictWeight": 2.0,
+      "CombatMovement": 2,
+      "CombatAbility": 1,
+      "CombatRange": 0,
+      "AccuracyMax": 30,
+      "Faiths": [
+        "none"
+      ],
+      "MemberWealth": "Poor",
+      "MemberTrades": [
+        "Trapper",
+        "Hunter"
+      ],
+      "TroopModels": [
+        363815774
+      ],
+      "TroopAccuracy": 16,
+      "HasCamps": true,
+      "JobTowns": [
+        "Annesburg",
+        "Van Horn"
+      ],
+      "Relations": {
+        "skinners": -30
+      },
+      "LeaderName": "Old Esau Murfree",
+      "LeaderBlurb": "Nobody's seen the head of the Brood in years. The Brood answers to him anyway.",
+      "FirstNames": "BackwoodsFirst",
+      "LastNames": "MurfreeLast",
+      "Titles": "MurfreeTitles",
+      "Accent": [
+        124,
+        116,
+        72
+      ],
+      "Tiers": [
+        {
+          "Label": "ELDERS",
+          "MinRank": 4,
+          "Seats": 2
+        },
+        {
+          "Label": "HUNTERS",
+          "MinRank": 2,
+          "Seats": 4
+        },
+        {
+          "Label": "BROOD",
+          "MinRank": 1,
+          "Seats": 8
+        }
+      ],
+      "Seed": [
+        {
+          "Rank": 4,
+          "Count": 2,
+          "Models": [
+            "363815774"
+          ]
+        },
+        {
+          "Rank": 3,
+          "Count": 2,
+          "Models": [
+            "363815774"
+          ]
+        },
+        {
+          "Rank": 2,
+          "Count": 2,
+          "Models": [
+            "363815774"
+          ]
+        },
+        {
+          "Rank": 1,
+          "Count": 8,
+          "Models": [
+            "363815774"
+          ]
+        }
+      ],
+      "ExtraLongGuns": [
+        {
+          "Weapon": "1845102363",
+          "Name": "a double-barrel shotgun",
+          "Weight": 6
+        }
+      ],
+      "OnlyDistricts": [
+        "0x0AA5F25D",
+        "0x7285FF5F",
+        "0x7D3D174C"
+      ],
+      "Jobs": [
+        {
+          "Title": "take travellers off the road near {t}",
+          "Place": "the road near {t}",
+          "Crew": 3
+        },
+        {
+          "Title": "raid a homestead in the hills by {t}",
+          "Place": "a homestead by {t}",
+          "Crew": 4
+        },
+        {
+          "Title": "set a trap on the trail out of {t}",
+          "Place": "the trail out of {t}",
+          "Crew": 3
+        }
+      ]
+    },
+    {
+      "Id": "skinners",
+      "Name": "Skinner Brothers",
+      "ModelTokens": [
+        "unimountainmen",
+        "skinnerbrother"
+      ],
+      "AmbushBase": 0.1,
+      "EncounterRate": 0.6,
+      "KeepsToItsOwn": true,
+      "MixedFootSoldiers": true,
+      "NoTowns": true,
+      "DayWeight": 0.8,
+      "NightWeight": 1.4,
+      "CombatMovement": 2,
+      "CombatAbility": 2,
+      "CombatRange": 2,
+      "AccuracyMin": 30,
+      "Faiths": [
+        "none"
+      ],
+      "MemberWealth": "Poor",
+      "MemberTrades": [
+        "Trapper",
+        "Hunter"
+      ],
+      "TroopModels": [
+        2873015698
+      ],
+      "TroopLongGuns": true,
+      "TroopAccuracy": 30,
+      "HasCamps": true,
+      "JobTowns": [
+        "Blackwater",
+        "Strawberry"
+      ],
+      "LeaderName": "Elias Skinner",
+      "LeaderBlurb": "Eldest of the brothers. Every man who crosses Tall Trees leaves part of himself behind.",
+      "FirstNames": "AmericanFirst",
+      "LastNames": "SkinnerLast",
+      "Titles": "SkinnerTitles",
+      "Accent": [
+        146,
+        112,
+        84
+      ],
+      "Tiers": [
+        {
+          "Label": "BROTHERS",
+          "MinRank": 4,
+          "Seats": 2
+        },
+        {
+          "Label": "TRAPPERS",
+          "MinRank": 2,
+          "Seats": 4
+        },
+        {
+          "Label": "SKINNERS",
+          "MinRank": 1,
+          "Seats": 8
+        }
+      ],
+      "Seed": [
+        {
+          "Rank": 4,
+          "Count": 2,
+          "Models": [
+            "2873015698"
+          ]
+        },
+        {
+          "Rank": 3,
+          "Count": 2,
+          "Models": [
+            "2873015698"
+          ]
+        },
+        {
+          "Rank": 2,
+          "Count": 2,
+          "Models": [
+            "2873015698"
+          ]
+        },
+        {
+          "Rank": 1,
+          "Count": 8,
+          "Models": [
+            "2873015698"
+          ]
+        }
+      ],
+      "ExtraLongGuns": [
+        {
+          "Weapon": "1999408598",
+          "Name": "a bolt-action rifle",
+          "Weight": 4
+        },
+        {
+          "Weapon": "3724000286",
+          "Name": "a varmint rifle",
+          "Weight": 2
+        }
+      ],
+      "OnlyDistricts": [
+        "0x6467EF09",
+        "0x65BC9DB1",
+        "0x0C925868",
+        "0x1C68EA97"
+      ],
+      "DistrictWeights": {
+        "0x6467EF09": 2.0,
+        "0x65BC9DB1": 2.0,
+        "0x0C925868": 0.6,
+        "0x1C68EA97": 0.6
+      },
+      "Jobs": [
+        {
+          "Title": "hunt men in the woods past {t}",
+          "Place": "the woods past {t}",
+          "Crew": 3
+        },
+        {
+          "Title": "rob a wagon on the road out of {t}",
+          "Place": "the road out of {t}",
+          "Crew": 4
+        },
+        {
+          "Title": "leave a warning on the trail by {t}",
+          "Place": "the trail by {t}",
+          "Crew": 2
+        }
+      ]
+    },
+    {
+      "Id": "laramie",
+      "Name": "Laramie Gang",
+      "ModelTokens": [
+        "laramie",
+        "uniranchers"
+      ],
+      "LeaderModel": "cs_laramie",
+      "AmbushBase": 0.12,
+      "EncounterRate": 0.5,
+      "MixedFootSoldiers": true,
+      "DayWeight": 0.8,
+      "NightWeight": 1.4,
+      "CombatMovement": 2,
+      "CombatAbility": 1,
+      "CombatRange": 1,
+      "AccuracyMin": 20,
+      "MemberWealth": "Poor",
+      "MemberTrades": [
+        "Ranch hand",
+        "Drover"
+      ],
+      "TroopModels": [
+        3204687205
+      ],
+      "TroopAccuracy": 24,
+      "HasCamps": true,
+      "CrewExtra": 1,
+      "JobTowns": [
+        "Blackwater",
+        "Armadillo"
+      ],
+      "Relations": {
+        "skinners": -40,
+        "delobo": -45,
+        "army": -40,
+        "lemoyneraiders": -20,
+        "murfree": -20,
+        "klan": -10
+      },
+      "Era": 1907,
+      "LeaderName": "Wade Haskell",
+      "LeaderBlurb": "Runs the Laramie boys - he'll take a man's herd, and his life if he argues.",
+      "FirstNames": "AmericanFirst",
+      "LastNames": "AmericanLast",
+      "Titles": "LaramieTitles",
+      "Accent": [
+        184,
+        140,
+        80
+      ],
+      "Tiers": [
+        {
+          "Label": "FOREMEN",
+          "MinRank": 4,
+          "Seats": 2
+        },
+        {
+          "Label": "WRANGLERS",
+          "MinRank": 2,
+          "Seats": 4
+        },
+        {
+          "Label": "RUSTLERS",
+          "MinRank": 1,
+          "Seats": 8
+        }
+      ],
+      "Seed": [
+        {
+          "Rank": 4,
+          "Count": 2,
+          "Models": [
+            "3204687205"
+          ]
+        },
+        {
+          "Rank": 3,
+          "Count": 2,
+          "Models": [
+            "3204687205"
+          ]
+        },
+        {
+          "Rank": 2,
+          "Count": 2,
+          "Models": [
+            "3204687205"
+          ]
+        },
+        {
+          "Rank": 1,
+          "Count": 8,
+          "Models": [
+            "3204687205"
+          ]
+        }
+      ],
+      "ExtraSidearms": [
+        {
+          "Weapon": "379542007",
+          "Name": "a Cattleman",
+          "Weight": 4,
+          "MinRank": 1
+        }
+      ],
+      "ExtraLongGuns": [
+        {
+          "Weapon": "4111948705",
+          "Name": "a carbine",
+          "Weight": 3
+        }
+      ],
+      "OnlyDistricts": [
+        "0x35390B10",
+        "0xFCCF2B76",
+        "0x0C925868",
+        "0x1C68EA97",
+        "0x3108C492",
+        "0xCFC5B2D1"
+      ],
+      "DistrictWeights": {
+        "0x35390B10": 2.0,
+        "0xFCCF2B76": 2.0,
+        "0x0C925868": 1.6,
+        "0x1C68EA97": 1.6,
+        "0x3108C492": 0.5,
+        "0xCFC5B2D1": 0.5
+      },
+      "Jobs": [
+        {
+          "Title": "run off cattle from a ranch near {t}",
+          "Place": "a ranch near {t}",
+          "Crew": 4
+        },
+        {
+          "Title": "change the brands on stolen stock outside {t}",
+          "Place": "a corral outside {t}",
+          "Crew": 3
+        },
+        {
+          "Title": "hold up the stage on the road out of {t}",
+          "Place": "the road out of {t}",
+          "Crew": 4
+        },
+        {
+          "Title": "rob a homestead outside {t}",
+          "Place": "a homestead outside {t}",
+          "Crew": 3
+        }
+      ]
+    },
+    {
+      "Id": "delobo",
+      "Name": "Del Lobo Gang",
+      "ModelTokens": [
+        "unibanditos"
+      ],
+      "AmbushBase": 0.14,
+      "EncounterRate": 0.6,
+      "MixedFootSoldiers": true,
+      "CombatMovement": 2,
+      "CombatAbility": 1,
+      "CombatRange": 1,
+      "AccuracyMin": 20,
+      "Faiths": [
+        "Catholic"
+      ],
+      "MemberWealth": "Poor",
+      "MemberTrades": [
+        "Vaquero",
+        "Horse thief"
+      ],
+      "TroopModels": [
+        424175505
+      ],
+      "TroopAccuracy": 24,
+      "HasCamps": true,
+      "CrewExtra": 1,
+      "JobTowns": [
+        "Tumbleweed",
+        "Armadillo"
+      ],
+      "Relations": {
+        "laramie": -45,
+        "army": -50,
+        "skinners": -20
+      },
+      "Era": 1907,
+      "LeaderName": "Hector Sandoval",
+      "LeaderBlurb": "Jefe of the Del Lobos. Rides both sides of the river, answers to neither.",
+      "FirstNames": "MexicanFirst",
+      "LastNames": "MexicanLast",
+      "Titles": "DelLoboTitles",
+      "Accent": [
+        198,
+        92,
+        58
+      ],
+      "Tiers": [
+        {
+          "Label": "JEFES",
+          "MinRank": 4,
+          "Seats": 2
+        },
+        {
+          "Label": "PISTOLEROS",
+          "MinRank": 2,
+          "Seats": 4
+        },
+        {
+          "Label": "BANDIDOS",
+          "MinRank": 1,
+          "Seats": 8
+        }
+      ],
+      "Seed": [
+        {
+          "Rank": 4,
+          "Count": 2,
+          "Models": [
+            "424175505"
+          ]
+        },
+        {
+          "Rank": 3,
+          "Count": 2,
+          "Models": [
+            "424175505"
+          ]
+        },
+        {
+          "Rank": 2,
+          "Count": 2,
+          "Models": [
+            "424175505"
+          ]
+        },
+        {
+          "Rank": 1,
+          "Count": 8,
+          "Models": [
+            "424175505"
+          ]
+        }
+      ],
+      "ExtraSidearms": [
+        {
+          "Weapon": "2075992054",
+          "Name": "a Schofield",
+          "Weight": 3,
+          "MinRank": 1
+        }
+      ],
+      "ExtraLongGuns": [
+        {
+          "Weapon": "4111948705",
+          "Name": "a carbine",
+          "Weight": 4
+        }
+      ],
+      "OnlyDistricts": [
+        "0xF9831C72",
+        "0x2BE0ECA6",
+        "0x84D7AD0E",
+        "0xEB388009",
+        "0x8016C23F",
+        "0x2E79F240",
+        "0x35390B10",
+        "0xFCCF2B76"
+      ],
+      "DistrictWeights": {
+        "0xF9831C72": 1.5,
+        "0x2BE0ECA6": 1.5,
+        "0x84D7AD0E": 2.0,
+        "0xEB388009": 2.0,
+        "0x8016C23F": 2.0,
+        "0x2E79F240": 2.0,
+        "0x35390B10": 0.4,
+        "0xFCCF2B76": 0.4
+      },
+      "Jobs": [
+        {
+          "Title": "rob the stagecoach on the road out of {t}",
+          "Place": "the road out of {t}",
+          "Crew": 4
+        },
+        {
+          "Title": "raid a ranch outside {t}",
+          "Place": "a ranch outside {t}",
+          "Crew": 4
+        },
+        {
+          "Title": "hold up a train near {t}",
+          "Place": "the tracks near {t}",
+          "Crew": 4
+        },
+        {
+          "Title": "run guns across the river by {t}",
+          "Place": "the river by {t}",
+          "Crew": 3
+        }
+      ]
+    },
+    {
+      "Id": "nightfolk",
+      "Name": "Night Folk",
+      "ModelTokens": [
+        "uniswamp"
+      ],
+      "AmbushBase": 0.08,
+      "EncounterRate": 0.4,
+      "KeepsToItsOwn": true,
+      "Feuds": false,
+      "GangLifeEvents": false,
+      "OwnLifeOnly": true,
+      "MixedFootSoldiers": true,
+      "NoTowns": true,
+      "DayWeight": 0.2,
+      "NightWeight": 2.0,
+      "CombatMovement": 2,
+      "CombatAbility": 0,
+      "CombatRange": 0,
+      "AccuracyMax": 20,
+      "Faiths": [
+        "the old ways"
+      ],
+      "MemberWealth": "Poor",
+      "MemberTrades": [
+        "Trapper",
+        "Fisherman"
+      ],
+      "TroopModels": [
+        3759562400
+      ],
+      "TroopAccuracy": 14,
+      "HasCamps": true,
+      "JobTowns": [
+        "Saint Denis"
+      ],
+      "Relations": {
+        "lemoyneraiders": -20,
+        "army": -30,
+        "bronte": -35
+      },
+      "TurfWars": false,
+      "Era": 1907,
+      "LeaderName": "Silas Thibodeaux",
+      "LeaderBlurb": "Nobody has seen him in daylight. The bayou does what he says anyway.",
+      "FirstNames": "CajunFirst",
+      "LastNames": "CajunLast",
+      "Titles": "NightFolkTitles",
+      "Accent": [
+        104,
+        128,
+        108
+      ],
+      "Tiers": [
+        {
+          "Label": "ELDERS",
+          "MinRank": 4,
+          "Seats": 1
+        },
+        {
+          "Label": "STALKERS",
+          "MinRank": 2,
+          "Seats": 3
+        },
+        {
+          "Label": "FOLK",
+          "MinRank": 1,
+          "Seats": 8
+        }
+      ],
+      "Seed": [
+        {
+          "Rank": 4,
+          "Count": 1,
+          "Models": [
+            "3759562400"
+          ]
+        },
+        {
+          "Rank": 2,
+          "Count": 3,
+          "Models": [
+            "3759562400"
+          ]
+        },
+        {
+          "Rank": 1,
+          "Count": 8,
+          "Models": [
+            "3759562400"
+          ]
+        }
+      ],
+      "OnlyDistricts": [
+        "0x78BFE1AC",
+        "0xC920C87B"
+      ],
+      "Jobs": [
+        {
+          "Title": "take a traveller off the bayou road near {t}",
+          "Place": "the bayou road near {t}",
+          "Crew": 3
+        },
+        {
+          "Title": "leave a warning hanging in the trees by {t}",
+          "Place": "the trees by {t}",
+          "Crew": 2
+        },
+        {
+          "Title": "hang lanterns in the cypress along the road out of {t}",
+          "Place": "the road out of {t}",
+          "Crew": 2
+        },
+        {
+          "Title": "dig up a fresh grave in the cemetery at {t}",
+          "Place": "the cemetery at {t}",
+          "Crew": 2
+        },
+        {
+          "Title": "take a fishing boat off the water near {t}",
+          "Place": "the water near {t}",
+          "Crew": 2
+        },
+        {
+          "Title": "leave something on a doorstep in {t}",
+          "Place": "a doorstep in {t}",
+          "Crew": 1
+        }
+      ]
+    },
+    {
+      "Id": "pinkertons",
+      "Name": "Pinkerton Agency",
+      "ModelTokens": [
+        "pinlaw",
+        "pinkerton"
+      ],
+      "LeaderModel": "cs_edgarross",
+      "AmbushBase": 0.1,
+      "EncounterRate": 0.35,
+      "OrdersNotFeelings": true,
+      "UniformKit": true,
+      "NeedsReason": true,
+      "SquadsOnly": true,
+      "KeepsToItsOwn": true,
+      "Feuds": false,
+      "GangLifeEvents": false,
+      "WeightNorth": 1.1,
+      "WeightSouth": 1.2,
+      "CombatMovement": 2,
+      "CombatAbility": 2,
+      "CombatRange": 2,
+      "AccuracyMin": 48,
+      "AccuracyMax": 72,
+      "MemberWealth": "Comfortable",
+      "MemberTrades": [
+        "Detective",
+        "Pinkerton Agent"
+      ],
+      "TroopModels": [
+        "s_m_m_pinlaw_01",
+        "s_m_m_ambientblwpolice_01",
+        "s_m_m_ambientsdpolice_01"
+      ],
+      "TroopAccuracy": 38,
+      "FamilyNames": false,
+      "UnnamedKillsPerPoint": 1,
+      "JobTowns": [
+        "Blackwater",
+        "Saint Denis",
+        "Valentine",
+        "Rhodes",
+        "Strawberry",
+        "Annesburg"
+      ],
+      "Relations": {
+        "odriscoll": -70,
+        "lemoyneraiders": -65,
+        "murfree": -75,
+        "skinners": -80,
+        "delobo": -70,
+        "bronte": -30,
+        "army": 50,
+        "marshals": 65
+      },
+      "TurfWars": false,
+      "LoreLeaderProtected": true,
+      "LeaderName": "Agent Edgar Ross",
+      "LeaderBlurb": "Senior Pinkerton detective funded by Cornwall and Washington to eradicate outlaw gangs across the states.",
+      "FirstNames": "AmericanFirst",
+      "LastNames": "AmericanLast",
+      "Titles": [
+        "Agent",
+        "Detective",
+        "Inspector",
+        "Senior Agent",
+        "Special Agent",
+        "Operative",
+        "Investigator",
+        "Case Officer"
+      ],
+      "Accent": [
+        82,
+        112,
+        148
+      ],
+      "Tiers": [
+        {
+          "Label": "INSPECTORS",
+          "MinRank": 4,
+          "Seats": 2
+        },
+        {
+          "Label": "DETECTIVES",
+          "MinRank": 2,
+          "Seats": 5
+        },
+        {
+          "Label": "AGENTS",
+          "MinRank": 1,
+          "Seats": 10
+        }
+      ],
+      "Seed": [
+        {
+          "Rank": 4,
+          "Count": 2,
+          "Models": [
+            "s_m_m_pinlaw_01",
+            "s_m_m_ambientblwpolice_01"
+          ]
+        },
+        {
+          "Rank": 2,
+          "Count": 5,
+          "Models": [
+            "s_m_m_pinlaw_01",
+            "s_m_m_ambientsdpolice_01"
+          ]
+        },
+        {
+          "Rank": 1,
+          "Count": 10,
+          "Models": [
+            "s_m_m_pinlaw_01",
+            "s_m_m_ambientblwpolice_01",
+            "s_m_m_ambientsdpolice_01"
+          ]
+        }
+      ],
+      "Jobs": [
+        {
+          "Title": "question witnesses along the road to {t}",
+          "Place": "the road to {t}",
+          "Crew": 4
+        },
+        {
+          "Title": "guard a federal payroll stagecoach near {t}",
+          "Place": "the road outside {t}",
+          "Crew": 5
+        },
+        {
+          "Title": "serve a Pinkerton warrant in the hills by {t}",
+          "Place": "the hills by {t}",
+          "Crew": 4
+        }
+      ]
+    },
+    {
+      "Id": "marshals",
+      "Name": "U.S. Marshals",
+      "ModelTokens": [
+        "lawrural",
+        "valdeputy",
+        "asbdeputies"
+      ],
+      "AmbushBase": 0.1,
+      "EncounterRate": 0.35,
+      "OrdersNotFeelings": true,
+      "UniformKit": true,
+      "NeedsReason": true,
+      "SquadsOnly": true,
+      "KeepsToItsOwn": true,
+      "Feuds": false,
+      "GangLifeEvents": false,
+      "WeightNorth": 1.2,
+      "WeightSouth": 1.1,
+      "WeightElsewhere": 1.2,
+      "CombatMovement": 1,
+      "CombatAbility": 2,
+      "CombatRange": 2,
+      "AccuracyMin": 42,
+      "AccuracyMax": 68,
+      "MemberWealth": "Working",
+      "MemberTrades": [
+        "Deputy Marshal",
+        "County Sheriff"
+      ],
+      "TroopModels": [
+        "s_m_m_ambientlawrural_01",
+        "s_m_m_valdeputy_01",
+        "s_m_m_asbdeputies_01"
+      ],
+      "TroopAccuracy": 34,
+      "FamilyNames": false,
+      "UnnamedKillsPerPoint": 1,
+      "JobTowns": [
+        "Valentine",
+        "Rhodes",
+        "Strawberry",
+        "Blackwater",
+        "Tumbleweed",
+        "Armadillo",
+        "Annesburg"
+      ],
+      "Relations": {
+        "odriscoll": -65,
+        "lemoyneraiders": -60,
+        "murfree": -70,
+        "skinners": -75,
+        "delobo": -75,
+        "laramie": -40,
+        "army": 55,
+        "pinkertons": 65
+      },
+      "TurfWars": false,
+      "LoreLeaderProtected": true,
+      "LeaderName": "Marshal Tom Davies",
+      "LeaderBlurb": "Veteran U.S. Marshal holding federal warrant authority across the county lines and frontier territories.",
+      "FirstNames": "AmericanFirst",
+      "LastNames": "AmericanLast",
+      "Titles": [
+        "Marshal",
+        "Deputy Marshal",
+        "Sheriff",
+        "Chief Deputy",
+        "Warrant Officer",
+        "Ranger"
+      ],
+      "Accent": [
+        135,
+        120,
+        85
+      ],
+      "Tiers": [
+        {
+          "Label": "U.S. MARSHALS",
+          "MinRank": 4,
+          "Seats": 2
+        },
+        {
+          "Label": "SHERIFFS",
+          "MinRank": 2,
+          "Seats": 5
+        },
+        {
+          "Label": "DEPUTIES",
+          "MinRank": 1,
+          "Seats": 10
+        }
+      ],
+      "Seed": [
+        {
+          "Rank": 4,
+          "Count": 2,
+          "Models": [
+            "s_m_m_ambientlawrural_01",
+            "s_m_m_valdeputy_01"
+          ]
+        },
+        {
+          "Rank": 2,
+          "Count": 5,
+          "Models": [
+            "s_m_m_ambientlawrural_01",
+            "s_m_m_asbdeputies_01"
+          ]
+        },
+        {
+          "Rank": 1,
+          "Count": 10,
+          "Models": [
+            "s_m_m_ambientlawrural_01",
+            "s_m_m_valdeputy_01",
+            "s_m_m_asbdeputies_01"
+          ]
+        }
+      ],
+      "Jobs": [
+        {
+          "Title": "escort a prison wagon toward {t}",
+          "Place": "the road to {t}",
+          "Crew": 4
+        },
+        {
+          "Title": "ride a county warrant sweep outside {t}",
+          "Place": "the road outside {t}",
+          "Crew": 4
+        },
+        {
+          "Title": "post federal bounty notices in {t}",
+          "Place": "the road by {t}",
+          "Crew": 3
+        }
+      ]
+    }
+  ]
+}

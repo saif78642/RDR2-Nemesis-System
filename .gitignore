@@ -1,0 +1,24 @@
+# Build outputs and Roslyn response files
+[Bb]in/
+[Oo]bj/
+decompiled/NemesisMod/build.rsp
+
+# Backup and temporary files
+*.bak
+*.orig
+*.log
+*.tmp
+*.user
+*.suo
+
+# Visual Studio / Rider / VS Code directories
+.vs/
+.idea/
+.vscode/
+
+# Large REA reverse-engineering evidence bundle (~82 MB)
+rea_evidence_bundle.json
+
+# OS generated files
+Thumbs.db
+.DS_Store

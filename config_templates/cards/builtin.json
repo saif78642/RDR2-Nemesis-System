@@ -1,0 +1,460 @@
+﻿{
+  "About": "Encounter Cards (NemesisMod.Cards.cs). These are the mod's own encounters - edit them, or add cards in any other .json file here.",
+  "Cards": [
+    {
+      "Id": "idle",
+      "Title": "Out in the world",
+      "Notes": "He and his men are found doing something (a fire, a smoke, a bottle, keeping watch, on the move). They see you, he squares up.",
+      "Enabled": true,
+      "Stage": "idle",
+      "When": {
+        "Place": "wild"
+      },
+      "Weight": 35,
+      "IniWeight": "Ambush",
+      "Cast": {},
+      "BackDownHate": -5
+    },
+    {
+      "Id": "riders",
+      "Title": "Riders from behind",
+      "Notes": "You're riding: they come up behind you on horses and run you down.",
+      "Enabled": true,
+      "Stage": "riders",
+      "When": {
+        "Place": "wild",
+        "Mounted": true
+      },
+      "Weight": 25,
+      "IniWeight": "Riders",
+      "TensionMin": 50,
+      "Cast": {},
+      "Standoff": false,
+      "BackDownHate": -5
+    },
+    {
+      "Id": "ahead",
+      "Title": "Waiting on the road",
+      "Notes": "You're riding: they wait ahead of you on the road and open up within 45 m.",
+      "Enabled": true,
+      "Stage": "ahead",
+      "When": {
+        "Place": "wild",
+        "Mounted": true
+      },
+      "Weight": 15,
+      "IniWeight": "Ahead",
+      "Cast": {},
+      "Standoff": false,
+      "BackDownHate": -5
+    },
+    {
+      "Id": "sniper",
+      "Title": "Sniper on the high ground",
+      "Notes": "A murderous man takes the high ground with a rifle; only marked once he fires.",
+      "Enabled": true,
+      "Stage": "sniper",
+      "When": {
+        "Place": "wild",
+        "Tiers": [
+          "Murderous"
+        ]
+      },
+      "Weight": 10,
+      "IniWeight": "Sniper",
+      "TensionMin": 62,
+      "Cast": {},
+      "Standoff": false,
+      "BackDownHate": -5
+    },
+    {
+      "Id": "callout",
+      "Title": "Call-out in town",
+      "Notes": "In town: idling somewhere until he spots you, then he walks over and squares up.",
+      "Enabled": true,
+      "Stage": "callout",
+      "When": {
+        "Place": "town"
+      },
+      "Weight": 100,
+      "IniWeight": "Callout",
+      "Cast": {},
+      "BackDownHate": -5
+    },
+    {
+      "Id": "army-cavalry",
+      "Title": "Cavalry",
+      "Notes": "An Army officer rides with his troopers.",
+      "Enabled": true,
+      "Stage": "riders",
+      "When": {
+        "Place": "wild",
+        "Factions": [
+          "army"
+        ],
+        "MinRank": 4
+      },
+      "Weight": 100,
+      "Cast": {},
+      "Standoff": false,
+      "BackDownHate": -5
+    },
+    {
+      "Id": "army-road",
+      "Title": "Army on the road",
+      "Notes": "A squad waits ahead on the road.",
+      "Enabled": true,
+      "Stage": "ahead",
+      "When": {
+        "Place": "wild",
+        "Mounted": true,
+        "Factions": [
+          "army"
+        ],
+        "MaxRank": 3
+      },
+      "Weight": 50,
+      "Cast": {},
+      "Standoff": false,
+      "BackDownHate": -5
+    },
+    {
+      "Id": "army-squad",
+      "Title": "Army squad",
+      "Notes": "A squad on patrol. The Army doesn't talk: once they see you, it's on.",
+      "Enabled": true,
+      "Stage": "idle",
+      "When": {
+        "Place": "wild",
+        "Factions": [
+          "army"
+        ],
+        "MaxRank": 3
+      },
+      "Weight": 50,
+      "Cast": {},
+      "Standoff": false,
+      "Activity": "patrol",
+      "BackDownHate": -5
+    },
+    {
+      "Id": "skirmish",
+      "Title": "Faction skirmish",
+      "Notes": "Two factions going at each other ahead of you.",
+      "Enabled": true,
+      "Stage": "skirmish",
+      "When": {
+        "Place": "wild"
+      },
+      "Weight": 10,
+      "Chance": 15,
+      "IniChance": "SkirmishChance",
+      "Cast": {},
+      "BackDownHate": -5
+    },
+    {
+      "Id": "patrol",
+      "Title": "Patrol on the road",
+      "Notes": "A patrol marches past (or raids a camp nearby).",
+      "Enabled": true,
+      "Stage": "patrol",
+      "When": {
+        "Place": "wild"
+      },
+      "Weight": 10,
+      "Chance": 12,
+      "IniChance": "ArmyPatrolChance",
+      "Cast": {},
+      "BackDownHate": -5
+    },
+    {
+      "Id": "wapiti-ridge",
+      "Title": "Riders on the ridge",
+      "Notes": "Wapiti riders sit their horses on high ground and watch you go by, then ride off. Get close, fire near them or wait them out and they leave; shoot one and they come down at you.",
+      "Enabled": true,
+      "Stage": "ridge",
+      "Faction": "wapiti",
+      "When": {
+        "Place": "wild"
+      },
+      "Weight": 10,
+      "Chance": 12,
+      "Cast": {},
+      "BackDownHate": -5
+    },
+    {
+      "Id": "wapiti-patrol",
+      "Title": "Wapiti patrol",
+      "Notes": "Rarely, a few Wapiti riders cross their country. They leave you be unless you give them a reason - and they keep clear of gunfire.",
+      "Enabled": true,
+      "Stage": "patrol",
+      "Faction": "wapiti",
+      "When": {
+        "Place": "wild"
+      },
+      "Weight": 10,
+      "Chance": 4,
+      "Cast": {},
+      "BackDownHate": -5
+    },
+    {
+      "Id": "wapiti-band",
+      "Title": "Wapiti war party",
+      "Notes": "Once you've given them a reason: a war party of a named warrior and his men, found in their country.",
+      "Enabled": true,
+      "Stage": "idle",
+      "When": {
+        "Place": "wild",
+        "Factions": [
+          "wapiti"
+        ]
+      },
+      "Weight": 50,
+      "Cast": {},
+      "Taunts": [
+        "You were warned to leave us be.",
+        "You came back. That was a mistake.",
+        "You don't ride here any more."
+      ],
+      "Standoff": false,
+      "BackDownHate": -5
+    },
+    {
+      "Id": "wapiti-riders",
+      "Title": "Wapiti riders",
+      "Notes": "Once you've given them a reason: they ride you down.",
+      "Enabled": true,
+      "Stage": "riders",
+      "When": {
+        "Place": "wild",
+        "Mounted": true,
+        "Factions": [
+          "wapiti"
+        ]
+      },
+      "Weight": 50,
+      "Cast": {},
+      "Taunts": [
+        "There he is!",
+        "You should have stayed off our land."
+      ],
+      "Standoff": false,
+      "BackDownHate": -5
+    },
+    {
+      "Id": "war-warband",
+      "Title": "Warband",
+      "Notes": "In a war zone: riders of one side go past you to hit the other. Follow them and the fight is there.",
+      "Enabled": true,
+      "Stage": "warband",
+      "When": {
+        "Place": "wild"
+      },
+      "Weight": 10,
+      "Chance": 22,
+      "CooldownMinutes": 120,
+      "Cast": {},
+      "BackDownHate": -5
+    },
+    {
+      "Id": "war-ambush",
+      "Title": "Ambush in progress",
+      "Notes": "In a war zone: one side waits by a road ahead for the other's riders. Warn them, join in or ride on.",
+      "Enabled": true,
+      "Stage": "ambush",
+      "When": {
+        "Place": "wild"
+      },
+      "Weight": 10,
+      "Chance": 18,
+      "CooldownMinutes": 120,
+      "Cast": {},
+      "BackDownHate": -5
+    },
+    {
+      "Id": "war-aftermath",
+      "Title": "Just after",
+      "Notes": "In a war zone: you come upon a fight that has just ended - the dead, and the men still standing.",
+      "Enabled": true,
+      "Stage": "aftermath",
+      "When": {
+        "Place": "wild"
+      },
+      "Weight": 10,
+      "Chance": 18,
+      "CooldownMinutes": 120,
+      "Cast": {},
+      "BackDownHate": -5
+    },
+    {
+      "Id": "hunters",
+      "Title": "Bounty hunters",
+      "Notes": "A rich man who won't come himself pays bounty hunters. Disable to stop it.",
+      "Enabled": true,
+      "Stage": "hunters",
+      "When": {
+        "Place": "any"
+      },
+      "Weight": 100,
+      "Cast": {},
+      "BackDownHate": -5
+    },
+    {
+      "Id": "wagon",
+      "Title": "Up the road on a wagon",
+      "Notes": "He drives a wagon (a stagecoach if he's rich or an officer) up the road toward you, his men aboard. He climbs down when he sees you.",
+      "Enabled": true,
+      "Stage": "wagon",
+      "When": {
+        "Place": "wild",
+        "NotFactions": [
+          "army",
+          "wapiti"
+        ]
+      },
+      "Weight": 12,
+      "Cast": {
+        "Crew": [
+          1,
+          3
+        ]
+      },
+      "BackDownHate": -5,
+      "History": "CAME UP THE ROAD on a wagon ({place})"
+    },
+    {
+      "Id": "arc-ko-revenge",
+      "Title": "Back with friends",
+      "Notes": "You knocked him out last time: he comes back with more men, no talking.",
+      "Enabled": true,
+      "Stage": "idle",
+      "When": {
+        "Place": "wild",
+        "LastOutcome": [
+          "knocked out"
+        ]
+      },
+      "Weight": 70,
+      "Cast": {
+        "Crew": [
+          3,
+          5
+        ]
+      },
+      "Taunts": [
+        "You put me in the dirt, {name}. Brought some friends this time.",
+        "Remember me? I remember you."
+      ],
+      "Standoff": false,
+      "BackDownHate": -5,
+      "History": "CAME BACK WITH MORE MEN after you knocked him out ({place})"
+    },
+    {
+      "Id": "arc-back-from-dead",
+      "Title": "Back from the dead",
+      "Notes": "You left him for dead: he walks up to show you the scar.",
+      "Enabled": true,
+      "Stage": "idle",
+      "When": {
+        "Place": "wild",
+        "LastOutcome": [
+          "cheated death"
+        ]
+      },
+      "Weight": 80,
+      "Cast": {},
+      "Taunts": [
+        "Surprised? You should've made sure.",
+        "Takes more than that to kill me."
+      ],
+      "BackDownHate": -5,
+      "History": "CAME BACK FROM THE DEAD for you ({place})"
+    },
+    {
+      "Id": "arc-squared",
+      "Title": "Squaring it",
+      "Notes": "He surrendered / backed down last time: he comes alone, says his piece and goes - unless you start it.",
+      "Enabled": true,
+      "Stage": "idle",
+      "When": {
+        "Place": "wild",
+        "Tempers": [
+          "Proud",
+          "Loyal",
+          "Cold",
+          "Drifter"
+        ],
+        "LastOutcome": [
+          "surrendered",
+          "backed off"
+        ]
+      },
+      "Weight": 60,
+      "Cast": {
+        "Crew": [
+          0,
+          0
+        ]
+      },
+      "Taunts": [
+        "You let me walk. I came to say it - we're square. This once.",
+        "No trouble. Just wanted you to know I ain't forgot."
+      ],
+      "StandoffSeconds": 18,
+      "BackDownHate": -12,
+      "History": "CAME TO SQUARE IT with you - no fight ({place})",
+      "EndsPeacefully": true
+    },
+    {
+      "Id": "arc-runner",
+      "Title": "Tired of chasing",
+      "Notes": "He got away from you twice running: he brings riders.",
+      "Enabled": true,
+      "Stage": "riders",
+      "When": {
+        "Place": "wild",
+        "Mounted": true,
+        "LastOutcome": [
+          "got away"
+        ],
+        "MinArcStep": 2
+      },
+      "Weight": 60,
+      "Cast": {
+        "Crew": [
+          3,
+          4
+        ]
+      },
+      "Taunts": [
+        "You keep running, {name}. Not this time."
+      ],
+      "Standoff": false,
+      "BackDownHate": -5,
+      "History": "RODE YOU DOWN after you got away twice ({place})"
+    },
+    {
+      "Id": "arc-killer",
+      "Title": "Again?",
+      "Notes": "He killed you last time: he waits on the road, cocky.",
+      "Enabled": true,
+      "Stage": "ahead",
+      "When": {
+        "Place": "wild",
+        "Mounted": true,
+        "LastOutcome": [
+          "killed you"
+        ]
+      },
+      "Weight": 40,
+      "Cast": {},
+      "Taunts": [
+        "Back for more? Last time didn't take?",
+        "I killed you once already."
+      ],
+      "Standoff": false,
+      "BackDownHate": -5,
+      "History": "WAITED ON THE ROAD - he killed you last time ({place})"
+    }
+  ]
+}

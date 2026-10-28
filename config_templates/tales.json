@@ -1,0 +1,632 @@
+﻿{
+  "About": "The world's past (History.cs). lore: Year (absolute) or YearsAgo, Month, Title, Place, Gang (faction id or null), Lines, When (text instead of a date). tales: per faction id, the raids / fights its men rode in - Kind RAID / CLASH / DUTY, Title with {place}, Places, Foe (faction id or null), HeardPercent, Line.",
+  "Lore": [
+    {
+      "Year": 1889,
+      "Month": 1,
+      "Title": "The O'Driscoll - Van der Linde feud",
+      "Place": "",
+      "Gang": "odriscoll",
+      "Lines": [
+        "Dutch van der Linde killed Colm O'Driscoll's brother; Colm killed Dutch's woman, Annabelle.",
+        "Neither man has forgotten - and neither gang lets the other ride past in peace."
+      ],
+      "When": "About 1889"
+    },
+    {
+      "Year": 1893,
+      "Month": 5,
+      "Title": "The Panic of '93",
+      "Place": "across the country",
+      "Lines": [
+        "Banks fail from New York to Saint Denis; farms and stores go under by the hundred."
+      ]
+    },
+    {
+      "YearsAgo": 5,
+      "Month": 3,
+      "Title": "Sisika Penitentiary fills up",
+      "Place": "Sisika Penitentiary",
+      "Lines": [
+        "The island prison takes every road agent and rustler the law can catch."
+      ]
+    },
+    {
+      "YearsAgo": 4,
+      "Month": 6,
+      "Title": "The Lemoyne Raiders ride",
+      "Place": "Lemoyne",
+      "Gang": "lemoyneraiders",
+      "Lines": [
+        "Old Confederates who never laid down their arms ride the bayous and the fields, burning out northern money."
+      ]
+    },
+    {
+      "YearsAgo": 4,
+      "Month": 2,
+      "Title": "Annesburg's coal",
+      "Place": "Annesburg",
+      "Lines": [
+        "Men go down the mine poor and come up poorer."
+      ]
+    },
+    {
+      "YearsAgo": 3,
+      "Month": 9,
+      "Title": "The Braithwaites and the Grays",
+      "Place": "Rhodes",
+      "Lines": [
+        "Two old Scarlett Meadows families and an older feud - over land, over the war, over moonshine."
+      ]
+    },
+    {
+      "YearsAgo": 3,
+      "Month": 4,
+      "Title": "Angelo Bronte's Saint Denis",
+      "Place": "Saint Denis",
+      "Lines": [
+        "Bronte's men run the docks, the saloons and half the police."
+      ]
+    },
+    {
+      "YearsAgo": 2,
+      "Month": 7,
+      "Title": "Cornwall's railroad",
+      "Place": "the territories",
+      "Lines": [
+        "Leviticus Cornwall's money lays track, drills oil and boils kerosene - and pays the men who do it in pennies."
+      ]
+    },
+    {
+      "YearsAgo": 2,
+      "Month": 10,
+      "Title": "Night riders in Scarlett Meadows",
+      "Place": "Scarlett Meadows",
+      "Gang": "klan",
+      "Lines": [
+        "Hooded fools burn crosses in the dark - and scatter the moment anyone shoots back."
+      ]
+    },
+    {
+      "YearsAgo": 1,
+      "Month": 5,
+      "Title": "Fort Wallace",
+      "Place": "Fort Wallace",
+      "Gang": "army",
+      "Lines": [
+        "Colonel Henry Favours holds Ambarino for the Army; his patrols ride the Cumberland Forest roads."
+      ]
+    },
+    {
+      "YearsAgo": 1,
+      "Month": 8,
+      "Title": "The Wapiti reservation",
+      "Place": "Ambarino",
+      "Gang": "army",
+      "Lines": [
+        "The Army hems the Wapiti onto their reservation - and oil men are already eyeing the land."
+      ]
+    },
+    {
+      "YearsAgo": 1,
+      "Month": 9,
+      "Title": "Cattle money in Valentine",
+      "Place": "Valentine",
+      "Lines": [
+        "The stockyards are full and Smithfield's Saloon never closes."
+      ]
+    },
+    {
+      "Year": 1899,
+      "Month": 2,
+      "Title": "The Blackwater ferry job",
+      "Place": "Blackwater",
+      "Lines": [
+        "The Van der Linde gang's robbery on the Blackwater ferry goes wrong - a woman is killed, and the gang runs for the mountains.",
+        "Pinkerton agents take the case; there's a price on every Van der Linde head."
+      ]
+    }
+  ],
+  "Tales": {
+    "odriscoll": [
+      {
+        "Kind": "RAID",
+        "Title": "O'Driscolls hit a homestead near {place}",
+        "Places": [
+          "Emerald Ranch",
+          "the Heartlands",
+          "Big Valley",
+          "Cumberland Forest"
+        ],
+        "HeardPercent": 80,
+        "Line": "They took the horses and whatever wasn't nailed down."
+      },
+      {
+        "Kind": "RAID",
+        "Title": "Stagecoach robbed on the road to {place}",
+        "Places": [
+          "Valentine",
+          "Strawberry",
+          "Annesburg"
+        ],
+        "HeardPercent": 90,
+        "Line": "The driver lived to tell the sheriff it was O'Driscolls."
+      },
+      {
+        "Kind": "CLASH",
+        "Title": "O'Driscolls and Van der Linde's men trade shots near {place}",
+        "Places": [
+          "Big Valley",
+          "the Heartlands",
+          "Strawberry"
+        ],
+        "HeardPercent": 60,
+        "Line": "The old feud flares up again; both sides ride off cursing."
+      },
+      {
+        "Kind": "CLASH",
+        "Title": "O'Driscolls and Raiders fight over a moonshine run near {place}",
+        "Places": [
+          "Rhodes",
+          "the Heartlands"
+        ],
+        "Foe": "lemoyneraiders",
+        "HeardPercent": 70,
+        "Line": "Nobody got the moonshine."
+      },
+      {
+        "Kind": "CLASH",
+        "Title": "Army patrol ambushed by O'Driscolls in {place}",
+        "Places": [
+          "Cumberland Forest",
+          "the Grizzlies"
+        ],
+        "Foe": "army",
+        "HeardPercent": 85,
+        "Line": "The Army swore it would be back with more men."
+      }
+    ],
+    "lemoyneraiders": [
+      {
+        "Kind": "RAID",
+        "Title": "Raiders burn out a carpetbagger's store in {place}",
+        "Places": [
+          "Rhodes",
+          "Scarlett Meadows"
+        ],
+        "HeardPercent": 90,
+        "Line": "They left a Union flag nailed to the door, burning."
+      },
+      {
+        "Kind": "CLASH",
+        "Title": "Raiders and the Army trade fire in {place}",
+        "Places": [
+          "Bluewater Marsh",
+          "Scarlett Meadows",
+          "Bayou Nwa"
+        ],
+        "Foe": "army",
+        "HeardPercent": 85,
+        "Line": "The soldiers held the road; the Raiders melted into the swamp."
+      },
+      {
+        "Kind": "RAID",
+        "Title": "Payroll wagon taken outside {place}",
+        "Places": [
+          "Saint Denis",
+          "Rhodes"
+        ],
+        "HeardPercent": 80,
+        "Line": "The guards were found tied to a tree, alive and furious."
+      },
+      {
+        "Kind": "RAID",
+        "Title": "Raiders run a Yankee surveyor out of {place}",
+        "Places": [
+          "Scarlett Meadows",
+          "Bluewater Marsh"
+        ],
+        "HeardPercent": 60,
+        "Line": "His instruments are still at the bottom of the river."
+      }
+    ],
+    "army": [
+      {
+        "Kind": "DUTY",
+        "Title": "Army escorts a Cornwall payroll through {place}",
+        "Places": [
+          "Roanoke Ridge",
+          "Cumberland Forest"
+        ],
+        "HeardPercent": 50,
+        "Line": "Not a shot fired - this time."
+      },
+      {
+        "Kind": "CLASH",
+        "Title": "Army column hunts O'Driscolls in {place}",
+        "Places": [
+          "Cumberland Forest",
+          "the Grizzlies"
+        ],
+        "Foe": "odriscoll",
+        "HeardPercent": 80,
+        "Line": "They burned an empty camp and two men's pride."
+      },
+      {
+        "Kind": "DUTY",
+        "Title": "Fort Wallace drills new recruits through the winter",
+        "Places": [
+          "Fort Wallace"
+        ],
+        "HeardPercent": 30,
+        "Line": "Half of them had never held a rifle."
+      }
+    ],
+    "wapiti": [
+      {
+        "Kind": "RAID",
+        "Title": "Wapiti riders take back horses from an Army corral near {place}",
+        "Places": [
+          "Fort Wallace",
+          "Cumberland Forest"
+        ],
+        "Foe": "army",
+        "HeardPercent": 75,
+        "Line": "They were gone before the bugle sounded. Nobody was hurt."
+      },
+      {
+        "Kind": "CLASH",
+        "Title": "Soldiers and Wapiti trade arrows and bullets at {place}",
+        "Places": [
+          "the Dakota River",
+          "Cumberland Forest"
+        ],
+        "Foe": "army",
+        "HeardPercent": 80,
+        "Line": "Nobody would say who fired first."
+      },
+      {
+        "Kind": "DUTY",
+        "Title": "A Wapiti hunting party rides out into {place}",
+        "Places": [
+          "the Grizzlies",
+          "Ambarino"
+        ],
+        "HeardPercent": 35,
+        "Line": "Enough meat for the families, for a while."
+      }
+    ],
+    "klan": [
+      {
+        "Kind": "RAID",
+        "Title": "Hooded riders burn a field in {place}",
+        "Places": [
+          "Scarlett Meadows",
+          "Bluewater Marsh"
+        ],
+        "HeardPercent": 70,
+        "Line": "The farmer and his sons put the fire out by dawn."
+      },
+      {
+        "Kind": "CLASH",
+        "Title": "A Klan rally broken up in {place} - the hoods ran",
+        "Places": [
+          "Scarlett Meadows",
+          "Roanoke Ridge"
+        ],
+        "HeardPercent": 80,
+        "Line": "Somebody fired one shot. That was enough."
+      }
+    ],
+    "bronte": [
+      {
+        "Kind": "RAID",
+        "Title": "Bronte's men lean on a shopkeeper in {place}",
+        "Places": [
+          "Saint Denis",
+          "the Saint Denis docks"
+        ],
+        "HeardPercent": 70,
+        "Line": "He paid. The ones who don't pay find their windows broken."
+      },
+      {
+        "Kind": "CLASH",
+        "Title": "Bronte's men and the Lemoyne Raiders shoot it out over a shipment near {place}",
+        "Places": [
+          "Saint Denis",
+          "Bayou Nwa"
+        ],
+        "Foe": "lemoyneraiders",
+        "HeardPercent": 75,
+        "Line": "The crates went into the bayou. Both sides blamed the other."
+      },
+      {
+        "Kind": "DUTY",
+        "Title": "A dock foreman who talked to the papers is fished out of {place}",
+        "Places": [
+          "the Lannahechee River",
+          "the bayou"
+        ],
+        "HeardPercent": 85,
+        "Line": "The police called it an accident. Everyone knew better."
+      },
+      {
+        "Kind": "RAID",
+        "Title": "Bronte's men take over a gambling house in {place}",
+        "Places": [
+          "Saint Denis"
+        ],
+        "HeardPercent": 60,
+        "Line": "The old owner left town the same night."
+      }
+    ],
+    "murfree": [
+      {
+        "Kind": "RAID",
+        "Title": "Travellers go missing on the road through {place}",
+        "Places": [
+          "Roanoke Ridge",
+          "Brandywine Drop",
+          "Beaver Hollow"
+        ],
+        "HeardPercent": 80,
+        "Line": "Their wagon was found. They weren't."
+      },
+      {
+        "Kind": "RAID",
+        "Title": "The Brood drags a family off a homestead near {place}",
+        "Places": [
+          "Roanoke Ridge",
+          "Annesburg"
+        ],
+        "HeardPercent": 85,
+        "Line": "The bounty posters went up in Annesburg. Nobody went in after them."
+      },
+      {
+        "Kind": "CLASH",
+        "Title": "Murfrees and O'Driscolls cross paths in {place}",
+        "Places": [
+          "Roanoke Ridge",
+          "Kamassa River"
+        ],
+        "Foe": "odriscoll",
+        "HeardPercent": 60,
+        "Line": "The O'Driscolls didn't go back that way."
+      }
+    ],
+    "laramie": [
+      {
+        "Kind": "RAID",
+        "Title": "Laramie boys run off a herd from {place}",
+        "Places": [
+          "Hennigan's Stead",
+          "the Great Plains",
+          "Big Valley"
+        ],
+        "HeardPercent": 80,
+        "Line": "The brands were changed before the owners woke."
+      },
+      {
+        "Kind": "RAID",
+        "Title": "Stagecoach held up on the road to {place}",
+        "Places": [
+          "Blackwater",
+          "Armadillo",
+          "MacFarlane's Ranch"
+        ],
+        "HeardPercent": 85,
+        "Line": "The driver said they laughed the whole time."
+      },
+      {
+        "Kind": "CLASH",
+        "Title": "Laramie men and Del Lobos shoot it out over stolen horses near {place}",
+        "Places": [
+          "Cholla Springs",
+          "Hennigan's Stead"
+        ],
+        "Foe": "delobo",
+        "HeardPercent": 75,
+        "Line": "Nobody kept the horses."
+      },
+      {
+        "Kind": "CLASH",
+        "Title": "Laramie rustlers and the Skinner Brothers cross paths in {place}",
+        "Places": [
+          "the Great Plains",
+          "Tall Trees"
+        ],
+        "Foe": "skinners",
+        "HeardPercent": 60,
+        "Line": "The rustlers rode south the next morning."
+      },
+      {
+        "Kind": "CRIME",
+        "Title": "A rancher near {place} finds his herd wearing somebody else's brand",
+        "Places": [
+          "Hennigan's Stead",
+          "the Great Plains"
+        ],
+        "HeardPercent": 70,
+        "Line": "He couldn't prove a thing."
+      },
+      {
+        "Kind": "CRIME",
+        "Title": "A stock detective found dead on the trail near {place}",
+        "Places": [
+          "Hennigan's Stead",
+          "Big Valley"
+        ],
+        "HeardPercent": 60,
+        "Line": "The cattlemen's association sent two more."
+      }
+    ],
+    "delobo": [
+      {
+        "Kind": "RAID",
+        "Title": "Del Lobos rob a train near {place}",
+        "Places": [
+          "Rio Bravo",
+          "Cholla Springs",
+          "Gaptooth Ridge"
+        ],
+        "HeardPercent": 85,
+        "Line": "They were back across the river before the marshal heard."
+      },
+      {
+        "Kind": "RAID",
+        "Title": "A ranch outside {place} burned by the Del Lobos",
+        "Places": [
+          "Armadillo",
+          "Tumbleweed"
+        ],
+        "HeardPercent": 80,
+        "Line": "The rancher wouldn't pay. Now he has no ranch."
+      },
+      {
+        "Kind": "CLASH",
+        "Title": "Del Lobos and the Army trade shots in {place}",
+        "Places": [
+          "Rio Bravo",
+          "Gaptooth Ridge"
+        ],
+        "Foe": "army",
+        "HeardPercent": 70,
+        "Line": "The soldiers lost two men and the trail."
+      },
+      {
+        "Kind": "RAID",
+        "Title": "Guns run across the river near {place}",
+        "Places": [
+          "Rio Bravo",
+          "Gaptooth Ridge"
+        ],
+        "HeardPercent": 50,
+        "Line": "Nobody saw anything. Nobody ever does."
+      },
+      {
+        "Kind": "RAID",
+        "Title": "The bank in {place} robbed in broad daylight",
+        "Places": [
+          "Armadillo",
+          "Tumbleweed"
+        ],
+        "HeardPercent": 75,
+        "Line": "The Del Lobos rode out shooting in the air."
+      },
+      {
+        "Kind": "CLASH",
+        "Title": "Del Lobos and rurales fight at the river near {place}",
+        "Places": [
+          "Rio Bravo"
+        ],
+        "HeardPercent": 55,
+        "Line": "The river ran with it for a day."
+      }
+    ],
+    "nightfolk": [
+      {
+        "Kind": "RAID",
+        "Title": "A traveller vanishes on the bayou road near {place}",
+        "Places": [
+          "Bayou Nwa",
+          "Lagras",
+          "Saint Denis"
+        ],
+        "HeardPercent": 70,
+        "Line": "His horse came home without him."
+      },
+      {
+        "Kind": "RAID",
+        "Title": "Bodies found hanging in the cypress near {place}",
+        "Places": [
+          "Bayou Nwa",
+          "Shady Belle"
+        ],
+        "HeardPercent": 80,
+        "Line": "Nobody in Saint Denis would go and cut them down."
+      },
+      {
+        "Kind": "CLASH",
+        "Title": "Raiders ride into the swamp after the Night Folk near {place}",
+        "Places": [
+          "Bayou Nwa"
+        ],
+        "Foe": "lemoyneraiders",
+        "HeardPercent": 60,
+        "Line": "Fewer rode out than rode in."
+      },
+      {
+        "Kind": "CRIME",
+        "Title": "Lanterns in the trees along the road near {place}, three nights running",
+        "Places": [
+          "Bayou Nwa",
+          "Lagras"
+        ],
+        "HeardPercent": 60,
+        "Line": "Nobody took that road after dark for a month."
+      },
+      {
+        "Kind": "CRIME",
+        "Title": "A fishing boat found drifting near {place}, nobody aboard",
+        "Places": [
+          "Bayou Nwa",
+          "Lagras"
+        ],
+        "HeardPercent": 65,
+        "Line": "The nets were cut. The lantern was still lit."
+      },
+      {
+        "Kind": "CRIME",
+        "Title": "A grave dug up in the night near {place}",
+        "Places": [
+          "Saint Denis",
+          "Shady Belle"
+        ],
+        "HeardPercent": 55,
+        "Line": "Whatever was taken, the family won't say."
+      },
+      {
+        "Kind": "CRIME",
+        "Title": "A Saint Denis family wakes to find something left on their doorstep",
+        "Places": [
+          "Saint Denis"
+        ],
+        "HeardPercent": 45,
+        "Line": "They left the city within the week."
+      }
+    ],
+    "skinners": [
+      {
+        "Kind": "RAID",
+        "Title": "A trapper's camp found stripped in {place}",
+        "Places": [
+          "Tall Trees",
+          "Manzanita Post",
+          "the Great Plains"
+        ],
+        "HeardPercent": 75,
+        "Line": "The Skinner Brothers' mark was cut into a tree beside it."
+      },
+      {
+        "Kind": "RAID",
+        "Title": "Settlers scalped on the trail through {place}",
+        "Places": [
+          "Tall Trees",
+          "Aurora Basin"
+        ],
+        "HeardPercent": 85,
+        "Line": "Blackwater put a price on the brothers' heads. Nobody collected."
+      },
+      {
+        "Kind": "CLASH",
+        "Title": "Skinner Brothers and bounty hunters fight in {place}",
+        "Places": [
+          "Tall Trees",
+          "the Great Plains"
+        ],
+        "HeardPercent": 70,
+        "Line": "Only one of the hunters rode out."
+      }
+    ]
+  }
+}

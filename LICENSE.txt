@@ -1,0 +1,34 @@
+enRAGE - a nemesis system for Red Dead Redemption 2 (Story Mode)
+
+Copyright (c) 2026 the enRAGE author. All rights reserved, except as allowed below.
+
+YOU MAY
+- Use enRAGE in your own game.
+- Translate enRAGE and share your translation.
+- Modify enRAGE for your own game - its settings, its content files, and anything you change after decompiling it - and share
+  your changes as a patch (an edited file or a set of changes that needs enRAGE itself to work).
+- Decompile enRAGE to learn from it or to make your own patch.
+
+When you share a translation or a patch:
+- credit enRAGE with a link to its official Nexus Mods page;
+- don't charge for it or put it behind a paywall;
+- say clearly that it is unofficial, so problems with it come to you, not to enRAGE.
+
+YOU MAY NOT
+- Re-upload enRAGE itself (NemesisMod.dll or the full download) anywhere else - link to the official Nexus Mods page instead.
+- Share a modified copy of the whole mod. Share a patch.
+- Publish or share enRAGE's source code, decompiled or otherwise.
+- Use parts of enRAGE (its code, its content files, its text) in another mod or project.
+- Sell enRAGE or anything made from it.
+- Present enRAGE, or any part of it, as your own work.
+
+Third-party software and data that enRAGE uses or ships with keep their own licences - see THIRD-PARTY.txt. (Newtonsoft.Json
+is MIT-licensed; ScriptHookRDR2 and ScriptHookRDR2DotNet are not part of enRAGE and are not covered by this notice.)
+
+enRAGE is a fan-made, unofficial mod. It is not affiliated with or endorsed by Rockstar Games or Take-Two Interactive.
+Red Dead Redemption 2 is their property. enRAGE is for Story Mode only; Script Hook closes the game in Red Dead Online.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL ANYONE WHO MADE OR SHARED IT BE LIABLE FOR
+ANY CLAIM, DAMAGES OR OTHER LIABILITY - INCLUDING LOST SAVE GAMES OR MOD DATA - ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR ITS USE. Back up your saves. Use at your own risk.

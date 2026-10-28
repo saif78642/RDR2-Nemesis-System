@@ -1,0 +1,235 @@
+enRAGE changelog
+================
+
+v0.9.5.3 - a patch
+------------------
+
+NEW
+- Lock lore leaders (setup card, Your story; on by default). Turn it off and the outfits' leaders, Colm O'Driscoll, Angelo Bronte, Lindsey Wofford, Rains Fall and the rest, are out in the world. Each holds his outfit's hideout, his men can give it up under questioning, and killing him leaves his seat open.
+- Hold a gun on a man and the armed men with him (his patrol, his crew, his gang) draw and cover you. They won't fire first, but shoot, hurt one of them or have him go for you and it's a fight. When the talk ends quietly they lower their guns and carry on.
+- Men the mod lets go together (the last of a skirmish, an encounter's crew after a quiet end, a rival's men) still answer for each other for a few minutes. Go for one and the rest within reach fight you.
+- In chapter 3, while the story takes your guns in Rhodes, the mod leaves Rhodes alone: no encounters, no one turning up to fight you, no saloon shootouts. A fight that follows you in breaks off. Funerals still go ahead.
+- Mounted guns (Gatlings, the Maxim, cannons) show on the X-ray, and a machine gun round tears a man up the way it should. Their kills read as riddling a man.
+- An animal's X-ray comes true. A brain, heart, broken neck or severed spine shot drops it where it stands, both lungs bring it down within seconds, and the pelt stays as your shot left it. Your own horse, legendary animals and mission animals are never dropped this way.
+- Telegrams read like real ones: a Western Union form on the newspaper's paper, with the message typed on it in ink.
+- New name card setting, On target: a name shows only on the person you aim at or focus on.
+- New setting, TownsfolkReactions (Alt+F11, under People): turn it off and ordinary people react to you only as the game makes them.
+- After a crash, enRAGE keeps a lastcrash.txt in its data folder saying what it was doing. Please send it with your logs.
+- New on the settings card, Your story: Angelo Bronte. Like Lindsey Wofford, you tell the mod what's become of him in your story, since it can't always tell.
+- For modders and testers: the debug spawner can show every place the mod uses on the map.
+
+CHANGED
+- Outlaws are outlaws to the game itself. Attack or fight one of the mod's outlaws and he counts as one of the game's own gang men: killing him is no crime and nobody turns witness. A townsman who pulls a gun or a knife on you is fair game too. The mod no longer quietly takes back your bounty or wanted level.
+- A man who isn't scared of you won't talk. He stands his ground at gunpoint instead of putting his hands up, stays put when you lower your gun, won't take your money, and if you push too far he goes for you. Scare him and he talks as before.
+- "Let him go" is only offered to a man who's scared of you. Otherwise "That's all." ends the talk and you both go your way. Afterwards a man walks off or goes back to what he was doing, and only runs if he's terrified.
+- A man who slips your grip is no longer snapped back into it. The questioning closes, and if you grab him again yourself it picks up where it left off.
+- Funerals: the marker sits on the grave and stays until the mourners are there, a cemetery holds one funeral a day, and the mourners walk in from out of sight and face the grave. No random encounter turns up at a funeral (or anything else planned) you're waiting for, and if something holds it up it waits a little longer for you.
+- O'Driscoll ranks: a Captain now outranks a Lieutenant. Captains hold the hideouts, Lieutenants the camps.
+- The mod remembers more: the X-ray keeps 2000 people and 2000 animals (was 300 each), the World tab 5000 events (was 1500), 2000 people are remembered (was 1000) and the Fallen row holds 200 (was 60).
+- Changing Lindsey Wofford, Angelo Bronte or Lock lore leaders on the settings card asks you to confirm first, and a leader who died in your game can't be brought back there.
+- Saint Denis: the Bronte rail yard camp is gone (its money moves to another camp), and so is the Raiders' camp beside it. A Bronte camp stands a little up the street instead. A camp spot you place in game is always used, even near another camp.
+
+FIXED
+- Letting a man go no longer gets his crew shooting at you (a button press as the talk closed was read as antagonizing him), and a man let go while tied up leaves once he's cut free.
+- A man who swings at you first in town no longer gets you fined for the brawl. The lawman arrests him instead.
+- The witness the mod says told the law is now one who saw the crime you were charged for.
+- A gang's roadblock no longer stops you and lets you by when one of their patrols is already after you.
+- A wounded enemy left alive no longer keeps you "in combat" and locked out of shops, the post office, the coach and camp.
+- Busy people (sweeping, smoking, at cards) no longer drop what they're holding when they recognise you or you greet them, card players stay at the table, and things no longer vanish and reappear in someone's hands in front of you.
+- Choking a man to death in a fight kills him ("Strangled"), grabbing a man and punching him counts as punches, stomps line up with the game ("Stomped to death"), and witnesses count how an attacker died as self-defence. Knife executions show where the knife went.
+- Alligators and other big animals die to a rifle headshot again, with a clean pelt. An animal's X-ray no longer shows a graze, a fire bottle or a stray pellet as a fatal wound while it runs on, and a one-hit kill reads "killed outright", not "gut shot".
+- Killing a Klansman no longer costs honor. Soldiers and the Wapiti still do.
+- A camp no longer vanishes while its boss is out; his men hold it, with its supplies and money. Town camps no longer put men on roofs or inside buildings, and supply camps come up with their horses more often.
+- A war patrol that hits a camp spreads out, looks the place over and rides off, instead of sitting on its horses. Its news names the right outfits and the camp, and wiping the camp out before it gets there is credited to you.
+- A nemesis you leave tied up in front of a train (or in the river, off a cliff) counts as your kill.
+- After you respawn, the mod's riders and wagon men near you are cleaned up instead of left in the world.
+- Helping a stranger on the road only counts once you've actually helped. Robbing, threatening or riding off cancels it.
+- The people in a stranger mission's scene are left to the game until it's over, even after the mission marker goes.
+- Eugene Wegner, his daughter Miriam and Seamus at Emerald Ranch show their own names and never become nemeses.
+- Laid-up men only appear at doctors you can walk into (Valentine, Saint Denis) or at hotel beds you've marked.
+- Switching to a later save no longer ends a war in the world you left, and no longer mixes up who's who on the X-ray.
+- The World tab shows one line for a town fight you win, not one per man, the war page's lists and counts agree, and messages no longer say "a The Klan".
+- The menu key tells you why when it can't open, editing NemesisMod.ini while you play sticks, and a laptop media key tells you to try Fn.
+
+v0.9.5.2 - a patch
+------------------
+
+NEW
+- Chokes count on the X-ray, from behind too.
+- Stomping someone you knocked out counts on the X-ray. Two stomps to the head crack the skull.
+- Kicks from the saddle count as kicks. Riding into someone still doesn't.
+- Kick someone on the ground until they die and they're presumed dead, not just out cold. A nemesis can still have secretly survived.
+- Greeting the mod's people (mourners, camp men, people you know) gets a real exchange. You say hello, they answer.
+- Men and women share jobs. Most keep the usual work, but a woman might run a forge or a ranch, and a man might keep a store or teach school. Blacksmiths and tailors are new. People you've already met keep their jobs.
+- The Laramie Gang use the game's own Laramie looks and voices. Men you've already met keep their faces.
+- Outfits with only one model (Wapiti, Murfrees, Skinners, Del Lobos, Night Folk, Laramie) no longer all dress alike.
+- A fist fight is one line on someone's page ("Punched (18 hits)"), not a line per punch.
+
+FIXED
+- The mod could shut itself off after a short freeze, usually 20 to 60 minutes in. Saving at autosaves, when you load an older save or when you quit no longer holds the game up.
+- No more "game function(s) missing" warning with some ScriptHookRDR2DotNet copies. On those setups, patrols now leave after a fight instead of standing around.
+- No more hitches from the mod at autosaves, when closing the X-ray, right after loading, or while it looks for a controller.
+- Smaller hitches when a fight breaks out in front of onlookers, when a patrol rides in and when people turn up in town: that work is spread over several frames.
+- Your notoriety could reset on load if the scripts folder was read-only or blocked by antivirus. It's saved now, and you're told once if it happens.
+- Quitting or pressing Insert during a save no longer loses your latest changes.
+- Patrols free their models after spawning, so the mod holds less memory.
+- Lindsey Wofford's face no longer turns up at Raider camps. Camille de Millemont was wearing his bounty model. The mod's people never use bounty models now.
+- One kick could count twice on the X-ray, as a kick and a stomp.
+- Someone knocked down by your horse showed as "tied" on the X-ray.
+- A controller is found even when your PC hasn't been restarted in weeks.
+- Supply wagons and wagons on the road could stand still for a minute or more: they were sometimes sent somewhere off the roads. They head for a real road now, or just drive on along theirs.
+- Random encounters could be switched off by one key in the menu (with debug on) without a word, so nothing ever came. That key now tells you, and if yours were off they're back on (you're told once).
+- The Wapiti kept their camp, supplies and money in their reservation village, where the game won't let you draw a gun. They use their camps in the hills now, and nothing comes at you on the reservation.
+- grudges.log now records performance and RAM use, to help track down stutter reports.
+
+v0.9.5.1 - a patch
+------------------
+
+NEW
+- Train robberies count. Robbing a train puts it on the World tab (and maybe the newspaper), gets the nearest town talking, earns a little respect from outlaw outfits and angers the Army. Everyone aboard near you was held up at gunpoint, and some of them won't forget it. Masked, they mostly don't know it was you, unless you take the mask off near the robbery where someone sees your face. A long robbery counts once.
+- Fist fights on the X-ray. Punches, kicks and blows with your gun each get their own line under the man and their own colour on the skeleton, every blow marked where it landed. The injuries build with the blows: a bruised face, a black eye, a broken nose, a cracked jaw, a concussion; bruised then cracked ribs. A man you knock out reads as knocked out, not dead. Grabbing a man to hogtie him isn't a punch.
+- Outfit crates in Saint Denis are one or two hidden stashes at hand-picked spots: a pile of crates, sometimes a big one only fire or dynamite will take, and sometimes a lookout. Destroy every crate and you're told.
+- Supply caches: when an outfit loses the officer holding its supply camp, the supplies stay where they are as a cache instead of vanishing. They sit unguarded for a few hours (a white chest on your map, if you know it), then one of the outfit's men comes to watch them (red).
+
+CHANGED
+- Supplies and money move, and you have to find them again. Wreck an outfit's supplies or rob its treasury and what's left moves to another of its camps a game day later, or at once if the keeper is dead, ran or was let go. Wipe a camp out and its supplies and money move even if you never touched them. You hear of it like other world news ("Word is the Lemoyne Raiders have moved their supplies out of their camp in Scarlett Meadows."), where from, never where to. Knowing a camp doesn't tell you its supplies are there: you learn that by asking, finding them or hitting them.
+- Patrols don't stand around after a fight. Camp raiders, riders who come to the shooting and riders pulled in from the road wait for the shooting to stop, move about the place looking it over (one of them checks the dead), then mount up and ride off together. If they took your side, their leader gives you a word before they go.
+- The Bronte family rides in 1907 too. With Angelo dead, his lieutenants still hold Saint Denis and the bayou around it. A world already in 1907 gets the family back on its next load.
+- More to say when you let a man go or ask "Give me one reason to let you live": every outfit answers in its own voice (the 1907 outfits too), scared men differently from bold ones. A man you let go gets a last word before the questioning closes.
+- Women have women's lives: seamstresses, laundresses, schoolteachers, shopkeepers, cooks, housemaids, boarding-house keepers, milliners, telegraph operators, nurses, nuns, homesteaders, farm wives, market sellers, saloon girls and showgirls, ladies of means and travellers, each with her own past. No more lady railroad men or blacksmiths. Women you've already met get a woman's trade and their life written again, once.
+- A camp you wipe out stays empty for a game day instead of three. Then the outfit mans it again, or another outfit starts moving in.
+- Saint Denis: no outfit keeps a supply camp on its streets, and the Bronte family's city camps are just their men on the corner, no tents or wagons.
+- A battlefield's ? shows on the map once you're within 150 m of it, not 300.
+- Outfit camps are fuller: a second wagon at most camps, more tents and barrels, and the Murfrees park a cart. The Skinners' camp has its tents and stores.
+- A new licence (LICENSE.txt): you're free to translate enRAGE, modify it and decompile it, and to share translations and patches with a link to the Nexus Mods page. Re-uploading the mod, sharing its source and selling it aren't allowed.
+
+FIXED: Letting men go
+- A man you let go, or who bought his life, no longer turns on you when you cut him loose.
+- A man who surrenders and is let go runs instead of rejoining the fight. A hogtied man you let go stays out of the fight until he's cut free.
+- A man let go while sitting on a stopped wagon gets down and runs.
+- A crippled man you let go stays where he lies instead of snapping into a T-pose.
+- Killing a man you let go takes back everything the mercy earned you, even after a reload (within a day). Questioning him again no longer counts the mercy twice.
+- A man who gives up in a fight and runs while you're still busy with the others has slipped away, not been spared: no mercy, no word to his outfit. He counts as spared if the fight is over and you watch him go, or when you let him go yourself (questioning, the release prompt, or the bargain).
+
+FIXED: Outfits and questioning
+- Hierarchy cards no longer show a hate word. In a fresh world about half of an outfit's men said "Murderous": their starting hate only sets how they're armed, it isn't a grudge against you.
+- A new leader no longer talks about himself by name ("Mick'll kill ye slower", said by Mick). Telegrams and the Fort Wallace marker name whoever leads now.
+- A man scarred in a fight between outfits no longer counts as carrying your scar: he isn't held to a grudge against you for it.
+- A man who keeps his outfit's supplies or money himself now says so when questioned.
+- A false lead stays false after the liar's boss dies. A real lead about a man who dies tells you it's off.
+- When a man whose habit or funeral you know dies, you're told. A funeral whose mourner died is led by another man of the outfit.
+
+FIXED: Camps, funerals and the map
+- Camps you know stay on your map when the officer there dies or moves, and you're told when a known camp moves.
+- Camp markers update when the camp changes hands or an officer is promoted.
+- An officer believed dead no longer keeps his camp empty.
+- Funerals in Rhodes and Valentine are held by the graves, not inside the church. A funeral already planned there moves to the graves.
+- The saloons found in testing (Rhodes, Valentine's two, Saint Denis) come with the mod, doors and all.
+- Town crates and stashes no longer end up inside buildings or appear right in front of you.
+- A supply wagon that stops in the road keeps trying to get going.
+
+FIXED: Menu, X-ray and performance
+- Less micro-stutter. The big save files are written when a hitch can't be seen (the enRAGE menu or the X-ray open, the pause menu, a fade, a load, fast travel or sleeping), one at a time. During play they're only written about once a minute as a safety net (was every 3 to 5 seconds). The people and looks files are written off the game thread. Everything is still saved on Insert and at save points, and the menus show every change at once.
+- The menu's pause holds even when another mod changes the game speed. When a mission blocks it, you're told why.
+- Aiming at a hogtied man shows Antagonize again.
+- The X-ray no longer says a man "died later" on one wound and "survived" on another when he cheated death. The search list only marks men your shots actually killed.
+- Buckshot up close counts. A shotgun blast from a few metres hits as one mass: it breaks the bone it reaches, and four or more pellets in one part of a man tear it apart (critical; the head, fatal). It used to read as a spray of chipped bones and flesh wounds. Shots already in your X-ray log show the new reading.
+
+FIXED: Install problems
+- If another copy of the mod is installed (an old update unzipped into a folder inside scripts), a warning window on load shows which file it is and what to do. The extra copy stays out of the way and never touches your world.
+- The saddle check no longer fails with "Method not found: _IS_METAPED_USING_COMPONENT".
+- On load, enRAGE checks that your ScriptHookRDR2DotNet has every game function it uses, and tells you if any are missing (API CHECK in grudges.log).
+
+v0.9.5 - The Epilogue
+---------------------
+
+Eight years later. Play as John Marston and the world moves on to 1907.
+
+NEW: Eight years later
+- The first time you play as John, your world turns to 1907, once.
+- Every man the world knew in 1899 gets eight years of his own: some died (a gunfight, the rope, a fever), some sit in Sisika Penitentiary, some went straight, went west or took a deputy's badge, and some still ride, often higher up than before.
+- Grudges against Arthur are gone. To the men of 1907, John is a stranger.
+- Wars end, the outfits rebuild, leaders change, and a shake-up runs everywhere.
+- The World tab shows an "Eight years later" marker between the old chronicle and the new one. Select it to see what became of everyone. Each man's fate is in the chronicle and on his own page.
+- Your 1899 world is kept: loading an Arthur save brings it back.
+- A world started fresh on an epilogue save begins in 1907 right away.
+
+NEW: The outfits of 1907
+- Gone: the O'Driscoll Boys (Colm was hanged), the Bronte Family (it broke up after Angelo died) and the Wapiti (Rains Fall led his people north to Canada).
+- Some of their old riders joined the new outfits, and keep their place there.
+- The Laramie Gang: rustlers on the Great Plains and in Hennigan's Stead.
+- The Del Lobo Gang: bandits who made New Austin's badlands their own.
+- The Night Folk: they come out of the bayou at night, they don't go to war, and they don't talk.
+- The Lemoyne Raiders, the Murfree Brood, the Skinner Brothers, the Klan and the U.S. Army still ride, under 1907 leaders: Colonel Favours has left Fort Wallace, and Lindsey Wofford is long gone.
+- Leaders who died back in 1899 are long buried - no funerals for them in 1908. The Night Folk bury their own in the bayou.
+- Each new outfit has a life of its own in the World tab:
+  - The Night Folk: voices in the water, lanterns in the cypress, graves dug up in the night, something left on a doorstep. Their own jobs and past, and none of the everyday outlaw life.
+  - The Laramie Gang: rustled herds, changed brands, night herd in a storm, stock detectives on the trail.
+  - The Del Lobos: trains, guns across the river, the rurales, letters home.
+  - Their jobs succeed and fail their own way ("the moon was too bright", "a stock detective was waiting", "the rurales were waiting on the other side").
+
+NEW: New Austin
+- Hennigan's Stead, Cholla Springs, Gaptooth Ridge and Rio Bravo are now part of the world, with their own ground, camps and hideouts.
+
+NEW: Camps that look lived in
+- Ten more camp sites: three more for the Del Lobos and one for the Laramie Gang in New Austin, two for the Skinner Brothers in Tall Trees, two for the Murfree Brood in Roanoke Ridge, and two for the Lemoyne Raiders in Bluewater Marsh and the Grizzlies.
+- Hand-placed camps get a fire, tents, bedrolls, lanterns, firewood, crates and barrels, on open ground - never on a roof.
+- Each outfit's camp has its own look and layout: Laramie tents in a row behind a wall of hay, Del Lobos sleeping in a ring round the fire with no tents, Night Folk lean-tos and graves in the dark with no fire, Skinner hide racks, Murfree graves and a coffin, O'Driscoll stolen goods piled high, Raider moonshine stills, Bronte tables and chairs.
+- A camp that changes hands takes on its new owners' look.
+- Camps have a wagon parked at the edge and horses tied up, the outfit's own kind: a chuckwagon for the Laramie boys, carts for the Del Lobos, a coach for the Brontes, only horses for the Wapiti, nothing but the swamp for the Night Folk.
+
+NEW: The hierarchy shows ground
+- Each outfit's hierarchy has a GROUND line under its strength: the districts it holds, where it's strong, and where it has a foothold.
+- The strength bar that compares an outfit's ground with what it started with is now called HOLDING, so it isn't mistaken for how much ground they have.
+
+NEW: Easier to set up
+- A Settings card (O in the menu, Start on a controller, and once on first load): messages, world news, name cards, the war banner, how many encounters, distant battles, pausing in menus, the menu key, and how a controller opens the menu (double-tap D-pad Right, Left or Down, hold Right, or off). In 1899 it also asks whether you already collected Lindsey Wofford's bounty, so the Raiders get a new leader if you did. Its All settings row (or Alt+F11) still opens every setting.
+- The menu key can be a combination, like Shift+F9 or Ctrl+End, for mod lists where F11 is taken. The settings, undo and guide follow it.
+- Change keys right in the settings panel: pick one, press Enter, then press the new key. Keys that would clash with play, the menus or another enRAGE key are refused with a note.
+- One setting for how often encounters happen: Fewer, Normal, More or Lots.
+- The debug tools are off by default now; turn them on from the Settings card (More, Debug tools) if you want them.
+- Updating players get a one-page "What's new" once (and any time from the Settings card). New players get the full guide instead.
+
+NEW: More life
+- Men of no outfit get funerals too, when someone on the roster will mourn them.
+- An outfit buries up to three of its dead at one funeral, a coffin for each. When its funerals are full, an officer takes the place of a lesser man.
+- Funerals last five hours, so you can still catch one if you're late. The newspaper prints them in a FUNERAL NOTICES box: who, which outfit, the day and hour, the cemetery, and how long the mourners stay.
+- The newspaper is fuller: news from the last five days and further afield, a column of news from around the territory, local talk, advertisements, and a layout that changes from day to day. Headlines vary from story to story.
+- A funeral's mark stays on your map until you're at the graveside.
+- Children have names, a temper and a little story. Their name card reads like everyone's ("Boy - Hothead"). Greet one to learn who they are. They never hold grudges or join fights.
+- The world talks about the old gang the way it would in 1907: Dutch gone, Micah with his own gang, Sadie Adler hunting bounties, and the rest scattered. The Army's new commander replaces Colonel Favours in what people say.
+
+CHANGED
+- Men hold their ground better. A shaken man gives ground and keeps shooting instead of running, as long as his side is still in the fight; he only runs or gives up once they're losing badly.
+- Men defending their own camp are steadier, and a camp's boss won't slip away before the fight unless he's a coward.
+- A quick run of losses can no longer break a steady man in seconds.
+- Outfits that keep to their own country (the Del Lobos, the Laramie Gang, the Night Folk and others) no longer turn up in towns far outside it.
+- The settings panel also moves with W A S D, not just the arrow keys.
+- On the Settings card, B / Backspace now reads "Confirm & Back" (it always kept your choices).
+- Ages are counted from the game's year, not always from 1899.
+
+FIXED
+- A patrol on foot could stand still for good when it couldn't reach its point. It now tries nearer spots on the road, then wanders off.
+- Playing as John, the shortcut to your own page (A / Home, pad X) opens John's page, not Arthur's, and John is marked as you. His criminal profile is his own: the men Arthur killed are no longer counted as John's.
+- The large masks (the executioner's hood, skull masks and the like) hide your face too, not just the small ones and bandanas.
+- Fire bottles now burn an outfit's supply crates, the big stacks included (they used to take dynamite).
+- Big outfits (the O'Driscolls most of all) bled out in a few days: every clash cost them as if they were at war, one fight could take 60+ men, and they could never pay their way back. Now only a real war costs full losses, a single fight takes 2-7% of an outfit at most, a beaten outfit always gets some local men back each day, and bigger outfits take more money from their ground.
+- A newspaper story could say "four men shot dead" and name only three.
+- The game's own random events are left alone: no enRAGE encounter starts while one of its people is near, and shooting during one (the sharpshooter's targets, say) no longer sets off nearby camps, crews and patrols. Hitting one of them still does.
+- The game could crash after a few minutes in the enRAGE menu with the world paused (a graphics driver crash). The world now stays frozen for the first minute, then runs on in slow motion while the menu is open.
+- Fighting an outlaw camp, crew or patrol that came at you is no longer a crime - wounding them, or roughing up the one who surrenders, included (it used to be only killing them).
+- A camp's men could spawn on a rooftop, or a whole camp could sit off its spot when the ground hadn't loaded yet. Camps now sit where they belong, on open ground.
+- Treasury strongboxes and supply crates could land inside tents or on props. They always land clear now.
+- A lead you were given about a man (his ride, him alone, his camp, his habits) stayed on the map after he died. It comes off now.
+- Loading an epilogue save no longer starts a brand new world for it. Your world carries on into 1907.
+- Updating while already in the epilogue (from 0.9.4) keeps everything you've done as John. Only the outfits change: the O'Driscolls, Bronte family and Wapiti leave, and the new outfits arrive.
+- Two men in the same outfit could end up with the same name (a relative taking a surname). Now they never do, and existing doubles you've never met are renamed.
+
+Known
+- The new outfits' camp spots are placed by hand, since the game has none for them. Some may sit awkwardly. Please report any that look wrong.
+- The Night Folk are silent, on purpose.
+
+
+v0.9.4 - First early access release
+-----------------------------------
+- First public release.
