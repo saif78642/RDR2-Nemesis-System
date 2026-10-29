@@ -5,6 +5,8 @@ $outDir = Join-Path $projDir "bin\Release\net48"
 New-Item -ItemType Directory -Force -Path $outDir | Out-Null
 
 $csc = "C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\Bin\Roslyn\csc.exe"
+if (Test-Path (Join-Path $rootDir "tools\roslyn\csc.exe")) { $csc = Join-Path $rootDir "tools\roslyn\csc.exe" }
+if ($env:CSC_PATH) { $csc = $env:CSC_PATH }
 $net48 = "C:\Windows\Microsoft.NET\Framework64\v4.0.30319"
 $refsDir = Join-Path (Split-Path -Parent $projDir) "refs"
 
@@ -19,7 +21,7 @@ $rspPath = Join-Path $projDir "build.rsp"
 $rspLines = @(
   '/target:library',
   "/out:`"$outDll`"",
-  '/langversion:14.0',
+  '/langversion:latest',
   '/nullable:annotations',
   '/unsafe',
   '/optimize+',

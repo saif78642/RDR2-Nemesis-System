@@ -1863,4 +1863,163 @@ public partial class NemesisMod : Script
 			paper.Wanted.Add($"COURT DOCKET ({pr.Town}): {pr.Name} is scheduled for {pr.Sentence} in {Math.Max(1, pr.ExecutionDay - Math.Max(1, GameDayKey()))} days (Bail: ${pr.BailDollars}).");
 		}
 	}
+
+	private static NemesisMod _liveInstance;
+
+	public static NemesisMod Instance => _liveInstance ?? (NemesisRecord.GameClock?.Target as NemesisMod);
+
+	public Dictionary<string, string> ExportAiNpcContext(int pedHandle)
+	{
+		_liveInstance = this;
+		Dictionary<string, string> ctx = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+		ctx["enrage_active"] = "true";
+		Ped player = Game.Player?.Character;
+		string town = (player != null && player.Exists()) ? (TownAt(player.Position) ?? _currentTown ?? "Valentine") : (_currentTown ?? "Valentine");
+		ctx["town"] = town;
+		ctx["player_name"] = InterroLines.PlayerName ?? YouShort ?? "Arthur Morgan";
+
+		NemesisRecord rec = RecordAt(pedHandle) ?? Roster.FirstOrDefault((NemesisRecord r) => r != null && r.IsAlive && r.LastHandle == pedHandle);
+		if (_activeMayorPed != null && _activeMayorPed.Exists() && _activeMayorPed.Handle == pedHandle)
+		{
+			TownPoliticState mp = TownPoliticsOf(_activeMayorTown ?? town);
+			ctx["npc_name"] = mp?.MayorName ?? "Mayor";
+			ctx["npc_role"] = $"Sitting Mayor of {_activeMayorTown ?? town} ({mp?.Regime})";
+			ctx["npc_faction"] = mp?.BackedFaction ?? "Town Government";
+			ctx["npc_personality"] = "Proud, political, calculating";
+			ctx["is_special_civic"] = "Mayor";
+		}
+		else if (_activePrisonerPed != null && _activePrisonerPed.Exists() && _activePrisonerPed.Handle == pedHandle && _activePrisonerRec != null)
+		{
+			ctx["npc_name"] = _activePrisonerRec.Name;
+			ctx["npc_role"] = $"Captured Outlaw Prisoner (Scheduled for {_activePrisonerRec.Sentence} in {_activePrisonerRec.Town})";
+			ctx["npc_faction"] = Gangs.ById(_activePrisonerRec.Gang)?.Name ?? _activePrisonerRec.Gang ?? "Outlaw";
+			ctx["npc_personality"] = "Desperate, defiant captive";
+			ctx["is_special_civic"] = "Prisoner";
+		}
+		else if (_activeBountyPed != null && _activeBountyPed.Exists() && _activeBountyPed.Handle == pedHandle && _activeBountyContract != null)
+		{
+			ctx["npc_name"] = _activeBountyContract.TargetName;
+			ctx["npc_role"] = $"Wanted Bounty Target (${_activeBountyContract.AliveReward} Alive / ${_activeBountyContract.DeadReward} Dead for {_activeBountyContract.Crime})";
+			ctx["npc_faction"] = Gangs.ById(_activeBountyContract.Gang)?.Name ?? _activeBountyContract.Gang ?? "Outlaw";
+			ctx["npc_personality"] = "Ruthless, hunted outlaw";
+			ctx["is_special_civic"] = "BountyTarget";
+		}
+
+		if (rec != null)
+		{
+			ctx["is_nemesis"] = "true";
+			ctx["nemesis_id"] = rec.Id ?? "";
+			ctx["npc_name"] = rec.FullName ?? rec.Name ?? "Unknown Outlaw";
+			ctx["npc_title"] = rec.Title ?? "";
+			ctx["npc_rank"] = rec.Rank.ToString();
+			Gang g = Gangs.ById(rec.Gang);
+			ctx["npc_faction_id"] = rec.Gang ?? "";
+			ctx["npc_faction"] = g?.Name ?? rec.Affiliation ?? "Independent";
+			ctx["npc_role"] = (g != null) ? $"{g.Name} (Rank {rec.Rank})" : (rec.Trade ?? "Frontier Drifter");
+			ctx["npc_personality"] = (rec.Personality ?? Personality.Cold).ToString();
+			ctx["npc_hate"] = rec.Hate.ToString();
+			ctx["npc_fear"] = EffectiveFear(rec).ToString();
+			ctx["npc_grudge"] = rec.GrudgeSummary ?? "";
+			ctx["npc_origin"] = rec.Origin.ToString();
+			ctx["npc_times_killed_player"] = rec.TimesKilledPlayer.ToString();
+			ctx["npc_times_cheated_death"] = rec.TimesCheatedDeath.ToString();
+			ctx["npc_times_spared"] = rec.TimesSpared.ToString();
+			ctx["npc_limp"] = rec.Limp ? "true" : "false";
+			ctx["npc_scars"] = (rec.Scars != null && rec.Scars.Count > 0) ? string.Join(", ", rec.Scars.Select((Scar s) => s.Description ?? s.Wound ?? "scarred")) : "";
+			ctx["npc_quirks"] = (rec.Quirks != null && rec.Quirks.Count > 0) ? string.Join(", ", rec.Quirks) : "";
+			ctx["npc_backstory"] = $"Born {rec.BornYear} in {rec.Birthplace ?? "the frontier"}. Trade: {rec.Trade ?? "gunhand"}. Family: {rec.Family ?? "none"}. Faith: {rec.Faith ?? "none"}.";
+			NemesisRecord boss = BossOf(rec);
+			if (boss != null)
+			{
+				ctx["npc_boss"] = boss.FullName;
+			}
+			if (rec.History != null && rec.History.Count > 0)
+			{
+				ctx["npc_history"] = string.Join(" | ", rec.History.Skip(Math.Max(0, rec.History.Count - 4)).Select((HistoryEntry h) => h.Text));
+			}
+		}
+		else if (!ctx.ContainsKey("npc_name"))
+		{
+			string who = WhoIs(pedHandle);
+			if (!string.IsNullOrEmpty(who) && who != "a stranger")
+			{
+				ctx["npc_name"] = who.Replace(" (stranger)", "");
+			}
+			if (ENTITY.DOES_ENTITY_EXIST(pedHandle))
+			{
+				uint modelHash = ENTITY.GET_ENTITY_MODEL(pedHandle);
+				Gang mg = Gangs.ForModel(modelHash);
+				if (mg != null)
+				{
+					ctx["npc_faction_id"] = mg.Id;
+					ctx["npc_faction"] = mg.Name;
+					ctx["npc_role"] = mg.Name + " Member";
+				}
+			}
+		}
+
+		TownPoliticState tp = TownPoliticsOf(town);
+		if (tp != null)
+		{
+			ctx["town_mayor"] = tp.MayorName ?? "";
+			ctx["town_sheriff"] = tp.SheriffName ?? "";
+			ctx["town_detective"] = tp.DetectiveName ?? "";
+			ctx["town_challenger"] = tp.ChallengerName ?? "";
+			ctx["town_regime"] = tp.Regime.ToString();
+			ctx["town_corruption"] = tp.Corruption.ToString();
+			ctx["town_tax_rate"] = tp.TaxRatePct.ToString();
+			ctx["town_warrant"] = tp.Warrant.ToString();
+			ctx["town_case_heat"] = tp.CaseHeat.ToString();
+			ctx["town_backed_faction"] = Gangs.ById(tp.BackedFaction)?.Name ?? tp.BackedFaction ?? "None";
+		}
+		if (Civic.Bounties != null && Civic.Bounties.Count > 0)
+		{
+			BountyContract b = Civic.Bounties.FirstOrDefault((BountyContract x) => x.Town == town) ?? Civic.Bounties[0];
+			ctx["active_bounty"] = $"{b.TargetName} (${b.AliveReward} Alive in {b.Town} for {b.Crime})";
+		}
+		if (Civic.Prisoners != null && Civic.Prisoners.Count > 0)
+		{
+			PrisonerRecord p = Civic.Prisoners.FirstOrDefault((PrisonerRecord x) => x.Town == town) ?? Civic.Prisoners[0];
+			ctx["court_prisoner"] = $"{p.Name} awaiting {p.Sentence} in {p.Town} Jail (Bail ${p.BailDollars})";
+		}
+		return ctx;
+	}
+
+	public void RecordAiDialogueOutcome(int pedHandle, string playerLine, string npcReply, int hateDelta, int fearDelta, bool revealedCamp)
+	{
+		try
+		{
+			NemesisRecord rec = RecordAt(pedHandle) ?? Roster.FirstOrDefault((NemesisRecord r) => r != null && r.IsAlive && r.LastHandle == pedHandle);
+			if (rec != null)
+			{
+				rec.Touch();
+				if (hateDelta != 0)
+				{
+					rec.AddHate(hateDelta);
+				}
+				if (fearDelta != 0)
+				{
+					rec.AddFear(fearDelta);
+				}
+				if (revealedCamp)
+				{
+					rec.CampKnown = true;
+					rec.GaveCamp = true;
+				}
+				if (rec.History == null)
+				{
+					rec.History = new List<HistoryEntry>();
+				}
+				rec.History.Add(new HistoryEntry
+				{
+					At = DateTime.Now,
+					Text = $"Spoke with you: \"{playerLine}\" -> \"{npcReply}\""
+				});
+				SaveRoster();
+			}
+		}
+		catch
+		{
+		}
+	}
 }

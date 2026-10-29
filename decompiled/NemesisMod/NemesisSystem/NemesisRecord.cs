@@ -424,7 +424,7 @@ public class NemesisRecord
 		LastInteraction = DateTime.Now;
 		if (GameClock != null)
 		{
-			LastGameMin = GameClock();
+			try { LastGameMin = GameClock(); } catch { }
 		}
 	}
 

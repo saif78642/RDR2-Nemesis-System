@@ -19307,12 +19307,29 @@ public partial class NemesisMod : Script
 		StartupTrace.Write("ctor done - handlers next");
 		Tick += (object o, EventArgs e) =>
 		{
-			if (ActiveCopy())
+			try
 			{
-				Guard("tick", () =>
+				if (ActiveCopy())
 				{
-					OnTick(o, e);
-				});
+					Guard("tick", () =>
+					{
+						OnTick(o, e);
+					});
+				}
+			}
+			catch (ThreadAbortException)
+			{
+				throw;
+			}
+			catch (Exception ex)
+			{
+				try
+				{
+					GrudgeLog("TICK fatal unhandled: " + ex);
+				}
+				catch
+				{
+				}
 			}
 		};
 		KeyDown += (object o, KeyEventArgs e) =>
@@ -21916,7 +21933,7 @@ public partial class NemesisMod : Script
 		SafeFile.EndWaitBudget(started);
 		Step(() =>
 		{
-			if (!SafeFile.WaitWrites(5000))
+			if (!SafeFile.WaitWrites(1500))
 			{
 				GrudgeLog("SAVE the background writer didn't finish in 5 s before the unload");
 			}
@@ -21930,7 +21947,7 @@ public partial class NemesisMod : Script
 			}
 			if (array.Length != 0)
 			{
-				Task.WaitAll(array, 3000);
+				Task.WaitAll(array, 1000);
 			}
 		});
 		Crumbs.Close("Insert / abort");
@@ -22594,9 +22611,10 @@ public partial class NemesisMod : Script
 			ErrorCount++;
 			string key = what + ":" + ex2.GetType().Name + ":" + ex2.Message;
 			LastError = what + ": " + ex2.GetType().Name + " " + ex2.Message;
-			if (!_errorLoggedAt.TryGetValue(key, out var value) || Game.GameTime - value > 60000)
+			int tickNow = Environment.TickCount;
+			if (!_errorLoggedAt.TryGetValue(key, out var value) || tickNow - value > 60000)
 			{
-				_errorLoggedAt[key] = Game.GameTime;
+				_errorLoggedAt[key] = tickNow;
 				GrudgeLog($"ERROR in {what}: {ex2}");
 			}
 		}
@@ -22629,10 +22647,20 @@ public partial class NemesisMod : Script
 			}
 			break;
 		}
-		if (num4 >= 8.0 && what != "saves" && (!_slowLoggedAt.TryGetValue(what, out var value2) || Game.GameTime - value2 > 60000))
+		try
 		{
-			_slowLoggedAt[what] = Game.GameTime;
-			GrudgeLog((num3 >= 1.0) ? $"SLOW {what} held the frame {num4:0} ms (and waited {num3:0} ms for models to load - the game ran on meanwhile)" : $"SLOW {what} took {num4:0} ms");
+			if (num4 >= 8.0 && what != "saves")
+			{
+				int tickNow2 = Environment.TickCount;
+				if (!_slowLoggedAt.TryGetValue(what, out var value2) || tickNow2 - value2 > 60000)
+				{
+					_slowLoggedAt[what] = tickNow2;
+					GrudgeLog((num3 >= 1.0) ? $"SLOW {what} held the frame {num4:0} ms (and waited {num3:0} ms for models to load - the game ran on meanwhile)" : $"SLOW {what} took {num4:0} ms");
+				}
+			}
+		}
+		catch
+		{
 		}
 	}
 

@@ -1,7 +1,8 @@
 # Build outputs and Roslyn response files
 [Bb]in/
 [Oo]bj/
-decompiled/NemesisMod/build.rsp
+*.rsp
+tools/
 
 # Backup and temporary files
 *.bak
